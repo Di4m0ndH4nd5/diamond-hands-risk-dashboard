@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050607">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Diamond Hands">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Diamond Hands Risk Dashboard</title>
+<style>
+:root{--bg:#050607;--panel:#0d1217;--line:#22303a;--cyan:#61d9ff;--text:#f4f7fa;--muted:#aeb6bf;}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:980px;margin:auto;padding:18px 14px 34px}.head{display:flex;align-items:center;gap:14px;padding:8px 2px 18px}
+.logo{width:78px;height:78px;border-radius:50%;background:#fff}.title h1{margin:0;font-size:30px;letter-spacing:.03em}.title h2{margin:2px 0 0;color:var(--cyan);font-size:18px;letter-spacing:.12em}
+.status{margin-left:auto;text-align:right;color:var(--muted);font-size:13px}.live{color:#36d05f;margin-top:6px}
+.panel{background:linear-gradient(180deg,#111821,#0a0f14);border:1px solid var(--line);border-radius:13px;margin:12px 0;overflow:hidden}
+.info{padding:16px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}.info h3,.section{color:var(--cyan);font-size:14px;letter-spacing:.04em;margin:0 0 8px}.info p{font-size:13px;line-height:1.45;color:#e7ecf0;margin:0}
+.scale{height:11px;border-radius:20px;background:linear-gradient(90deg,#29b34a 0 25%,#e5db28 25% 50%,#ff9b16 50% 75%,#ef3e36 75% 100%);margin:12px 0 6px}.ticks{display:flex;justify-content:space-between;font-size:11px;color:#d7dde2}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.stat{padding:15px;text-align:center}.stat b{font-size:34px}.stat small{display:block;color:var(--muted);margin-top:4px}
+.toolbar{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.toolbar strong{color:var(--cyan);font-size:16px}
+table{width:100%;border-collapse:collapse}th,td{padding:13px 12px;border-bottom:1px solid #1c2933;text-align:left}th{font-size:11px;color:#cbd5dd;font-weight:600}td{font-size:14px}
+.asset{font-weight:700}.ticker{color:var(--muted);font-size:11px;margin-top:2px}.score{font-weight:800}.bar{height:8px;border-radius:10px;background:#303943;overflow:hidden;margin-top:7px}.fill{height:100%;background:linear-gradient(90deg,#3fca55,#e8df2a,#ff8c1c,#ef4136)}
+.badge{display:inline-block;padding:6px 12px;border-radius:10px;font-weight:700;font-size:11px}.low{color:#4cdc69;background:#10341d}.moderate{color:#f4e63b;background:#383410}.high{color:#ff9f28;background:#39250f}.extreme{color:#ff5249;background:#3d1311}
+.group td{background:#121b23;color:var(--cyan);text-align:center;font-size:12px;font-weight:800;letter-spacing:.06em}
+.foot{padding:16px;color:var(--muted);font-size:12px;line-height:1.45}.refresh{appearance:none;border:1px solid #2f4555;background:#111a21;color:white;border-radius:10px;padding:9px 12px;font-weight:700}
+@media(max-width:700px){.info{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.status{font-size:11px}.title h1{font-size:22px}.title h2{font-size:14px}.logo{width:62px;height:62px}th:nth-child(6),td:nth-child(6){display:none}th,td{padding:11px 7px;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <div class="head">
+  <img class="logo" src="icon-180.png" alt="">
+  <div class="title"><h1>DIAMOND HANDS</h1><h2>RISK DASHBOARD</h2></div>
+  <div class="status"><div id="updated">Snapshot</div><div class="live">● Hourly refresh ready</div></div>
+ </div>
+
+ <div class="panel info">
+  <div><h3>ABOUT THIS DASHBOARD</h3><p>Cowen-inspired risk metric. 0 = lowest valuation/cycle risk; 1 = highest. Built for long-term perspective, not short-term trading.</p></div>
+  <div><h3>RISK SCALE</h3><div class="scale"></div><div class="ticks"><span>0</span><span>.25</span><span>.50</span><span>.75</span><span>1</span></div></div>
+  <div><h3>HOW TO USE</h3><p>Lower scores suggest better long-term valuation. Scores are model estimates, not Benjamin Cowen's proprietary ITC readings.</p></div>
+ </div>
+
+ <div class="stats" id="stats"></div>
+
+ <div class="panel">
+  <div class="toolbar"><strong>☷ MARKETS OVERVIEW</strong><button class="refresh" onclick="render()">Refresh</button></div>
+  <div style="overflow:auto"><table><thead><tr><th>ASSET</th><th>RISK</th><th>LEVEL</th><th>BUY ZONE</th><th>RISK BAR</th><th>TYPE</th></tr></thead><tbody id="rows"></tbody></table></div>
+ </div>
+
+ <div class="panel foot"><b style="color:var(--cyan)">DIAMOND HANDS RISK DASHBOARD</b><br>
+ This PWA is ready to be hosted and added to an iPhone Home Screen. The included scores are the current dashboard model snapshot. A public host/data feed is required for truly live autonomous market recalculation.</div>
+</div>
+<script>
+const assets=[
+["Bitcoin","BTC",0.27,"Crypto"],["Ethereum","ETH",0.32,"Crypto"],["Dogecoin","DOGE",0.35,"Crypto"],
+["S&P 500","SPX",0.72,"Index"],["FTSE 100","UKX",0.66,"Index"],["Gold","XAU",0.78,"Metal"],["Silver","XAG",0.69,"Metal"],
+["Apple","AAPL",0.70,"Big 8"],["Microsoft","MSFT",0.68,"Big 8"],["NVIDIA","NVDA",0.82,"Big 8"],["Alphabet","GOOGL",0.61,"Big 8"],
+["Amazon","AMZN",0.66,"Big 8"],["Meta Platforms","META",0.67,"Big 8"],["Tesla","TSLA",0.79,"Big 8"],["Broadcom","AVGO",0.76,"Big 8"],["Rolls-Royce Holdings","RR.",0.78,"Additional Stocks"],["ASML Holding","ASML",0.69,"Additional Stocks"],["BAE Systems","BA.",0.70,"Additional Stocks"]
+];
+function level(s){return s<=.30?["LOW","low"]:s<=.60?["MODERATE","moderate"]:s<=.80?["HIGH","high"]:["EXTREME","extreme"]}
+function buyZone(s){
+  if(s<=.20) return ["STRONG BUY","low"];
+  if(s<=.35) return ["BUY ZONE","low"];
+  if(s<=.55) return ["DCA / HOLD","moderate"];
+  if(s<=.75) return ["WAIT","high"];
+  return ["AVOID / TRIM","extreme"];
+}
+function render(){
+ document.getElementById("updated").textContent="Last opened "+new Date().toLocaleString();
+ let rows="", last="";
+ assets.forEach(a=>{if(a[3]!=last){rows+=`<tr class="group"><td colspan="6">${a[3].toUpperCase()}</td></tr>`;last=a[3]}
+ let l=level(a[2]), bz=buyZone(a[2]); rows+=`<tr><td><div class="asset">${a[0]}</div><div class="ticker">${a[1]}</div></td><td class="score">${a[2].toFixed(2)}</td><td><span class="badge ${l[1]}">${l[0]}</span></td><td><span class="badge ${bz[1]}">${bz[0]}</span></td><td><div class="bar"><div class="fill" style="width:${a[2]*100}%"></div></div></td><td>${a[3]}</td></tr>`});
+ document.getElementById("rows").innerHTML=rows;
+ let counts=[0,0,0,0];assets.forEach(a=>{if(a[2]<=.30)counts[0]++;else if(a[2]<=.60)counts[1]++;else if(a[2]<=.80)counts[2]++;else counts[3]++});
+ document.getElementById("stats").innerHTML=
+ `<div class="panel stat"><small>TOTAL ASSETS</small><b>${assets.length}</b><small>Tracked</small></div>
+ <div class="panel stat"><small>LOW RISK</small><b>${counts[0]}</b><small>≤ 0.30</small></div>
+ <div class="panel stat"><small>MODERATE</small><b>${counts[1]}</b><small>0.30–0.60</small></div>
+ <div class="panel stat"><small>HIGH RISK</small><b>${counts[2]}</b><small>0.60–0.80</small></div>
+ <div class="panel stat"><small>EXTREME</small><b>${counts[3]}</b><small>&gt; 0.80</small></div>`;
+}
+render();
+if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(()=>{})}
+setInterval(render,3600000);
+</script>
+</body></html>
