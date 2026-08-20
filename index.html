@@ -67,14 +67,32 @@ th{color:#c7d2da;font-size:10px;letter-spacing:.04em}
 .disclaimer strong{color:var(--cyan);letter-spacing:.04em}
 @media(max-width:700px){.disclaimer{font-size:10px;padding:6px 8px;gap:6px}.disclaimer img{width:29px;height:29px}}
 
+
+.health-wrap{display:flex;align-items:center;justify-content:flex-end;gap:7px;margin-top:6px;font-weight:700}
+.health-light{width:12px;height:12px;border-radius:50%;display:inline-block;border:1px solid rgba(255,255,255,.24)}
+.health-good{background:#34c759;box-shadow:0 0 8px rgba(52,199,89,.55)}
+.health-warn{background:#ff9f0a;box-shadow:0 0 8px rgba(255,159,10,.5)}
+.health-bad{background:#ff453a;box-shadow:0 0 8px rgba(255,69,58,.55)}
+.health-wait{background:#8e8e93}
+@media(max-width:700px){
+ .health-wrap{gap:5px;margin-top:4px;font-size:9px}
+ .health-light{width:10px;height:10px}
+}
+
 </style>
 </head>
 <body>
 <div class="wrap">
  <header class="head">
   <img class="logo" src="icon-180.png" alt="">
-  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V14</span></h2></div>
-  <div class="status"><div id="updated">Waiting for latest UK market update</div><div class="live">● Prices + risk update hourly</div></div>
+  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V17</span></h2></div>
+  <div class="status">
+  <div id="updated">Waiting for latest UK market update</div>
+  <div class="health-wrap">
+    <span id="healthLight" class="health-light health-wait"></span>
+    <span id="healthText">Checking system…</span>
+  </div>
+</div>
  </header>
 
  <div class="disclaimer">
@@ -119,6 +137,16 @@ function fmtPrice(a,p){
    return "$"+p.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2})+" USD";
  }
 
+ // Metals displayed in USD per troy ounce.
+ // HG=F copper is quoted in USD/lb, so convert lb -> troy oz (14.5833 ozt/lb).
+ if(a.yf==="HG=F"){
+   const perOz=p/14.5833333333;
+   return "$"+perOz.toLocaleString("en-US",{minimumFractionDigits:3,maximumFractionDigits:3})+"/oz";
+ }
+ if(["GC=F","SI=F","PA=F"].includes(a.yf)){
+   return "$"+p.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2})+"/oz";
+ }
+
  // London-listed shares are quoted by Yahoo in GBp; display them in GBP.
  if(a.yf.endsWith(".L")){
    const gbp=p/100;
@@ -127,6 +155,36 @@ function fmtPrice(a,p){
 
  return "$"+p.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
 }
+function updateHealth(){
+ const light=document.getElementById("healthLight");
+ const text=document.getElementById("healthText");
+ light.className="health-light";
+
+ if(!priceData || !priceData.updated){
+   light.classList.add("health-bad");
+   text.textContent="SYSTEM OFFLINE";
+   return;
+ }
+
+ const updated=new Date(priceData.updated);
+ const ageHours=(Date.now()-updated.getTime())/3600000;
+ const expected=assets.length || 23;
+ const priceCount=Object.keys(priceData.prices || {}).length;
+ const riskCount=Object.keys(priceData.risks || {}).length;
+ const errorCount=Object.keys(priceData.errors || {}).length;
+
+ if(ageHours <= 2.25 && priceCount >= expected && riskCount >= expected && errorCount === 0){
+   light.classList.add("health-good");
+   text.textContent="ALL SYSTEMS LIVE";
+ }else if(ageHours <= 4.5 && priceCount > 0 && riskCount > 0){
+   light.classList.add("health-warn");
+   text.textContent=errorCount ? "PARTIAL DATA" : "UPDATE DELAYED";
+ }else{
+   light.classList.add("health-bad");
+   text.textContent="DATA FEED ISSUE";
+ }
+}
+
 function render(filter=""){
  const visible=assets.filter(a=>(a.name+" "+a.ticker).toLowerCase().includes(filter.toLowerCase()));
  let out="",group="";
@@ -166,6 +224,7 @@ function render(filter=""){
   }).format(d);
   document.getElementById("updated").textContent="Last updated (UK): "+uk;
  }
+ updateHealth();
 }
 async function load(){
  try{
@@ -174,7 +233,15 @@ async function load(){
    fetch("data.json?x="+Date.now()).then(r=>r.json())
   ]);
   assets=a;priceData=d;render(document.getElementById("search").value);
- }catch(e){document.getElementById("updated").textContent="Market data unavailable";}
+ }catch(e){
+   document.getElementById("updated").textContent="Market data unavailable";
+   const light=document.getElementById("healthLight");
+   const text=document.getElementById("healthText");
+   if(light && text){
+     light.className="health-light health-bad";
+     text.textContent="DATA FEED ISSUE";
+   }
+ }
 }
 document.getElementById("search").addEventListener("input",e=>render(e.target.value));
 load();

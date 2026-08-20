@@ -98,13 +98,6 @@
     "type": "Big 8"
   },
   {
-    "name": "Broadcom",
-    "ticker": "AVGO",
-    "yf": "AVGO",
-    "risk": 0.76,
-    "type": "Big 8"
-  },
-  {
     "name": "Rolls-Royce Holdings",
     "ticker": "RR.",
     "yf": "RR.L",
@@ -123,6 +116,48 @@
     "ticker": "BA.",
     "yf": "BA.L",
     "risk": 0.7,
+    "type": "Additional Stocks"
+  },
+  {
+    "name": "Copper",
+    "ticker": "COPPER",
+    "yf": "HG=F",
+    "risk": 0.5,
+    "type": "Metal"
+  },
+  {
+    "name": "Palladium",
+    "ticker": "PALLADIUM",
+    "yf": "PA=F",
+    "risk": 0.5,
+    "type": "Metal"
+  },
+  {
+    "name": "Coca-Cola",
+    "ticker": "KO",
+    "yf": "KO",
+    "risk": 0.5,
+    "type": "Additional Stocks"
+  },
+  {
+    "name": "CRISPR Therapeutics",
+    "ticker": "CRSP",
+    "yf": "CRSP",
+    "risk": 0.5,
+    "type": "Additional Stocks"
+  },
+  {
+    "name": "Mastercard",
+    "ticker": "MA",
+    "yf": "MA",
+    "risk": 0.5,
+    "type": "Additional Stocks"
+  },
+  {
+    "name": "Visa",
+    "ticker": "V",
+    "yf": "V",
+    "risk": 0.5,
     "type": "Additional Stocks"
   }
 ]
