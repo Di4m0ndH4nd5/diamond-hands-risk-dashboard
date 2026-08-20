@@ -17,7 +17,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,B
 .wrap{max-width:1180px;margin:auto;padding:18px 14px 34px}
 .head{display:flex;align-items:center;gap:14px;padding:6px 2px 16px;border-bottom:1px solid var(--line)}
 .logo{width:70px;height:70px;border-radius:50%;background:#fff}
-.title h1{margin:0;font-size:29px;letter-spacing:.03em}
+.title h1{margin:0;font-size:29px;letter-spacing:.025em}
 .title h2{margin:2px 0 0;color:var(--cyan);font-size:17px;letter-spacing:.11em}
 .version{display:inline-block;margin-left:7px;padding:2px 6px;border:1px solid var(--cyan);border-radius:6px;font-size:10px;vertical-align:middle}
 .status{margin-left:auto;text-align:right;color:var(--muted);font-size:12px}
@@ -79,13 +79,28 @@ th{color:#c7d2da;font-size:10px;letter-spacing:.04em}
  .health-light{width:10px;height:10px}
 }
 
+
+.asset-cell{display:flex;align-items:center;gap:10px}
+.asset-icon{width:30px;height:30px;border-radius:50%;flex:0 0 auto}
+th,td{text-align:center}
+th:first-child,td:first-child{text-align:left}
+.score{margin-bottom:4px}
+.group td{text-align:center!important}
+.toolbar{align-items:center}
+.scale-title,.ticks,.labels{text-align:center}
+@media(max-width:700px){
+  .asset-cell{gap:7px}
+  .asset-icon{width:25px;height:25px}
+  th,td{vertical-align:middle}
+}
+
 </style>
 </head>
 <body>
 <div class="wrap">
  <header class="head">
   <img class="logo" src="icon-180.png" alt="">
-  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V18</span></h2></div>
+  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V20</span></h2></div>
   <div class="status">
   <div id="updated">Waiting for latest UK market update</div>
   <div class="health-wrap">
@@ -133,8 +148,8 @@ function fmtPrice(a,p){
 
  // Crypto feed symbols are explicitly USD pairs (BTC-USD / ETH-USD / DOGE-USD).
  if(a.type==="Crypto"){
-   if(p<1) return "$"+p.toLocaleString("en-US",{maximumFractionDigits:6})+" USD";
-   return "$"+p.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2})+" USD";
+   if(p<1) return "$"+p.toLocaleString("en-US",{maximumFractionDigits:6});
+   return "$"+p.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
  }
 
  // Metals displayed in USD per troy ounce.
@@ -194,7 +209,12 @@ function render(filter=""){
   const r=(dynamicRisk==null ? a.risk : dynamicRisk);
   const l=level(r),z=zone(r),p=priceData.prices?.[a.yf];
   out+=`<tr>
-   <td><div class="asset">${a.name}</div><div class="ticker">${a.ticker}</div></td>
+   <td>
+     <div class="asset-cell">
+       <img class="asset-icon" src="${a.icon || ''}" alt="">
+       <div><div class="asset">${a.name}</div><div class="ticker">${a.ticker}</div></div>
+     </div>
+   </td>
    <td class="price"><span class="live-dot">●</span>${fmtPrice(a,p)}</td>
    <td><div class="score">${r.toFixed(2)}</div><span class="badge ${l[1]}">${l[0]}</span></td>
    <td><span class="badge ${z[1]}">${z[0]}</span></td>
