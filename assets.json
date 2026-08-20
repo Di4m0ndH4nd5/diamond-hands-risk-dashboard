@@ -56,6 +56,22 @@
     "icon": "asset-icons/XAG.svg"
   },
   {
+    "name": "Copper",
+    "ticker": "COPPER",
+    "yf": "HG=F",
+    "risk": 0.5,
+    "type": "Metal",
+    "icon": "asset-icons/COPPER.svg"
+  },
+  {
+    "name": "Palladium",
+    "ticker": "PALLADIUM",
+    "yf": "PA=F",
+    "risk": 0.5,
+    "type": "Metal",
+    "icon": "asset-icons/PALLADIUM.svg"
+  },
+  {
     "name": "Apple",
     "ticker": "AAPL",
     "yf": "AAPL",
@@ -136,22 +152,6 @@
     "icon": "asset-icons/BA_.svg"
   },
   {
-    "name": "Copper",
-    "ticker": "COPPER",
-    "yf": "HG=F",
-    "risk": 0.5,
-    "type": "Metal",
-    "icon": "asset-icons/COPPER.svg"
-  },
-  {
-    "name": "Palladium",
-    "ticker": "PALLADIUM",
-    "yf": "PA=F",
-    "risk": 0.5,
-    "type": "Metal",
-    "icon": "asset-icons/PALLADIUM.svg"
-  },
-  {
     "name": "Coca-Cola",
     "ticker": "KO",
     "yf": "KO",
@@ -182,5 +182,45 @@
     "risk": 0.5,
     "type": "Additional Stocks",
     "icon": "asset-icons/V.svg"
+  },
+  {
+    "name": "Micron Technology",
+    "ticker": "MU",
+    "yf": "MU",
+    "risk": 0.5,
+    "type": "Additional Stocks",
+    "icon": "asset-icons/MU.svg"
+  },
+  {
+    "name": "Uber Technologies",
+    "ticker": "UBER",
+    "yf": "UBER",
+    "risk": 0.5,
+    "type": "Additional Stocks",
+    "icon": "asset-icons/UBER.svg"
+  },
+  {
+    "name": "AST SpaceMobile",
+    "ticker": "ASTS",
+    "yf": "ASTS",
+    "risk": 0.5,
+    "type": "Additional Stocks",
+    "icon": "asset-icons/ASTS.svg"
+  },
+  {
+    "name": "Eli Lilly",
+    "ticker": "LLY",
+    "yf": "LLY",
+    "risk": 0.5,
+    "type": "Additional Stocks",
+    "icon": "asset-icons/LLY.svg"
+  },
+  {
+    "name": "Novo Nordisk",
+    "ticker": "NVO",
+    "yf": "NVO",
+    "risk": 0.5,
+    "type": "Additional Stocks",
+    "icon": "asset-icons/NVO.svg"
   }
 ]

@@ -1,0 +1,2 @@
+V26 uses recognisable brand marks from the CC0 Simple Icons project where available. Assets without a suitable available brand mark retain the dashboard's local ticker-style icon.
+Downloaded brand icons: 

@@ -100,7 +100,7 @@ th:first-child,td:first-child{text-align:left}
 <div class="wrap">
  <header class="head">
   <img class="logo" src="icon-180.png" alt="">
-  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V20</span></h2></div>
+  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V27</span></h2></div>
   <div class="status">
   <div id="updated">Waiting for latest UK market update</div>
   <div class="health-wrap">
@@ -131,7 +131,7 @@ th:first-child,td:first-child{text-align:left}
   </div>
   <div style="overflow-x:auto">
    <table>
-    <thead><tr><th>ASSET</th><th>CURRENT PRICE</th><th>RISK METRIC</th><th>BUY ZONE</th><th>RISK BAR</th></tr></thead>
+    <thead><tr><th>ASSET</th><th>CURRENT PRICE</th><th>RISK METRIC</th><th>BUY</th><th>RISK BAR</th></tr></thead>
     <tbody id="rows"></tbody>
    </table>
   </div>
@@ -142,7 +142,7 @@ th:first-child,td:first-child{text-align:left}
 let assets=[], priceData={prices:{},updated:null};
 
 function level(s){return s<=.30?["LOW","low"]:s<=.60?["MODERATE","moderate"]:s<=.80?["HIGH","high"]:["EXTREME","extreme"]}
-function zone(s){if(s<=.20)return["STRONG BUY","low"];if(s<=.35)return["BUY ZONE","low"];if(s<=.55)return["DCA / HOLD","moderate"];if(s<=.75)return["WAIT","high"];return["AVOID / TRIM","extreme"]}
+function zone(s){if(s<=.20)return["STRONG BUY 💎","low"];if(s<.45)return["BUY","low"];if(s<=.55)return["DCA / HOLD","moderate"];if(s<=.75)return["TRIM","high"];return["SELL","extreme"]}
 function fmtPrice(a,p){
  if(p==null) return "—";
 
@@ -183,7 +183,7 @@ function updateHealth(){
 
  const updated=new Date(priceData.updated);
  const ageHours=(Date.now()-updated.getTime())/3600000;
- const expected=assets.length || 23;
+ const expected=assets.length || 28;
  const priceCount=Object.keys(priceData.prices || {}).length;
  const riskCount=Object.keys(priceData.risks || {}).length;
  const errorCount=Object.keys(priceData.errors || {}).length;
@@ -231,9 +231,9 @@ function render(filter=""){
  document.getElementById("stats").innerHTML=
   `<div class="stat"><small>ASSETS</small><b>${assets.length}</b><small>Tracked</small></div>
    <div class="stat"><small>STRONG BUY</small><b>${c[0]}</b><small>≤ 0.20</small></div>
-   <div class="stat"><small>BUY ZONE</small><b>${c[1]}</b><small>0.20–0.35</small></div>
-   <div class="stat"><small>WAIT</small><b>${c[3]}</b><small>0.55–0.75</small></div>
-   <div class="stat"><small>AVOID / TRIM</small><b>${c[4]}</b><small>&gt; 0.75</small></div>`;
+   <div class="stat"><small>BUY</small><b>${c[1]}</b><small>0.20–0.45</small></div>
+   <div class="stat"><small>TRIM</small><b>${c[3]}</b><small>0.55–0.75</small></div>
+   <div class="stat"><small>SELL</small><b>${c[4]}</b><small>&gt; 0.75</small></div>`;
  if(priceData.updated){
   const d=new Date(priceData.updated);
   const uk = new Intl.DateTimeFormat("en-GB",{
