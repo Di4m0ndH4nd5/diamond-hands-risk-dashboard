@@ -3,224 +3,168 @@
     "name": "Bitcoin",
     "ticker": "BTC",
     "yf": "BTC-USD",
-    "risk": 0.27,
-    "type": "Crypto",
-    "icon": "asset-icons/BTC.svg"
+    "type": "Crypto"
   },
   {
     "name": "Ethereum",
     "ticker": "ETH",
     "yf": "ETH-USD",
-    "risk": 0.32,
-    "type": "Crypto",
-    "icon": "asset-icons/ETH.svg"
+    "type": "Crypto"
   },
   {
     "name": "Dogecoin",
     "ticker": "DOGE",
     "yf": "DOGE-USD",
-    "risk": 0.35,
-    "type": "Crypto",
-    "icon": "asset-icons/DOGE.svg"
+    "type": "Crypto"
   },
   {
     "name": "S&P 500",
     "ticker": "SPX",
     "yf": "^GSPC",
-    "risk": 0.72,
-    "type": "Index",
-    "icon": "asset-icons/SPX.svg"
+    "type": "Indices"
   },
   {
     "name": "FTSE 100",
     "ticker": "UKX",
     "yf": "^FTSE",
-    "risk": 0.66,
-    "type": "Index",
-    "icon": "asset-icons/UKX.svg"
+    "type": "Indices"
   },
   {
     "name": "Gold",
     "ticker": "XAU",
     "yf": "GC=F",
-    "risk": 0.78,
-    "type": "Metal",
-    "icon": "asset-icons/XAU.svg"
+    "type": "Metals"
   },
   {
     "name": "Silver",
     "ticker": "XAG",
     "yf": "SI=F",
-    "risk": 0.69,
-    "type": "Metal",
-    "icon": "asset-icons/XAG.svg"
+    "type": "Metals"
   },
   {
     "name": "Copper",
     "ticker": "COPPER",
     "yf": "HG=F",
-    "risk": 0.5,
-    "type": "Metal",
-    "icon": "asset-icons/COPPER.svg"
+    "type": "Metals"
   },
   {
     "name": "Palladium",
     "ticker": "PALLADIUM",
     "yf": "PA=F",
-    "risk": 0.5,
-    "type": "Metal",
-    "icon": "asset-icons/PALLADIUM.svg"
+    "type": "Metals"
   },
   {
     "name": "Apple",
     "ticker": "AAPL",
     "yf": "AAPL",
-    "risk": 0.7,
-    "type": "Big 7",
-    "icon": "asset-icons/AAPL.svg"
+    "type": "Big 7"
   },
   {
     "name": "Microsoft",
     "ticker": "MSFT",
     "yf": "MSFT",
-    "risk": 0.68,
-    "type": "Big 7",
-    "icon": "asset-icons/MSFT.svg"
+    "type": "Big 7"
   },
   {
     "name": "NVIDIA",
     "ticker": "NVDA",
     "yf": "NVDA",
-    "risk": 0.82,
-    "type": "Big 7",
-    "icon": "asset-icons/NVDA.svg"
+    "type": "Big 7"
   },
   {
     "name": "Amazon",
     "ticker": "AMZN",
     "yf": "AMZN",
-    "risk": 0.66,
-    "type": "Big 7",
-    "icon": "asset-icons/AMZN.svg"
+    "type": "Big 7"
   },
   {
     "name": "Alphabet",
     "ticker": "GOOGL",
     "yf": "GOOGL",
-    "risk": 0.61,
-    "type": "Big 7",
-    "icon": "asset-icons/GOOGL.svg"
+    "type": "Big 7"
   },
   {
-    "name": "Meta Platforms",
+    "name": "Meta",
     "ticker": "META",
     "yf": "META",
-    "risk": 0.67,
-    "type": "Big 7",
-    "icon": "asset-icons/META.svg"
+    "type": "Big 7"
   },
   {
     "name": "Tesla",
     "ticker": "TSLA",
     "yf": "TSLA",
-    "risk": 0.79,
-    "type": "Big 7",
-    "icon": "asset-icons/TSLA.svg"
+    "type": "Big 7"
   },
   {
-    "name": "Rolls-Royce Holdings",
+    "name": "Rolls-Royce",
     "ticker": "RR.",
     "yf": "RR.L",
-    "risk": 0.78,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/RR_.svg"
+    "type": "Additional Stocks"
   },
   {
-    "name": "ASML Holding",
+    "name": "ASML",
     "ticker": "ASML",
     "yf": "ASML",
-    "risk": 0.69,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/ASML.svg"
+    "type": "Additional Stocks"
   },
   {
     "name": "BAE Systems",
     "ticker": "BA.",
     "yf": "BA.L",
-    "risk": 0.7,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/BA_.svg"
+    "type": "Additional Stocks"
   },
   {
     "name": "Coca-Cola",
     "ticker": "KO",
     "yf": "KO",
-    "risk": 0.5,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/KO.svg"
+    "type": "Additional Stocks"
   },
   {
     "name": "CRISPR Therapeutics",
     "ticker": "CRSP",
     "yf": "CRSP",
-    "risk": 0.5,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/CRSP.svg"
+    "type": "Additional Stocks"
   },
   {
     "name": "Mastercard",
     "ticker": "MA",
     "yf": "MA",
-    "risk": 0.5,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/MA.svg"
+    "type": "Additional Stocks"
   },
   {
     "name": "Visa",
     "ticker": "V",
     "yf": "V",
-    "risk": 0.5,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/V.svg"
+    "type": "Additional Stocks"
   },
   {
     "name": "Micron Technology",
     "ticker": "MU",
     "yf": "MU",
-    "risk": 0.5,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/MU.svg"
+    "type": "Additional Stocks"
   },
   {
     "name": "Uber Technologies",
     "ticker": "UBER",
     "yf": "UBER",
-    "risk": 0.5,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/UBER.svg"
+    "type": "Additional Stocks"
   },
   {
     "name": "AST SpaceMobile",
     "ticker": "ASTS",
     "yf": "ASTS",
-    "risk": 0.5,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/ASTS.svg"
+    "type": "Additional Stocks"
   },
   {
     "name": "Eli Lilly",
     "ticker": "LLY",
     "yf": "LLY",
-    "risk": 0.5,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/LLY.svg"
+    "type": "Additional Stocks"
   },
   {
     "name": "Novo Nordisk",
     "ticker": "NVO",
     "yf": "NVO",
-    "risk": 0.5,
-    "type": "Additional Stocks",
-    "icon": "asset-icons/NVO.svg"
+    "type": "Additional Stocks"
   }
 ]

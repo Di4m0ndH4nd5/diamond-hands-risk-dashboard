@@ -1,0 +1,25 @@
+Di4m0ndH4nd5 Risk Dashboard V33
+
+Improvements
+- #HODL replaces DCA / HOLD.
+- Summary counters now use the exact same signal function as each asset row, so all 28 assets reconcile.
+- Prices over 1,000 display with no decimal places.
+- BAE Systems logo source corrected; Alphabet/Google uses the coloured Google favicon.
+- Logo containers use contain + padding so logos are not cropped.
+- 24H change added.
+- RSI(14) remains visible and colour-coded.
+- Best Opportunity and Most Overheated cards added.
+- Risk-sort toggle added.
+- Market OPEN/CLOSED/24/7 indicator added.
+- Last-update age and stale-data warnings added.
+- Favourite stars added (stored locally in the browser).
+- Tap an asset row to expand a simple live 0–1 risk gauge with RSI, 24H, From ATH, Signal and Updated.
+- Bottom methodology statement updated.
+- Crypto uses the V32 longer-term cycle-oriented model.
+- Workflow runs every 10 minutes; webpage checks for fresh data every 2 minutes.
+- Mobile-first layout retained, with V33 on its own line.
+
+IMPORTANT
+- data.json is intentionally not included. Keep your existing GitHub data.json.
+- Upload/replace .github/workflows/update-prices.yml to enable the 10-minute schedule.
+- After uploading V33, manually Run workflow once to immediately populate V33 RSI/24H/ATH fields.
