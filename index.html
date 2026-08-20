@@ -94,13 +94,21 @@ th:first-child,td:first-child{text-align:left}
   th,td{vertical-align:middle}
 }
 
+
+.icon-fallback{display:none;width:30px;height:30px;border-radius:50%;align-items:center;justify-content:center;
+background:#1d2a34;border:1px solid #40515f;color:#fff;font-size:9px;font-weight:800;flex:0 0 auto}
+.icon-fallback.icon-fallback-on{display:inline-flex}
+@media(max-width:700px){
+  .icon-fallback{width:25px;height:25px;font-size:8px}
+}
+
 </style>
 </head>
 <body>
 <div class="wrap">
  <header class="head">
   <img class="logo" src="icon-180.png" alt="">
-  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V28</span></h2></div>
+  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V29</span></h2></div>
   <div class="status">
   <div id="updated">Waiting for latest UK market update</div>
   <div class="health-wrap">
@@ -211,7 +219,9 @@ function render(filter=""){
   out+=`<tr>
    <td>
      <div class="asset-cell">
-       <img class="asset-icon" src="${a.icon || ''}" alt="">
+       <img class="asset-icon" src="${(a.icon || '') + '?v=29'}" alt="${a.ticker} logo"
+       onerror="this.style.display='none'; this.nextElementSibling?.classList.add('icon-fallback-on')">
+       <span class="icon-fallback">${a.ticker}</span>
        <div><div class="asset">${a.name}</div><div class="ticker">${a.ticker}</div></div>
      </div>
    </td>
