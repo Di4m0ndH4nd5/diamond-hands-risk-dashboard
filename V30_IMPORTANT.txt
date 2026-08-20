@@ -1,0 +1,12 @@
+V30 FIXES
+
+1. data.json is intentionally NOT included.
+   This prevents uploading a new dashboard version from wiping the live market prices and risk metrics already stored on GitHub.
+
+2. Asset logos now load from a public static CDN where available.
+   If a logo cannot load, the dashboard automatically shows the ticker as a fallback.
+
+When uploading V30:
+- DO NOT delete the existing data.json already in your GitHub repository.
+- Leave .github/workflows/update-prices.yml in place.
+- Upload/replace the other V30 files.

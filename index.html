@@ -102,13 +102,22 @@ background:#1d2a34;border:1px solid #40515f;color:#fff;font-size:9px;font-weight
   .icon-fallback{width:25px;height:25px;font-size:8px}
 }
 
+
+.brand-logo{
+  width:30px;height:30px;border-radius:50%;
+  background:#f4f6f8;padding:5px;object-fit:contain;flex:0 0 auto;
+}
+@media(max-width:700px){
+  .brand-logo{width:25px;height:25px;padding:4px}
+}
+
 </style>
 </head>
 <body>
 <div class="wrap">
  <header class="head">
   <img class="logo" src="icon-180.png" alt="">
-  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V29</span></h2></div>
+  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V30</span></h2></div>
   <div class="status">
   <div id="updated">Waiting for latest UK market update</div>
   <div class="health-wrap">
@@ -148,6 +157,29 @@ background:#1d2a34;border:1px solid #40515f;color:#fff;font-size:9px;font-weight
 </div>
 <script>
 let assets=[], priceData={prices:{},updated:null};
+
+
+function logoUrl(a){
+  const map={
+    BTC:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/bitcoin.svg",
+    ETH:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/ethereum.svg",
+    DOGE:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/dogecoin.svg",
+    AAPL:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/apple.svg",
+    MSFT:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/microsoft.svg",
+    NVDA:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/nvidia.svg",
+    AMZN:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/amazon.svg",
+    GOOGL:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/google.svg",
+    META:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/meta.svg",
+    TSLA:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/tesla.svg",
+    ASML:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/asml.svg",
+    KO:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/cocacola.svg",
+    MA:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/mastercard.svg",
+    V:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/visa.svg",
+    UBER:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/uber.svg",
+    NVO:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/novonordisk.svg"
+  };
+  return map[a.ticker] || "";
+}
 
 function level(s){return s<=.30?["LOW","low"]:s<=.60?["MODERATE","moderate"]:s<=.80?["HIGH","high"]:["EXTREME","extreme"]}
 function zone(s){if(s<=.20)return["STRONG BUY 💎","low"];if(s<.45)return["BUY","low"];if(s<=.55)return["DCA / HOLD","moderate"];if(s<=.75)return["TRIM","high"];return["SELL","extreme"]}
@@ -219,9 +251,9 @@ function render(filter=""){
   out+=`<tr>
    <td>
      <div class="asset-cell">
-       <img class="asset-icon" src="${(a.icon || '') + '?v=29'}" alt="${a.ticker} logo"
-       onerror="this.style.display='none'; this.nextElementSibling?.classList.add('icon-fallback-on')">
-       <span class="icon-fallback">${a.ticker}</span>
+       <img class="asset-icon brand-logo" src="${logoUrl(a)}" alt="${a.ticker} logo"
+       onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex'">
+     <span class="icon-fallback" style="display:${logoUrl(a)?'none':'inline-flex'}">${a.ticker}</span>
        <div><div class="asset">${a.name}</div><div class="ticker">${a.ticker}</div></div>
      </div>
    </td>
