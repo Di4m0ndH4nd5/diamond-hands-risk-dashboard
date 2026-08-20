@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Bitcoin",
+    "ticker": "BTC",
+    "yf": "BTC-USD",
+    "risk": 0.27,
+    "type": "Crypto"
+  },
+  {
+    "name": "Ethereum",
+    "ticker": "ETH",
+    "yf": "ETH-USD",
+    "risk": 0.32,
+    "type": "Crypto"
+  },
+  {
+    "name": "Dogecoin",
+    "ticker": "DOGE",
+    "yf": "DOGE-USD",
+    "risk": 0.35,
+    "type": "Crypto"
+  },
+  {
+    "name": "S&P 500",
+    "ticker": "SPX",
+    "yf": "^GSPC",
+    "risk": 0.72,
+    "type": "Index"
+  },
+  {
+    "name": "FTSE 100",
+    "ticker": "UKX",
+    "yf": "^FTSE",
+    "risk": 0.66,
+    "type": "Index"
+  },
+  {
+    "name": "Gold",
+    "ticker": "XAU",
+    "yf": "GC=F",
+    "risk": 0.78,
+    "type": "Metal"
+  },
+  {
+    "name": "Silver",
+    "ticker": "XAG",
+    "yf": "SI=F",
+    "risk": 0.69,
+    "type": "Metal"
+  },
+  {
+    "name": "Apple",
+    "ticker": "AAPL",
+    "yf": "AAPL",
+    "risk": 0.7,
+    "type": "Big 8"
+  },
+  {
+    "name": "Microsoft",
+    "ticker": "MSFT",
+    "yf": "MSFT",
+    "risk": 0.68,
+    "type": "Big 8"
+  },
+  {
+    "name": "NVIDIA",
+    "ticker": "NVDA",
+    "yf": "NVDA",
+    "risk": 0.82,
+    "type": "Big 8"
+  },
+  {
+    "name": "Amazon",
+    "ticker": "AMZN",
+    "yf": "AMZN",
+    "risk": 0.66,
+    "type": "Big 8"
+  },
+  {
+    "name": "Alphabet",
+    "ticker": "GOOGL",
+    "yf": "GOOGL",
+    "risk": 0.61,
+    "type": "Big 8"
+  },
+  {
+    "name": "Meta Platforms",
+    "ticker": "META",
+    "yf": "META",
+    "risk": 0.67,
+    "type": "Big 8"
+  },
+  {
+    "name": "Tesla",
+    "ticker": "TSLA",
+    "yf": "TSLA",
+    "risk": 0.79,
+    "type": "Big 8"
+  },
+  {
+    "name": "Broadcom",
+    "ticker": "AVGO",
+    "yf": "AVGO",
+    "risk": 0.76,
+    "type": "Big 8"
+  },
+  {
+    "name": "Rolls-Royce Holdings",
+    "ticker": "RR.",
+    "yf": "RR.L",
+    "risk": 0.78,
+    "type": "Additional Stocks"
+  },
+  {
+    "name": "ASML Holding",
+    "ticker": "ASML",
+    "yf": "ASML",
+    "risk": 0.69,
+    "type": "Additional Stocks"
+  },
+  {
+    "name": "BAE Systems",
+    "ticker": "BA.",
+    "yf": "BA.L",
+    "risk": 0.7,
+    "type": "Additional Stocks"
+  }
+]

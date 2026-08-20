@@ -6,84 +6,156 @@
 <meta name="theme-color" content="#050607">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Diamond Hands">
+<meta name="apple-mobile-web-app-title" content="Di4m0ndH4nd5">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="manifest" href="manifest.webmanifest">
-<title>Diamond Hands Risk Dashboard</title>
+<title>Di4m0ndH4nd5 Risk Dashboard</title>
 <style>
-:root{--bg:#050607;--panel:#0d1217;--line:#22303a;--cyan:#61d9ff;--text:#f4f7fa;--muted:#aeb6bf;}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-.wrap{max-width:980px;margin:auto;padding:18px 14px 34px}.head{display:flex;align-items:center;gap:14px;padding:8px 2px 18px}
-.logo{width:78px;height:78px;border-radius:50%;background:#fff}.title h1{margin:0;font-size:30px;letter-spacing:.03em}.title h2{margin:2px 0 0;color:var(--cyan);font-size:18px;letter-spacing:.12em}
-.status{margin-left:auto;text-align:right;color:var(--muted);font-size:13px}.live{color:#36d05f;margin-top:6px}
-.panel{background:linear-gradient(180deg,#111821,#0a0f14);border:1px solid var(--line);border-radius:13px;margin:12px 0;overflow:hidden}
-.info{padding:16px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}.info h3,.section{color:var(--cyan);font-size:14px;letter-spacing:.04em;margin:0 0 8px}.info p{font-size:13px;line-height:1.45;color:#e7ecf0;margin:0}
-.scale{height:11px;border-radius:20px;background:linear-gradient(90deg,#29b34a 0 25%,#e5db28 25% 50%,#ff9b16 50% 75%,#ef3e36 75% 100%);margin:12px 0 6px}.ticks{display:flex;justify-content:space-between;font-size:11px;color:#d7dde2}
-.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.stat{padding:15px;text-align:center}.stat b{font-size:34px}.stat small{display:block;color:var(--muted);margin-top:4px}
-.toolbar{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.toolbar strong{color:var(--cyan);font-size:16px}
-table{width:100%;border-collapse:collapse}th,td{padding:13px 12px;border-bottom:1px solid #1c2933;text-align:left}th{font-size:11px;color:#cbd5dd;font-weight:600}td{font-size:14px}
-.asset{font-weight:700}.ticker{color:var(--muted);font-size:11px;margin-top:2px}.score{font-weight:800}.bar{height:8px;border-radius:10px;background:#303943;overflow:hidden;margin-top:7px}.fill{height:100%;background:linear-gradient(90deg,#3fca55,#e8df2a,#ff8c1c,#ef4136)}
-.badge{display:inline-block;padding:6px 12px;border-radius:10px;font-weight:700;font-size:11px}.low{color:#4cdc69;background:#10341d}.moderate{color:#f4e63b;background:#383410}.high{color:#ff9f28;background:#39250f}.extreme{color:#ff5249;background:#3d1311}
-.group td{background:#121b23;color:var(--cyan);text-align:center;font-size:12px;font-weight:800;letter-spacing:.06em}
-.foot{padding:16px;color:var(--muted);font-size:12px;line-height:1.45}.refresh{appearance:none;border:1px solid #2f4555;background:#111a21;color:white;border-radius:10px;padding:9px 12px;font-weight:700}
-@media(max-width:700px){.info{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.status{font-size:11px}.title h1{font-size:22px}.title h2{font-size:14px}.logo{width:62px;height:62px}th:nth-child(6),td:nth-child(6){display:none}th,td{padding:11px 7px;font-size:12px}}
+:root{--bg:#050607;--panel:#0d1217;--line:#21303b;--cyan:#5ed8ff;--text:#f5f7fa;--muted:#aeb7c0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:1180px;margin:auto;padding:18px 14px 34px}
+.head{display:flex;align-items:center;gap:14px;padding:6px 2px 16px;border-bottom:1px solid var(--line)}
+.logo{width:70px;height:70px;border-radius:50%;background:#fff}
+.title h1{margin:0;font-size:29px;letter-spacing:.03em}
+.title h2{margin:2px 0 0;color:var(--cyan);font-size:17px;letter-spacing:.11em}
+.version{display:inline-block;margin-left:7px;padding:2px 6px;border:1px solid var(--cyan);border-radius:6px;font-size:10px;vertical-align:middle}
+.status{margin-left:auto;text-align:right;color:var(--muted);font-size:12px}
+.live{color:#3bd35f;margin-top:5px}
+.scale-panel{background:linear-gradient(180deg,#111821,#0a0f14);border:1px solid var(--line);border-radius:13px;padding:14px 16px;margin:13px 0}
+.scale-title{text-align:center;color:var(--cyan);font-size:13px;letter-spacing:.05em}
+.scale{height:15px;border-radius:999px;background:linear-gradient(90deg,#34c759 0 25%,#e5dd24 25% 50%,#ff9618 50% 75%,#ff453a 75% 100%);margin:11px 0 5px}
+.ticks,.labels{display:flex;justify-content:space-between;font-size:11px}
+.labels{margin-top:7px}.labels span:nth-child(1){color:#44d864}.labels span:nth-child(2){color:#eee02e}.labels span:nth-child(3){color:#ff991b}.labels span:nth-child(4){color:#ff4c43}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:12px 0}
+.stat{background:#0d1217;border:1px solid var(--line);border-radius:12px;text-align:center;padding:12px 7px}
+.stat small{display:block;color:var(--muted);font-size:10px}.stat b{display:block;font-size:27px;margin:4px 0}
+.panel{background:#0b1116;border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.toolbar{padding:13px 15px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}
+.toolbar strong{color:var(--cyan);font-size:15px;letter-spacing:.03em}
+.search{background:#111820;border:1px solid #2b3a46;border-radius:9px;color:white;padding:8px 10px;width:210px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px 10px;border-bottom:1px solid #1b2933;text-align:left;font-size:13px}
+th{color:#c7d2da;font-size:10px;letter-spacing:.04em}
+.asset{font-weight:700}.ticker{font-size:10px;color:var(--muted);margin-top:2px}
+.price{font-weight:750;white-space:nowrap}.live-dot{color:#3bd35f;margin-right:5px}
+.score{font-size:16px;font-weight:800;white-space:nowrap}
+.bar{height:15px;border-radius:999px;background:#303943;overflow:hidden;border:1px solid #46535e;min-width:115px}
+.fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#34c759,#f0df27,#ff9418,#ff453a)}
+.badge{display:inline-block;padding:5px 9px;border-radius:9px;font-size:10px;font-weight:750;white-space:nowrap}
+.low{color:#43d865;background:#10341d}.moderate{color:#f3e63b;background:#393410}.high{color:#ff9f28;background:#39250f}.extreme{color:#ff544b;background:#3d1311}
+.group td{text-align:center;background:#121b23;color:var(--cyan);font-size:11px;font-weight:800;letter-spacing:.06em}
+.note{padding:13px 15px;color:var(--muted);font-size:11px;line-height:1.4}
+@media(max-width:700px){
+ .wrap{padding:10px 8px 22px}.head{gap:9px;padding-bottom:11px}.logo{width:48px;height:48px}
+ .title h1{font-size:18px;line-height:1.1}.title h2{font-size:11px;letter-spacing:.07em}.version{font-size:8px;margin-left:4px}
+ .status{font-size:9px}.scale-panel{padding:10px 11px;margin:9px 0}.scale{height:12px}
+ .stats{grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}.stat{padding:7px 4px;min-height:61px}.stat b{font-size:20px;margin:2px 0}.stat small{font-size:8px}
+ .toolbar{padding:10px}.toolbar strong{font-size:13px}.search{width:130px;padding:7px;font-size:12px}
+ th,td{padding:9px 6px;font-size:11px}
+ th:nth-child(5),td:nth-child(5){display:none}
+ .bar{height:12px;min-width:72px}.score{font-size:14px}.badge{font-size:9px;padding:4px 6px}
+}
+@media(max-width:410px){
+ .status div:first-child{display:none}
+ th:nth-child(3),td:nth-child(3){display:none}
+ .stats{grid-template-columns:repeat(3,1fr)}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
- <div class="head">
+ <header class="head">
   <img class="logo" src="icon-180.png" alt="">
-  <div class="title"><h1>DIAMOND HANDS</h1><h2>RISK DASHBOARD</h2></div>
-  <div class="status"><div id="updated">Snapshot</div><div class="live">● Hourly refresh ready</div></div>
- </div>
+  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V9</span></h2></div>
+  <div class="status"><div id="updated">Waiting for latest UK market update</div><div class="live">● Live prices • hourly</div></div>
+ </header>
 
- <div class="panel info">
-  <div><h3>ABOUT THIS DASHBOARD</h3><p>Cowen-inspired risk metric. 0 = lowest valuation/cycle risk; 1 = highest. Built for long-term perspective, not short-term trading.</p></div>
-  <div><h3>RISK SCALE</h3><div class="scale"></div><div class="ticks"><span>0</span><span>.25</span><span>.50</span><span>.75</span><span>1</span></div></div>
-  <div><h3>HOW TO USE</h3><p>Lower scores suggest better long-term valuation. Scores are model estimates, not Benjamin Cowen's proprietary ITC readings.</p></div>
- </div>
+ <section class="scale-panel">
+  <div class="scale-title">RISK SCALE (0–1)</div>
+  <div class="scale"></div>
+  <div class="ticks"><span>0</span><span>0.25</span><span>0.50</span><span>0.75</span><span>1</span></div>
+  <div class="labels"><span>LOW</span><span>MODERATE</span><span>HIGH</span><span>EXTREME</span></div>
+ </section>
 
- <div class="stats" id="stats"></div>
+ <section class="stats" id="stats"></section>
 
- <div class="panel">
-  <div class="toolbar"><strong>☷ MARKETS OVERVIEW</strong><button class="refresh" onclick="render()">Refresh</button></div>
-  <div style="overflow:auto"><table><thead><tr><th>ASSET</th><th>RISK</th><th>LEVEL</th><th>BUY ZONE</th><th>RISK BAR</th><th>TYPE</th></tr></thead><tbody id="rows"></tbody></table></div>
- </div>
-
- <div class="panel foot"><b style="color:var(--cyan)">DIAMOND HANDS RISK DASHBOARD</b><br>
- This PWA is ready to be hosted and added to an iPhone Home Screen. The included scores are the current dashboard model snapshot. A public host/data feed is required for truly live autonomous market recalculation.</div>
+ <section class="panel">
+  <div class="toolbar">
+   <strong>☷ MARKET OVERVIEW</strong>
+   <input id="search" class="search" type="search" placeholder="Search asset...">
+  </div>
+  <div style="overflow-x:auto">
+   <table>
+    <thead><tr><th>ASSET</th><th>LIVE PRICE</th><th>RISK</th><th>BUY ZONE</th><th>RISK BAR</th></tr></thead>
+    <tbody id="rows"></tbody>
+   </table>
+  </div>
+  <div class="note">Live prices are pulled into <b>data.json</b> by the included GitHub Action every hour using the latest available market quote. Risk scores are Di4m0ndH4nd5 model values and are separate from the live price feed.</div>
+ </section>
 </div>
 <script>
-const assets=[
-["Bitcoin","BTC",0.27,"Crypto"],["Ethereum","ETH",0.32,"Crypto"],["Dogecoin","DOGE",0.35,"Crypto"],
-["S&P 500","SPX",0.72,"Index"],["FTSE 100","UKX",0.66,"Index"],["Gold","XAU",0.78,"Metal"],["Silver","XAG",0.69,"Metal"],
-["Apple","AAPL",0.70,"Big 8"],["Microsoft","MSFT",0.68,"Big 8"],["NVIDIA","NVDA",0.82,"Big 8"],["Alphabet","GOOGL",0.61,"Big 8"],
-["Amazon","AMZN",0.66,"Big 8"],["Meta Platforms","META",0.67,"Big 8"],["Tesla","TSLA",0.79,"Big 8"],["Broadcom","AVGO",0.76,"Big 8"],["Rolls-Royce Holdings","RR.",0.78,"Additional Stocks"],["ASML Holding","ASML",0.69,"Additional Stocks"],["BAE Systems","BA.",0.70,"Additional Stocks"]
-];
+let assets=[], priceData={prices:{},updated:null};
+
 function level(s){return s<=.30?["LOW","low"]:s<=.60?["MODERATE","moderate"]:s<=.80?["HIGH","high"]:["EXTREME","extreme"]}
-function buyZone(s){
-  if(s<=.20) return ["STRONG BUY","low"];
-  if(s<=.35) return ["BUY ZONE","low"];
-  if(s<=.55) return ["DCA / HOLD","moderate"];
-  if(s<=.75) return ["WAIT","high"];
-  return ["AVOID / TRIM","extreme"];
+function zone(s){if(s<=.20)return["STRONG BUY","low"];if(s<=.35)return["BUY ZONE","low"];if(s<=.55)return["DCA / HOLD","moderate"];if(s<=.75)return["WAIT","high"];return["AVOID / TRIM","extreme"]}
+function fmtPrice(a,p){
+ if(p==null) return "—";
+ // Yahoo Finance returns most London Stock Exchange share prices in GBp (pence).
+ // Convert them to pounds for display.
+ if(a.yf.endsWith(".L")){
+   const gbp = p/100;
+   return "£"+gbp.toLocaleString("en-GB",{minimumFractionDigits:2,maximumFractionDigits:2});
+ }
+ if(a.type==="Crypto" && p<1) return "$"+p.toLocaleString("en-GB",{maximumFractionDigits:5});
+ return "$"+p.toLocaleString("en-GB",{minimumFractionDigits:2,maximumFractionDigits:2});
 }
-function render(){
- document.getElementById("updated").textContent="Last opened "+new Date().toLocaleString();
- let rows="", last="";
- assets.forEach(a=>{if(a[3]!=last){rows+=`<tr class="group"><td colspan="6">${a[3].toUpperCase()}</td></tr>`;last=a[3]}
- let l=level(a[2]), bz=buyZone(a[2]); rows+=`<tr><td><div class="asset">${a[0]}</div><div class="ticker">${a[1]}</div></td><td class="score">${a[2].toFixed(2)}</td><td><span class="badge ${l[1]}">${l[0]}</span></td><td><span class="badge ${bz[1]}">${bz[0]}</span></td><td><div class="bar"><div class="fill" style="width:${a[2]*100}%"></div></div></td><td>${a[3]}</td></tr>`});
- document.getElementById("rows").innerHTML=rows;
- let counts=[0,0,0,0];assets.forEach(a=>{if(a[2]<=.30)counts[0]++;else if(a[2]<=.60)counts[1]++;else if(a[2]<=.80)counts[2]++;else counts[3]++});
+function render(filter=""){
+ const visible=assets.filter(a=>(a.name+" "+a.ticker).toLowerCase().includes(filter.toLowerCase()));
+ let out="",group="";
+ visible.forEach(a=>{
+  if(a.type!==group){group=a.type;out+=`<tr class="group"><td colspan="5">${group.toUpperCase()}</td></tr>`}
+  const l=level(a.risk),z=zone(a.risk),p=priceData.prices?.[a.yf];
+  out+=`<tr>
+   <td><div class="asset">${a.name}</div><div class="ticker">${a.ticker}</div></td>
+   <td class="price"><span class="live-dot">●</span>${fmtPrice(a,p)}</td>
+   <td><div class="score">${a.risk.toFixed(2)}</div><span class="badge ${l[1]}">${l[0]}</span></td>
+   <td><span class="badge ${z[1]}">${z[0]}</span></td>
+   <td><div class="bar"><div class="fill" style="width:${a.risk*100}%"></div></div></td>
+  </tr>`;
+ });
+ document.getElementById("rows").innerHTML=out;
+ let c=[0,0,0,0,0];
+ assets.forEach(a=>{if(a.risk<=.20)c[0]++;else if(a.risk<=.35)c[1]++;else if(a.risk<=.55)c[2]++;else if(a.risk<=.75)c[3]++;else c[4]++});
  document.getElementById("stats").innerHTML=
- `<div class="panel stat"><small>TOTAL ASSETS</small><b>${assets.length}</b><small>Tracked</small></div>
- <div class="panel stat"><small>LOW RISK</small><b>${counts[0]}</b><small>≤ 0.30</small></div>
- <div class="panel stat"><small>MODERATE</small><b>${counts[1]}</b><small>0.30–0.60</small></div>
- <div class="panel stat"><small>HIGH RISK</small><b>${counts[2]}</b><small>0.60–0.80</small></div>
- <div class="panel stat"><small>EXTREME</small><b>${counts[3]}</b><small>&gt; 0.80</small></div>`;
+  `<div class="stat"><small>ASSETS</small><b>${assets.length}</b><small>Tracked</small></div>
+   <div class="stat"><small>STRONG BUY</small><b>${c[0]}</b><small>≤ 0.20</small></div>
+   <div class="stat"><small>BUY ZONE</small><b>${c[1]}</b><small>0.20–0.35</small></div>
+   <div class="stat"><small>WAIT</small><b>${c[3]}</b><small>0.55–0.75</small></div>
+   <div class="stat"><small>AVOID / TRIM</small><b>${c[4]}</b><small>&gt; 0.75</small></div>`;
+ if(priceData.updated){
+  const d=new Date(priceData.updated);
+  const uk = new Intl.DateTimeFormat("en-GB",{
+    timeZone:"Europe/London",
+    day:"2-digit",month:"short",year:"numeric",
+    hour:"2-digit",minute:"2-digit",second:"2-digit",
+    hour12:false
+  }).format(d);
+  document.getElementById("updated").textContent="Last updated (UK): "+uk;
+ }
 }
-render();
-if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(()=>{})}
-setInterval(render,3600000);
+async function load(){
+ try{
+  const [a,d]=await Promise.all([
+   fetch("assets.json?x="+Date.now()).then(r=>r.json()),
+   fetch("data.json?x="+Date.now()).then(r=>r.json())
+  ]);
+  assets=a;priceData=d;render(document.getElementById("search").value);
+ }catch(e){document.getElementById("updated").textContent="Market data unavailable";}
+}
+document.getElementById("search").addEventListener("input",e=>render(e.target.value));
+load();
+setInterval(load,300000);
 </script>
-</body></html>
+</body>
+</html>
