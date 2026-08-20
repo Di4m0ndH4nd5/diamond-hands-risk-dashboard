@@ -111,13 +111,20 @@ background:#1d2a34;border:1px solid #40515f;color:#fff;font-size:9px;font-weight
   .brand-logo{width:25px;height:25px;padding:4px}
 }
 
+
+@media(min-width:701px){
+  table th:first-child, table td:first-child{width:31%;max-width:31%}
+  table th:nth-child(2), table td:nth-child(2){width:18%}
+  .asset-cell{gap:8px}
+}
+
 </style>
 </head>
 <body>
 <div class="wrap">
  <header class="head">
   <img class="logo" src="icon-180.png" alt="">
-  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V30</span></h2></div>
+  <div class="title"><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD <span class="version">V31</span></h2></div>
   <div class="status">
   <div id="updated">Waiting for latest UK market update</div>
   <div class="health-wrap">
@@ -160,25 +167,38 @@ let assets=[], priceData={prices:{},updated:null};
 
 
 function logoUrl(a){
-  const map={
+  const simple={
     BTC:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/bitcoin.svg",
     ETH:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/ethereum.svg",
     DOGE:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/dogecoin.svg",
     AAPL:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/apple.svg",
-    MSFT:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/microsoft.svg",
     NVDA:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/nvidia.svg",
-    AMZN:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/amazon.svg",
     GOOGL:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/google.svg",
     META:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/meta.svg",
     TSLA:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/tesla.svg",
-    ASML:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/asml.svg",
     KO:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/cocacola.svg",
     MA:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/mastercard.svg",
     V:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/visa.svg",
-    UBER:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/uber.svg",
-    NVO:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/novonordisk.svg"
+    UBER:"https://cdn.jsdelivr.net/npm/simple-icons@15.12.0/icons/uber.svg"
   };
-  return map[a.ticker] || "";
+  if(simple[a.ticker]) return simple[a.ticker];
+
+  const domains={
+    MSFT:"microsoft.com",
+    AMZN:"amazon.com",
+    "RR.":"rolls-royce.com",
+    ASML:"asml.com",
+    "BA.":"baesystems.com",
+    CRSP:"crisprtx.com",
+    MU:"micron.com",
+    ASTS:"ast-science.com",
+    LLY:"lilly.com",
+    NVO:"novonordisk.com"
+  };
+  if(domains[a.ticker]){
+    return "https://www.google.com/s2/favicons?domain="+domains[a.ticker]+"&sz=128";
+  }
+  return "";
 }
 
 function level(s){return s<=.30?["LOW","low"]:s<=.60?["MODERATE","moderate"]:s<=.80?["HIGH","high"]:["EXTREME","extreme"]}
