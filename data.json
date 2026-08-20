@@ -1,6 +1,8 @@
 {
   "updated": null,
+  "source": "Yahoo Finance chart feed",
   "prices": {},
   "risks": {},
-  "components": {}
+  "components": {},
+  "errors": {}
 }

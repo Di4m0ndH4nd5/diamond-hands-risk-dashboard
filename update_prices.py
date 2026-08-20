@@ -1,121 +1,210 @@
 import json
+import math
+import time
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote
 
-import numpy as np
-import pandas as pd
-import yfinance as yf
+import requests
 
-assets = json.loads(Path("assets.json").read_text())
-prices = {}
-risks = {}
-components = {}
+ASSETS = json.loads(Path("assets.json").read_text())
+
+BASES = [
+    "https://query1.finance.yahoo.com/v8/finance/chart/",
+    "https://query2.finance.yahoo.com/v8/finance/chart/",
+]
+
+session = requests.Session()
+session.headers.update({
+    "Accept": "application/json",
+    "User-Agent": "Di4m0ndH4nd5-Risk-Dashboard/13"
+})
 
 def clamp01(x):
     return max(0.0, min(1.0, float(x)))
 
-def percentile_rank(history, value):
-    s = pd.Series(history).dropna()
-    if s.empty:
+def percentile_rank(values, value):
+    vals = [float(x) for x in values if x is not None and math.isfinite(float(x))]
+    if not vals:
         return 0.5
-    return float((s <= value).mean())
+    return sum(x <= value for x in vals) / len(vals)
 
-def rsi(series, period=14):
-    s = pd.Series(series).dropna()
-    if len(s) < period + 2:
+def ema(values, alpha):
+    out = []
+    e = None
+    for v in values:
+        if v is None:
+            out.append(None)
+            continue
+        v = float(v)
+        e = v if e is None else alpha * v + (1-alpha) * e
+        out.append(e)
+    return out
+
+def rsi14(closes):
+    clean = [float(x) for x in closes if x is not None]
+    if len(clean) < 16:
         return 50.0
-    d = s.diff()
-    gains = d.clip(lower=0)
-    losses = -d.clip(upper=0)
-    avg_gain = gains.ewm(alpha=1/period, adjust=False).mean()
-    avg_loss = losses.ewm(alpha=1/period, adjust=False).mean()
-    loss = float(avg_loss.iloc[-1])
-    gain = float(avg_gain.iloc[-1])
-    if loss == 0:
-        return 100.0 if gain > 0 else 50.0
-    rs = gain / loss
-    return 100.0 - (100.0 / (1.0 + rs))
+    diffs = [clean[i]-clean[i-1] for i in range(1, len(clean))]
+    gains = [max(d,0.0) for d in diffs]
+    losses = [max(-d,0.0) for d in diffs]
+    ag = ema(gains, 1/14)[-1]
+    al = ema(losses, 1/14)[-1]
+    if not al:
+        return 100.0 if ag and ag > 0 else 50.0
+    rs = ag / al
+    return 100 - (100/(1+rs))
 
-for a in assets:
+def sma(values, window):
+    out=[]
+    buf=[]
+    total=0.0
+    for v in values:
+        if v is None:
+            out.append(None)
+            continue
+        v=float(v)
+        buf.append(v); total += v
+        if len(buf) > window:
+            total -= buf.pop(0)
+        out.append(total/len(buf) if len(buf) >= min(window,120) else None)
+    return out
+
+def yahoo_chart(symbol, range_="3y", interval="1d"):
+    encoded = quote(symbol, safe="")
+    last_error = None
+    for base in BASES:
+        url = base + encoded
+        for attempt in range(3):
+            try:
+                r = session.get(
+                    url,
+                    params={
+                        "range": range_,
+                        "interval": interval,
+                        "includePrePost": "false",
+                        "events": "div,splits"
+                    },
+                    timeout=20
+                )
+                if r.status_code == 429:
+                    time.sleep(2 + attempt*3)
+                    continue
+                r.raise_for_status()
+                payload = r.json()
+                result = payload.get("chart",{}).get("result")
+                if not result:
+                    raise RuntimeError(payload.get("chart",{}).get("error") or "No Yahoo result")
+                return result[0]
+            except Exception as e:
+                last_error = e
+                time.sleep(1 + attempt)
+    raise RuntimeError(f"Yahoo Finance failed for {symbol}: {last_error}")
+
+prices = {}
+risks = {}
+components = {}
+errors = {}
+
+for a in ASSETS:
     symbol = a["yf"]
     try:
-        ticker = yf.Ticker(symbol)
+        data = yahoo_chart(symbol, "3y", "1d")
+        meta = data.get("meta", {})
+        quote_data = (data.get("indicators",{}).get("quote") or [{}])[0]
+        closes = quote_data.get("close") or []
 
-        # Get the latest tradable quote.
-        latest = None
-        try:
-            fi = ticker.fast_info
-            latest = fi.get("last_price") if hasattr(fi, "get") else fi["last_price"]
-            if latest is not None:
-                latest = float(latest)
-        except Exception:
-            latest = None
-
-        # Three years gives enough history for cycle/trend context across all assets.
-        hist = ticker.history(period="3y", interval="1d", auto_adjust=True)
-        close = hist["Close"].dropna().astype(float)
-
-        if close.empty:
-            print(f"{symbol}: no price history")
-            continue
-
+        # Latest market price from Yahoo metadata, fallback to last daily close.
+        latest = meta.get("regularMarketPrice")
         if latest is None:
-            latest = float(close.iloc[-1])
+            valid = [x for x in closes if x is not None]
+            latest = valid[-1] if valid else None
+        if latest is None:
+            raise RuntimeError("No current price")
+        latest = float(latest)
 
-        # Treat the current quote as today's latest close for risk calculation.
-        calc = close.copy()
-        if len(calc):
-            calc.iloc[-1] = latest
+        # Replace latest daily close with current market price so intraday movement
+        # can influence the hourly risk score.
+        calc = [float(x) if x is not None else None for x in closes]
+        if calc:
+            last_valid = max(i for i,v in enumerate(calc) if v is not None)
+            calc[last_valid] = latest
 
-        # 1) Long-term trend extension:
-        # Compare price/200DMA to its own historical distribution.
-        ma200 = calc.rolling(200, min_periods=120).mean()
-        extension_series = (calc / ma200).replace([np.inf, -np.inf], np.nan).dropna()
-        if len(extension_series):
-            extension_now = float(extension_series.iloc[-1])
-            trend_risk = percentile_rank(extension_series, extension_now)
-        else:
-            extension_now = 1.0
-            trend_risk = 0.5
+        valid_calc = [x for x in calc if x is not None]
+        if len(valid_calc) < 120:
+            raise RuntimeError("Insufficient history for risk model")
 
-        # 2) Momentum via RSI14.
-        rsi_now = rsi(calc, 14)
+        # 1) Price extension relative to 200-day trend.
+        ma200 = sma(calc, 200)
+        extensions = []
+        extension_now = 1.0
+        for px,ma in zip(calc,ma200):
+            if px is not None and ma not in (None,0):
+                extensions.append(px/ma)
+                extension_now = px/ma
+        trend_risk = percentile_rank(extensions, extension_now)
+
+        # 2) RSI momentum.
+        rsi_now = rsi14(calc)
         momentum_risk = clamp01(rsi_now / 100.0)
 
-        # 3) Relative price position within the 3-year history.
-        price_position_risk = percentile_rank(calc, latest)
+        # 3) Price percentile over available three-year history.
+        price_position_risk = percentile_rank(valid_calc, latest)
 
-        # 4) Proximity to 3-year high.
-        high_3y = float(calc.max())
-        high_proximity_risk = clamp01(latest / high_3y) if high_3y > 0 else 0.5
+        # 4) Proximity to three-year high.
+        high_3y = max(valid_calc)
+        high_proximity_risk = clamp01(latest/high_3y) if high_3y else 0.5
 
-        risk = (
-            0.35 * trend_risk +
-            0.25 * momentum_risk +
-            0.25 * price_position_risk +
-            0.15 * high_proximity_risk
+        risk = clamp01(
+            0.35*trend_risk +
+            0.25*momentum_risk +
+            0.25*price_position_risk +
+            0.15*high_proximity_risk
         )
-        risk = round(clamp01(risk), 4)
 
         prices[symbol] = round(latest, 6)
-        risks[symbol] = risk
+        risks[symbol] = round(risk, 4)
         components[symbol] = {
-            "trend_extension": round(clamp01(trend_risk), 4),
-            "momentum_rsi": round(clamp01(momentum_risk), 4),
-            "price_position": round(clamp01(price_position_risk), 4),
-            "high_proximity": round(clamp01(high_proximity_risk), 4),
-            "rsi14": round(float(rsi_now), 2),
-            "price_vs_200dma": round(float(extension_now), 4)
+            "trend_extension": round(trend_risk,4),
+            "momentum_rsi": round(momentum_risk,4),
+            "price_position": round(price_position_risk,4),
+            "high_proximity": round(high_proximity_risk,4),
+            "rsi14": round(rsi_now,2),
+            "price_vs_200dma": round(extension_now,4),
+            "currency": meta.get("currency"),
+            "exchange": meta.get("exchangeName"),
+            "market_state": meta.get("marketState")
         }
-
-        print(f"{symbol}: price={latest:.4f} risk={risk:.4f}")
+        print(f"{symbol}: {latest} risk={risk:.4f}")
 
     except Exception as e:
-        print(f"{symbol}: {e}")
+        errors[symbol] = str(e)
+        print(f"ERROR {symbol}: {e}")
 
-Path("data.json").write_text(json.dumps({
+# Preserve the last good value for an asset if Yahoo temporarily fails,
+# rather than making the dashboard blank.
+data_path = Path("data.json")
+if data_path.exists():
+    try:
+        old = json.loads(data_path.read_text())
+        for symbol,value in old.get("prices",{}).items():
+            prices.setdefault(symbol,value)
+        for symbol,value in old.get("risks",{}).items():
+            risks.setdefault(symbol,value)
+        for symbol,value in old.get("components",{}).items():
+            components.setdefault(symbol,value)
+    except Exception:
+        pass
+
+data_path.write_text(json.dumps({
     "updated": datetime.now(timezone.utc).isoformat(),
+    "source": "Yahoo Finance chart feed",
     "prices": prices,
     "risks": risks,
-    "components": components
+    "components": components,
+    "errors": errors
 }, indent=2))
+
+# Fail the Action only if nothing at all could be refreshed.
+if not prices:
+    raise SystemExit("No market prices could be refreshed.")
