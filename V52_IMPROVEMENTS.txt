@@ -1,0 +1,9 @@
+Di4m0ndH4nd5 Risk Dashboard V52
+
+- Added 🇫🇷 CAC 40 (^FCHI), 🇯🇵 Nikkei 225 (^N225), and 🇩🇪 DAX (^GDAXI).
+- S&P 500 and FTSE 100 retained with 🇺🇸 / 🇬🇧 flag logos.
+- Correct index currencies: USD / GBP / EUR / JPY / EUR.
+- Front-end price formatting now uses the asset's declared currency for international indices.
+- Rebuilt the Doge rocket background: the flat dark-blue source background is removed using edge-connected segmentation so the site's own background shows through.
+- Header positioning remains LOCKED to the proven V34 structure.
+- GitHub Actions workflow unchanged.

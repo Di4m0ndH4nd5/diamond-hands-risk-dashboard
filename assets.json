@@ -21,13 +21,41 @@
     "name": "S&P 500",
     "ticker": "SPX",
     "yf": "^GSPC",
-    "type": "Indices"
+    "type": "Indices",
+    "currency": "USD",
+    "flag": "🇺🇸"
   },
   {
     "name": "FTSE 100",
     "ticker": "UKX",
     "yf": "^FTSE",
-    "type": "Indices"
+    "type": "Indices",
+    "currency": "GBP",
+    "flag": "🇬🇧"
+  },
+  {
+    "name": "CAC 40",
+    "ticker": "CAC40",
+    "yf": "^FCHI",
+    "type": "Indices",
+    "currency": "EUR",
+    "flag": "🇫🇷"
+  },
+  {
+    "name": "Nikkei 225",
+    "ticker": "NIKKEI",
+    "yf": "^N225",
+    "type": "Indices",
+    "currency": "JPY",
+    "flag": "🇯🇵"
+  },
+  {
+    "name": "DAX",
+    "ticker": "DAX",
+    "yf": "^GDAXI",
+    "type": "Indices",
+    "currency": "EUR",
+    "flag": "🇩🇪"
   },
   {
     "name": "Gold",
