@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Di4m0ndH4nd5 Risk Dashboard V46</title>
+<title>Di4m0ndH4nd5 Risk Dashboard V47</title>
 <style>
 :root{--bg:#070b0f;--panel:#0d1319;--line:#1d2b35;--cyan:#00e5ff;--text:#f4f7fa;--muted:#8c9aa6;--green:#00e676;--yellow:#f3d63a;--orange:#ff9f0a;--red:#ff453a}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#10212b 0,#070b0f 42%);color:var(--text);font-family:Inter,Arial,sans-serif}.wrap{max-width:1180px;margin:auto;padding:12px}.panel{background:linear-gradient(180deg,#0e151c,#0a1015);border:1px solid #17242d;border-radius:12px;padding:12px;margin-bottom:10px;box-shadow:0 8px 28px #0007}.head{display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:10px}.title h1{font-size:24px;margin:2px 0}.title h2{font-size:12px;margin:0;color:#c8d2da;letter-spacing:.08em}.version{display:block;width:max-content;margin-top:5px;border:1px solid #30404b;border-radius:6px;padding:3px 7px;font-size:10px}.rocket{width:250px;max-height:100px;object-fit:contain}.status{text-align:right;font-size:10px;color:#9dabb6;line-height:1.55}.health{display:inline-flex;gap:6px;align-items:center;color:#fff;font-weight:800}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}.notice{margin-top:9px;border:1px solid #8c6c18;background:#171306;border-radius:6px;padding:6px;text-align:center;font-size:10px;font-weight:900;letter-spacing:.06em}.scale{height:8px;border-radius:9px;background:linear-gradient(90deg,#00c853,#cddc39,#ffc107,#ff6d00,#e53935);margin:12px 0 4px}.ticks{display:flex;justify-content:space-between;font-size:9px;color:#7e8b95}.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.stat{border:1px solid #1a2832;background:#0b1116;border-radius:8px;padding:8px;text-align:center}.stat small{font-size:8px;color:#84939f}.stat b{display:block;font-size:22px;margin:2px}.opps{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.opp{border:1px solid #1b2b35;border-radius:8px;padding:8px;font-size:10px}.opp b{font-size:13px}.toolbar{display:flex;justify-content:space-between;align-items:center;margin:4px 0 8px}.toolbar strong{font-size:12px}.sortbtn{background:#0b171e;color:#d8f9ff;border:1px solid #24404c;border-radius:7px;padding:6px 9px;font-size:9px;font-weight:800}table{width:100%;border-collapse:collapse;table-layout:fixed}th{font-size:8px;color:#82919c;text-align:center;padding:8px 5px;border-bottom:1px solid #1b2831}th:first-child{text-align:left;width:30%}td{padding:9px 5px;border-bottom:1px solid #142029;text-align:center;font-size:10px}.group td{background:#0b1b23;color:#00d9ff;text-align:left;font-size:9px;font-weight:900;letter-spacing:.06em;padding:5px 8px}.assetcell{display:flex;align-items:center;gap:7px;text-align:left}.logoBox{width:30px;height:30px;border-radius:50%;background:#eef2f4;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 auto;padding:4px}.logoBox img{width:100%;height:100%;object-fit:contain;border-radius:10px;padding:1px}.fallback{font-size:7px;color:#111;font-weight:900}.asset{font-weight:850;font-size:11px}.ticker{font-size:8px;color:#74838f}.price{font-weight:800}.live{color:var(--green);font-size:8px;margin-right:3px}.score{font-size:13px;font-weight:900}.badge{display:inline-block;border-radius:5px;padding:3px 6px;font-size:8px;font-weight:900;white-space:nowrap}.low{color:#16ef78;background:#063d25}.moderate{color:#f3df42;background:#443b08}.high{color:#ffb13b;background:#482c05}.extreme{color:#ff5a50;background:#4a1210}.rsiLow{color:#2ee879}.rsiMid{color:#f0db3a}.rsiHigh{color:#ff5147}.fav{cursor:pointer;color:#53636e;margin-right:4px}.fav.on{color:#ffd54a}.detail td{padding:0;border-bottom:1px solid #20303a}.detailbox{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#080d11;padding:10px}.gaugewrap{text-align:center}.gaugeTitle{font-size:9px;color:#b7c2ca;font-weight:900}.gauge{width:150px;height:82px;position:relative;margin:5px auto 0;overflow:hidden}.arc{width:150px;height:150px;border-radius:50%;background:conic-gradient(from 270deg,#00c853 0 12.5%,#f3d63a 12.5% 25%,#ff9f0a 25% 37.5%,#ff3b30 37.5% 50%,transparent 50% 100%);position:absolute;top:7px}.arc:after{content:"";position:absolute;inset:18px;border-radius:50%;background:#080d11}.needle{position:absolute;width:2px;height:57px;background:#fff;left:74px;top:19px;transform-origin:50% 100%;z-index:2;box-shadow:0 0 5px #fff}.hub{position:absolute;width:8px;height:8px;border-radius:50%;background:#fff;left:71px;bottom:1px;z-index:3}.gscore{font-size:24px;font-weight:950;margin-top:0}.mini{width:100%;border-collapse:collapse}.mini td{padding:4px;border-bottom:1px solid #18252e;font-size:9px}.mini td:first-child{text-align:left;color:#84929d}.mini td:last-child{text-align:right;font-weight:850}.note{font-size:9px;line-height:1.55;color:#82909a;padding:10px 2px 2px}.stale{color:#ff9f0a;font-size:7px;font-weight:900}.market{font-size:7px;color:#75838d}.age{color:#8c9aa6}
@@ -769,10 +769,47 @@
 @media(max-width:390px){.rocketWrap{width:180px!important}}
 @media(max-width:340px){.rocketWrap{width:168px!important}}
 
+
+/* V47 — supplied Doge rocket artwork */
+@media(max-width:700px){
+  .head{
+    position:relative!important;
+    overflow:visible!important;
+  }
+  .rocketWrap{
+    position:absolute!important;
+    left:50vw!important;
+    right:auto!important;
+    top:4px!important;
+    width:190px!important;
+    height:auto!important;
+    transform:translateX(-50%)!important;
+    margin:0!important;
+    z-index:1!important;
+    pointer-events:none!important;
+  }
+  .rocket{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    max-height:none!important;
+    transform:none!important;
+    margin:0!important;
+    opacity:.92!important;
+    filter:none!important;
+  }
+}
+@media(max-width:390px){
+  .rocketWrap{width:180px!important}
+}
+@media(max-width:340px){
+  .rocketWrap{width:168px!important}
+}
+
 </style></head><body><div class="wrap">
 <section class="panel"><div class="head">
-<div class="title"><div class="brandline"><img src="icon-180.png" class="diamond-logo" alt="Diamond hands logo"><div><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD</h2><span class="version">V46</span></div></div></div>
-<div class="rocketWrap"><img class="rocket rocket-lower" src="doge-bitcoin-rocket.png" alt="Doge riding a Bitcoin rocket"></div>
+<div class="title"><div class="brandline"><img src="icon-180.png" class="diamond-logo" alt="Diamond hands logo"><div><h1>Di4m0ndH4nd5</h1><h2>RISK DASHBOARD</h2><span class="version">V47</span></div></div></div>
+<div class="rocketWrap"><img class="rocket rocket-lower" src="doge-rocket-v47.png" alt="Doge riding a Bitcoin rocket"></div>
 <div class="status"><div class="health"><span class="dot" id="healthDot"></span><span id="health">CHECKING</span></div><br><span id="updated">Loading…</span><br><span class="age" id="age"></span></div>
 </div><div class="notice"><img src="doge.png" class="notice-doge" alt="Doge"><span>NOT FINANCIAL ADVICE #HODL</span></div><div class="scale"></div><div class="ticks"><span>0.00</span><span>0.20</span><span>0.45</span><span>0.55</span><span>0.75</span><span>1.00</span></div></section>
 <section class="stats" id="stats"></section>

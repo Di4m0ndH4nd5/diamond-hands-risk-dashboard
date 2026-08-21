@@ -1,0 +1,8 @@
+Di4m0ndH4nd5 Risk Dashboard V47
+
+- Replaced the previous Doge rocket artwork with the exact image supplied from the Doge Rocket Image chat.
+- Added a broad, smooth transparent edge fade to the supplied image only at its outer boundaries so the artwork blends into the dashboard background instead of appearing as a rectangular image.
+- Doge/rocket artwork is displayed from a viewport-centred layer on mobile.
+- Removed previous rocket-specific compensation/centering tricks.
+- Everything else retained from V46.
+- GitHub Actions workflow unchanged.
