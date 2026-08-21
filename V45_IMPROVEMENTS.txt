@@ -1,0 +1,15 @@
+Di4m0ndH4nd5 Risk Dashboard V45
+
+- Laser-eye source artwork remains unchanged; CSS crops slightly inward to remove visible circular source rings across all approved laser icons.
+- Mobile Doge/Bitcoin rocket is visually centred, compensating for the source PNG's right-heavy transparent composition.
+- Mobile columns are rebalanced so Price and the columns to its right sit further right while STRONG BUY 💎 retains protected on-screen width.
+- Category headers are rebuilt as clean inset rounded pills.
+- Crypto Companies moved to the bottom of Market Overview, directly above the explanation cards.
+- Crypto Companies show latest disclosed corporate BTC holdings:
+  Strategy 840,447 BTC (16 Aug 2026);
+  MARA 35,577 BTC (30 Jun 2026);
+  Coinbase 17,311 BTC (30 Jun 2026).
+- Crypto company rows retain Price, weekly RSI, Risk, Crystal Ball and Signal plus the normal dropdown.
+- Bottom explanation area includes How Risk Is Calculated, Signal, Crystal Ball, Moon-O-Meter and Lambo Ladder.
+- Full mobile-first spacing and layout polish applied across header, table, categories, dropdowns, company section and explanations.
+- GitHub Actions workflow unchanged.
