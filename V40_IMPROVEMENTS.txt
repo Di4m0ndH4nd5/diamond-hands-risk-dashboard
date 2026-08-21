@@ -1,0 +1,12 @@
+Di4m0ndH4nd5 Risk Dashboard V40
+
+- Laser eyes now use finished local portrait assets with beams baked directly onto individually calibrated pupil centres. No runtime CSS positioning.
+- Dogecoin row uses the same finished-asset laser approach.
+- S&P 500 restored to the ^GSPC feed, replacing VUSA.
+- Doge/Bitcoin rocket slightly larger and slightly lower on mobile/app.
+- Coinbase and MARA use recognisable company logos.
+- Signal text increased while keeping STRONG BUY 💎 fully on one line on mobile.
+- Rolls-Royce and Eli Lilly logos slightly larger with protected inner padding.
+- ALL SYSTEMS LIVE / UPDATE DELAYED aligned with the top branding on mobile/app.
+- Everything else retained from V39.
+- GitHub Actions workflow unchanged.

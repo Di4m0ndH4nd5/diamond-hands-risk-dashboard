@@ -18,9 +18,9 @@
     "type": "Crypto"
   },
   {
-    "name": "VUSA",
-    "ticker": "VUSA",
-    "yf": "VUSA.L",
+    "name": "S&P 500",
+    "ticker": "SPX",
+    "yf": "^GSPC",
     "type": "Indices"
   },
   {
