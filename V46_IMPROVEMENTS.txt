@@ -1,0 +1,7 @@
+Di4m0ndH4nd5 Risk Dashboard V46
+
+- Re-centred the visible Doge/Bitcoin rocket using a symmetric transparent canvas and viewport-centred positioning.
+- Removed V45 corporate BTC holdings presentation and restored Crypto Companies to the normal market table.
+- Matched Moon-O-Meter and Lambo Ladder title typography on mobile.
+- Everything else retained from V45.
+- GitHub Actions workflow unchanged.
