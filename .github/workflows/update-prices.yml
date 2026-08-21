@@ -2,24 +2,35 @@ name: Update Di4m0ndH4nd5 prices and risk
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "3,13,23,33,43,53 * * * *"
 permissions:
   contents: write
+concurrency:
+  group: market-data-update
+  cancel-in-progress: false
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install yfinance pandas numpy
-      - run: python update_prices.py
-      - name: Commit refreshed market data
+      - name: Update with retry
+        run: |
+          for i in 1 2 3; do
+            python update_prices.py && exit 0
+            sleep $((i * 15))
+          done
+          exit 1
+      - name: Commit market data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data.json
           git diff --cached --quiet && exit 0
           git commit -m "Update market data"
+          git pull --rebase origin main
           git push
