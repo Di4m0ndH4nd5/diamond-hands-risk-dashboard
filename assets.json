@@ -166,5 +166,11 @@
     "ticker": "NVO",
     "yf": "NVO",
     "type": "Additional Stocks"
+  },
+  {
+    "name": "ServiceNow",
+    "ticker": "NOW",
+    "yf": "NOW",
+    "type": "Additional Stocks"
   }
 ]
