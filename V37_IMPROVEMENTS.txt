@@ -1,0 +1,11 @@
+Di4m0ndH4nd5 Risk Dashboard V37
+- Mobile/app brand block moved left.
+- Mobile columns tightened and STRONG BUY 💎 kept on one line.
+- DOGE row icon given thin laser eyes.
+- Person laser eyes made thinner and re-aligned.
+- Coca-Cola unchanged.
+- Weekly RSI unchanged: RSI(14) on weekly candles.
+- Crystal Ball source shows detailed basis/analyst count when available.
+- Main dropdown risk gauge runs green → yellow → orange → red.
+- Everything else retained from V36.
+- Workflow unchanged from V36.
