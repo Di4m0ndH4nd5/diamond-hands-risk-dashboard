@@ -1,0 +1,13 @@
+Di4m0ndH4nd5 Risk Dashboard V36
+
+- Future Telescope top colour bar is directly draggable and synced with the range slider.
+- Future Telescope price and risk use matching font sizes.
+- Live risk gauge uses green -> yellow -> orange -> red.
+- Crystal Ball details are presented in an emoji mini-table.
+- Laser-eye overlays repositioned closer to portrait eyes.
+- Coca-Cola, Eli Lilly and Google icon presentation improved.
+- DOGE row uses the same Doge image as the header notice.
+- Header Doge is no longer circular-cropped.
+- Mobile/app header alignment and centring refined.
+- S&P 500 and FTSE 100 use US/UK flag emoji icons.
+- Bottom explanation split into four clean sections: Risk, Signal, Crystal Ball and Future Telescope.
