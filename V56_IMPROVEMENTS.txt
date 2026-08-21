@@ -1,0 +1,6 @@
+Di4m0ndH4nd5 Risk Dashboard V56
+
+- Moved the V56 version badge directly beside RISK DASHBOARD.
+- Moved the Diamond Hands logo slightly upward for cleaner alignment.
+- No changes to the mobile/desktop header positioning structure.
+- No changes to index data, flags, rocket (already removed), or workflow.
