@@ -1,0 +1,1 @@
+V39: Palladium Pd removed; VUSA + FTSE 100 GBP display; Crypto Companies MSTR/MARA/COIN added; Michael Saylor MSTR portrait; mobile header one-line; signal fit/readability; RR/LLY sizing; laser-eye recalibration. Workflow unchanged.

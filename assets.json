@@ -18,9 +18,9 @@
     "type": "Crypto"
   },
   {
-    "name": "S&P 500",
-    "ticker": "SPX",
-    "yf": "^GSPC",
+    "name": "VUSA",
+    "ticker": "VUSA",
+    "yf": "VUSA.L",
     "type": "Indices"
   },
   {
@@ -94,6 +94,24 @@
     "ticker": "TSLA",
     "yf": "TSLA",
     "type": "Big 7"
+  },
+  {
+    "name": "Strategy",
+    "ticker": "MSTR",
+    "yf": "MSTR",
+    "type": "Crypto Companies"
+  },
+  {
+    "name": "MARA Holdings",
+    "ticker": "MARA",
+    "yf": "MARA",
+    "type": "Crypto Companies"
+  },
+  {
+    "name": "Coinbase",
+    "ticker": "COIN",
+    "yf": "COIN",
+    "type": "Crypto Companies"
   },
   {
     "name": "Rolls-Royce",
