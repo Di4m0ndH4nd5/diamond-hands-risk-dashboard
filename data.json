@@ -1,14 +1,14 @@
 {
   "prices": {
-    "BTC-USD": 77857.421875,
-    "ETH-USD": 2396.68994140625,
-    "DOGE-USD": 0.08459000289440155,
+    "BTC-USD": 76786.796875,
+    "ETH-USD": 2372.590087890625,
+    "DOGE-USD": 0.08309999853372574,
     "^GSPC": 7641.16015625,
-    "^FTSE": 10752.0,
-    "GC=F": 4648.2998046875,
-    "SI=F": 69.51499938964844,
-    "HG=F": 6.589000225067139,
-    "PA=F": 1354.0,
+    "^FTSE": 10766.7099609375,
+    "GC=F": 4655.39990234375,
+    "SI=F": 69.8949966430664,
+    "HG=F": 6.617499828338623,
+    "PA=F": 1356.5,
     "AAPL": 311.29998779296875,
     "MSFT": 481.1499938964844,
     "NVDA": 216.85000610351562,
@@ -16,9 +16,9 @@
     "GOOGL": 340.6700134277344,
     "META": 545.8300170898438,
     "TSLA": 345.1300048828125,
-    "RR.L": 1485.0,
+    "RR.L": 1495.4000244140625,
     "ASML": 1750.31005859375,
-    "BA.L": 2120.194091796875,
+    "BA.L": 2120.0,
     "KO": 90.5,
     "CRSP": 58.119998931884766,
     "MA": 573.8499755859375,
@@ -30,15 +30,15 @@
     "NVO": 46.13999938964844
   },
   "risks": {
-    "BTC-USD": 0.3894,
-    "ETH-USD": 0.3322,
-    "DOGE-USD": 0.1018,
+    "BTC-USD": 0.3751,
+    "ETH-USD": 0.3269,
+    "DOGE-USD": 0.0974,
     "^GSPC": 0.7479,
-    "^FTSE": 0.7048,
-    "GC=F": 0.73,
-    "SI=F": 0.5334,
-    "HG=F": 0.7322,
-    "PA=F": 0.3801,
+    "^FTSE": 0.7133,
+    "GC=F": 0.7325,
+    "SI=F": 0.5394,
+    "HG=F": 0.7439,
+    "PA=F": 0.3827,
     "AAPL": 0.6951,
     "MSFT": 0.7134,
     "NVDA": 0.6722,
@@ -46,9 +46,9 @@
     "GOOGL": 0.6105,
     "META": 0.4472,
     "TSLA": 0.4634,
-    "RR.L": 0.7208,
+    "RR.L": 0.7335,
     "ASML": 0.6778,
-    "BA.L": 0.6545,
+    "BA.L": 0.6544,
     "KO": 0.874,
     "CRSP": 0.5279,
     "MA": 0.7394,
@@ -61,28 +61,28 @@
   },
   "components": {
     "BTC-USD": {
-      "rsi14": 85.64,
-      "change24h": 6.61,
-      "drawdown_ath": -37.59,
-      "trend": 0.32,
-      "volatility30": 0.4373,
-      "position": 0.5291
+      "rsi14": 84.73,
+      "change24h": 5.14,
+      "drawdown_ath": -38.45,
+      "trend": 0.3098,
+      "volatility30": 0.4142,
+      "position": 0.5184
     },
     "ETH-USD": {
-      "rsi14": 86.12,
-      "change24h": 3.02,
-      "drawdown_ath": -50.39,
-      "trend": 0.3067,
-      "volatility30": 0.6903,
-      "position": 0.2751
+      "rsi14": 85.57,
+      "change24h": 1.99,
+      "drawdown_ath": -50.89,
+      "trend": 0.2992,
+      "volatility30": 0.687,
+      "position": 0.268
     },
     "DOGE-USD": {
-      "rsi14": 78.56,
-      "change24h": 5.18,
-      "drawdown_ath": -81.9,
+      "rsi14": 77.04,
+      "change24h": 3.33,
+      "drawdown_ath": -82.22,
       "trend": 0.0,
-      "volatility30": 0.5203,
-      "position": 0.0652
+      "volatility30": 0.5032,
+      "position": 0.0616
     },
     "^GSPC": {
       "rsi14": 51.17,
@@ -93,44 +93,44 @@
       "position": 0.9626
     },
     "^FTSE": {
-      "rsi14": 50.89,
-      "change24h": 0.04,
-      "drawdown_ath": -1.45,
-      "trend": 0.7091,
+      "rsi14": 52.52,
+      "change24h": 0.17,
+      "drawdown_ath": -1.32,
+      "trend": 0.7159,
       "volatility30": 0.0715,
-      "position": 0.9612
+      "position": 0.9648
     },
     "GC=F": {
-      "rsi14": 74.54,
-      "change24h": 2.92,
-      "drawdown_ath": -12.6,
-      "trend": 0.5571,
-      "volatility30": 0.2395,
-      "position": 0.8187
+      "rsi14": 74.78,
+      "change24h": 3.08,
+      "drawdown_ath": -12.47,
+      "trend": 0.5597,
+      "volatility30": 0.241,
+      "position": 0.8206
     },
     "SI=F": {
-      "rsi14": 67.78,
-      "change24h": 2.19,
-      "drawdown_ath": -39.59,
-      "trend": 0.4781,
-      "volatility30": 0.3692,
-      "position": 0.5328
+      "rsi14": 68.43,
+      "change24h": 2.75,
+      "drawdown_ath": -39.26,
+      "trend": 0.4836,
+      "volatility30": 0.3717,
+      "position": 0.5367
     },
     "HG=F": {
-      "rsi14": 57.26,
-      "change24h": 2.0,
-      "drawdown_ath": -1.7,
-      "trend": 0.7135,
-      "volatility30": 0.2018,
-      "position": 0.9674
+      "rsi14": 58.74,
+      "change24h": 2.44,
+      "drawdown_ath": -1.28,
+      "trend": 0.7209,
+      "volatility30": 0.2056,
+      "position": 0.9755
     },
     "PA=F": {
-      "rsi14": 55.95,
-      "change24h": 1.32,
-      "drawdown_ath": -44.93,
-      "trend": 0.3962,
-      "volatility30": 0.4185,
-      "position": 0.3247
+      "rsi14": 56.28,
+      "change24h": 1.51,
+      "drawdown_ath": -44.83,
+      "trend": 0.3979,
+      "volatility30": 0.419,
+      "position": 0.3262
     },
     "AAPL": {
       "rsi14": 48.93,
@@ -189,12 +189,12 @@
       "position": 0.6209
     },
     "RR.L": {
-      "rsi14": 49.77,
-      "change24h": -0.96,
-      "drawdown_ath": -5.44,
-      "trend": 0.7382,
-      "volatility30": 0.311,
-      "position": 0.9432
+      "rsi14": 51.57,
+      "change24h": -0.27,
+      "drawdown_ath": -4.78,
+      "trend": 0.7502,
+      "volatility30": 0.3096,
+      "position": 0.9501
     },
     "ASML": {
       "rsi14": 49.19,
@@ -205,12 +205,12 @@
       "position": 0.8515
     },
     "BA.L": {
-      "rsi14": 50.71,
-      "change24h": -1.16,
-      "drawdown_ath": -9.04,
-      "trend": 0.6061,
-      "volatility30": 0.2292,
-      "position": 0.8696
+      "rsi14": 50.68,
+      "change24h": -1.17,
+      "drawdown_ath": -9.05,
+      "trend": 0.606,
+      "volatility30": 0.2293,
+      "position": 0.8695
     },
     "KO": {
       "rsi14": 69.13,
@@ -286,6 +286,6 @@
     }
   },
   "errors": {},
-  "updated": "2026-08-21T10:58:20.020300+00:00",
+  "updated": "2026-08-21T11:58:32.959075+00:00",
   "model_version": "V33"
 }
