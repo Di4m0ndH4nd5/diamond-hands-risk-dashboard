@@ -1,0 +1,11 @@
+Di4m0ndH4nd5 Risk Dashboard V43
+
+- Uses FIXED V42 as the functional baseline so dropdowns, Crystal Ball, Moon-O-Meter and Lambo Ladder remain working.
+- Laser icons restored from V41, where eye origins/crops/angles were correct. Only the actual edge-connected laser beam components are thickened; unrelated red facial areas are untouched.
+- DOGE row receives the same V41-based beam-only treatment.
+- Doge/Bitcoin rocket is substantially larger and positioned behind the header text.
+- Rocket image has broad transparent feathering on all four edges plus a radial mask to eliminate the visible image boundary.
+- Mobile Signal column shifted left with a right safety gutter so STRONG BUY 💎 remains fully visible.
+- Category bars are inset from screen edges and rounded on mobile.
+- Bottom website explanation now includes 🚀 Moon-O-Meter and 🏎️ Lambo Ladder.
+- GitHub Actions workflow unchanged.
