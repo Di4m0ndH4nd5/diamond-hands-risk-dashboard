@@ -1,0 +1,8 @@
+Di4m0ndH4nd5 Risk Dashboard V54
+
+- Fixed international index flag logos so assets.json flag fields are actually rendered.
+- 🇺🇸 S&P 500, 🇬🇧 FTSE 100, 🇫🇷 CAC 40, 🇯🇵 Nikkei 225, 🇩🇪 DAX now use consistent flag logos.
+- Added explicit iPhone Apple Touch Icon references using the Diamond Hands icon files.
+- Added PWA manifest using the Diamond Hands icons.
+- Header/rocket positioning remains completely LOCKED to the proven V34 structure.
+- GitHub Actions workflow unchanged.
