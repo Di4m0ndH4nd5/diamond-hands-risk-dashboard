@@ -1,0 +1,6 @@
+Di4m0ndH4nd5 Risk Dashboard V57
+
+- Removed the unnecessary vertical gap above the NOT FINANCIAL ADVICE #HODL box.
+- Only the header-to-notice spacing was tightened.
+- Header positioning, Diamond Hands logo, V57 badge, status area and all other layout remain unchanged.
+- GitHub Actions workflow unchanged.
