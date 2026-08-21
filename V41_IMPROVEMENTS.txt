@@ -1,0 +1,12 @@
+Di4m0ndH4nd5 Risk Dashboard V41
+
+- Doge/Bitcoin rocket lower edge is feathered into the dashboard background so it no longer looks like a separate image rectangle.
+- V40 laser positions, portrait crops and angles are locked; only beam thickness/glow increased.
+- Same V40-position-preserving laser treatment applied to the DOGE row icon.
+- Crystal Ball table now uses 🔮 on every row: Forecast, Potential, Source, Updated and Confidence.
+- Added Crystal Ball Confidence based on analyst count/source type and forecast freshness; no invented analyst count.
+- Future Telescope reformatted to use the available dropdown width more effectively, especially on mobile.
+- Future Telescope Price and Risk are balanced, equal-size metric blocks and the slider is easier to use on mobile.
+- Mobile group header rows (Crypto, Indices, Metals, Big Tech, Crypto Companies, etc.) have corrected left padding so labels are no longer clipped.
+- Everything else retained from V40.
+- GitHub Actions workflow unchanged.
