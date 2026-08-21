@@ -1,0 +1,14 @@
+Di4m0ndH4nd5 Risk Dashboard V38
+
+- Mobile signal boxes widened with more horizontal padding while staying on one line.
+- Laser eyes reworked per portrait with individual pupil positions and thinner beams.
+- DOGE laser eyes refined.
+- Eli Lilly logo has extra internal padding so the red L is fully visible.
+- Rolls-Royce logo has extra internal padding to prevent clipping.
+- Mobile branding and ALL SYSTEMS LIVE align on one top row, with the rocket centred below.
+- Bitcoin and Ethereum rows retain the proper recognisable BTC and ETH marks.
+- Extra mobile spacing added between the six summary boxes and Market Overview.
+- Final mobile-first spacing/alignment pass applied throughout.
+- Everything else remains as V37.
+- update_prices.py unchanged.
+- GitHub Actions .yml unchanged.
