@@ -1,0 +1,8 @@
+Di4m0ndH4nd5 Risk Dashboard V51
+
+- V51 is the colour-blended V50 baseline.
+- Doge rocket artwork edges are blended to the dashboard background.
+- Header positioning remains LOCKED and unchanged:
+  Di4m0ndH4nd5 LEFT / Doge rocket CENTRE / ALL SYSTEMS LIVE or UPDATE DELAYED RIGHT.
+- No table, dropdown, signal, or mobile layout changes.
+- GitHub Actions workflow unchanged.

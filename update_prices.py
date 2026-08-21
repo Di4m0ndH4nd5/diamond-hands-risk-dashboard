@@ -47,7 +47,7 @@ old={}
 if os.path.exists(DATA):
     try:old=json.load(open(DATA,encoding="utf-8"))
     except:old={}
-out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V50"}
+out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V51"}
 ok=0
 for a in ASSETS:
     try:p,r,c=calc(a);out["prices"][a["yf"]]=p;out["risks"][a["yf"]]=r;out["components"][a["yf"]]=c;ok+=1
