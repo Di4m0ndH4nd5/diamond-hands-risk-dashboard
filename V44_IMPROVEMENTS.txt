@@ -1,0 +1,11 @@
+Di4m0ndH4nd5 Risk Dashboard V44
+
+- Uses the approved finished laser-eye artwork from the separate “Create Laser Eyes” chat.
+- Laser images are cropped directly from the approved composite and are NOT processed, recoloured, thickened, or repositioned.
+- Tesla uses Elon Musk; Amazon uses Jeff Bezos; Meta uses Mark Zuckerberg; Microsoft uses Bill Gates; Strategy/MSTR uses Michael Saylor; DOGE uses the approved laser Doge.
+- Mobile Doge/Bitcoin rocket is centred against the whole screen rather than being pushed by left/right header content.
+- Mobile category bars are moved fully on-screen with proper inset margins and rounded corners.
+- Mobile table column widths are rebalanced so STRONG BUY 💎 stays fully visible on one line.
+- Mobile dropdown layout places 🔮 Crystal Ball full-width, with 🚀 Moon-O-Meter and 🏎️ Lambo Ladder side-by-side below.
+- Everything else retained from V43.
+- GitHub Actions workflow unchanged.
