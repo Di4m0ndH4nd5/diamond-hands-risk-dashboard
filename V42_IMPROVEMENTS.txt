@@ -1,0 +1,12 @@
+Di4m0ndH4nd5 Risk Dashboard V42
+
+- 🔭 Future Telescope renamed to 🚀 Moon-O-Meter.
+- Added 🏎️ Lambo Ladder to every asset dropdown.
+- Lambo Ladder shows risk levels 0.0–1.0 in clean Risk / Price columns with no dotted separators.
+- Lambo Ladder is vertically scrollable and mobile-friendly.
+- Risk levels visually progress green → yellow → orange → red.
+- Lambo Ladder uses the same underlying risk-to-price relationship as Moon-O-Meter so both tools remain consistent.
+- Crystal Ball remains unchanged from V41.
+- V40/V41 laser-eye positioning and V41 thickness remain unchanged.
+- Everything else retained from V41.
+- GitHub Actions workflow unchanged.
