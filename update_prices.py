@@ -42,12 +42,12 @@ def calc(a):
         ma=c.rolling(200,min_periods=min(120,len(c))).mean().iloc[-1];dist=(p/float(ma)-1) if pd.notna(ma) and ma else 0;sig=float(ret.tail(60).std()) if len(ret)>=20 else .02;trend=clamp(((dist/max(sig*math.sqrt(200),.08))+1.25)/2.5);rr=clamp((w-25)/60);dr=clamp(1-abs(dd)/60);weights=(.34,.18,.18,.20,.10) if cls=="Metals" else (.36,.18,.16,.22,.08) if cls=="Indices" else (.38,.18,.16,.20,.08);risk=clamp(weights[0]*trend+weights[1]*rr+weights[2]*dr+weights[3]*pos+weights[4]*vr)
     tgt,n=(None,0) if cls in ("Crypto","Metals","Indices") else analyst(t)
     crystal=tgt if tgt else model(c,p,risk,cls);src="Analyst consensus" if tgt else "Model projection";basis=(f"Yahoo Finance analyst consensus ({n} analysts)" if tgt and n else "Yahoo Finance analyst consensus" if tgt else "12-month trend, cycle/risk position and momentum model")
-    return p,round(risk,4),{"rsi14":None if wrsi is None else round(wrsi,2),"rsi_timeframe":"weekly","change24h":round(ch,2),"drawdown_ath":round(dd,2),"trend":round(trend,4),"volatility30":round(vol,4),"position":round(pos,4),"crystal_target":round(float(crystal),4),"crystal_source":src,"crystal_basis":basis,"crystal_updated":datetime.now(timezone.utc).date().isoformat()}
+    return p,round(risk,4),{"rsi14":None if wrsi is None else round(wrsi,2),"rsi_timeframe":"weekly","change24h":round(ch,2),"drawdown_ath":round(dd,2),"trend":round(trend,4),"volatility30":round(vol,4),"position":round(pos,4),"crystal_target":round(float(crystal),4),"crystal_source":src,"crystal_basis":basis,"crystal_updated":datetime.now(timezone.utc).date().isoformat(),"telescope_low":round(float(lo)*0.90,4),"telescope_high":round(float(hi)*1.10,4)}
 old={}
 if os.path.exists(DATA):
     try:old=json.load(open(DATA,encoding="utf-8"))
     except:old={}
-out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V34"}
+out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V35"}
 ok=0
 for a in ASSETS:
     try:p,r,c=calc(a);out["prices"][a["yf"]]=p;out["risks"][a["yf"]]=r;out["components"][a["yf"]]=c;ok+=1

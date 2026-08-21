@@ -1,0 +1,23 @@
+Di4m0ndH4nd5 Risk Dashboard — V35
+
+Changes from V34:
+- Replaced simplified Meta/Amazon/Tesla/Microsoft face icons with real-person portrait sources and laser-eye overlays.
+- Mobile layout alignment improved.
+- NOT FINANCIAL ADVICE #HODL centred.
+- Doge/Bitcoin rocket centred.
+- System status aligned to the right on mobile.
+- STRONG BUY diamond signal constrained so it stays on-screen on mobile.
+- Risk dropdown gauge updated to a clear green → yellow → orange → red scale.
+- Rolls-Royce uses the proper Rolls-Royce Group logo source.
+- BAE Systems uses the proper BAE Systems logo and is fitted inside its circle.
+- Coca-Cola uses the proper Coca-Cola wordmark.
+- Added 🔭 FUTURE TELESCOPE to each asset dropdown.
+- Future Telescope slider runs from 0.00 to 1.00 risk and displays the modelled asset price at the selected risk level.
+- Current risk/current price is the anchor point for the Future Telescope model.
+- 🔮 CRYSTAL BALL is positioned beside the Future Telescope.
+
+Portrait/logo sources used by the web UI:
+- Wikimedia Commons: Mark Zuckerberg, Jeff Bezos, Elon Musk, Bill Gates portraits.
+- Wikimedia Commons: Rolls-Royce Group, BAE Systems and Coca-Cola logos.
+
+Future Telescope values are modelled estimates, not guaranteed future prices or financial advice.
