@@ -1,8 +1,8 @@
 {
   "prices": {
-    "BTC-USD": 77401.75,
-    "ETH-USD": 2439.489990234375,
-    "DOGE-USD": 0.09179999679327011,
+    "BTC-USD": 77316.8203125,
+    "ETH-USD": 2433.72998046875,
+    "DOGE-USD": 0.09282000362873077,
     "^GSPC": 7674.3701171875,
     "^FTSE": 10816.599609375,
     "GC=F": 4624.10009765625,
@@ -38,9 +38,9 @@
     "^GDAXI": 26136.560546875
   },
   "risks": {
-    "BTC-USD": 0.3207,
+    "BTC-USD": 0.3235,
     "ETH-USD": 0.2849,
-    "DOGE-USD": 0.0657,
+    "DOGE-USD": 0.0617,
     "^GSPC": 0.7912,
     "^FTSE": 0.7508,
     "GC=F": 0.6763,
@@ -77,14 +77,14 @@
   },
   "components": {
     "BTC-USD": {
-      "rsi14": 57.26,
+      "rsi14": 56.52,
       "rsi_timeframe": "weekly",
-      "change24h": 5.98,
-      "drawdown_ath": -37.96,
-      "trend": 0.3157,
-      "volatility30": 0.4269,
-      "position": 0.5245,
-      "crystal_target": 78261.3052,
+      "change24h": -1.3,
+      "drawdown_ath": -38.02,
+      "trend": 0.3147,
+      "volatility30": 0.4474,
+      "position": 0.5237,
+      "crystal_target": 78904.6427,
       "crystal_source": "Model projection",
       "crystal_basis": "12-month trend, cycle/risk position and momentum model",
       "crystal_updated": "2026-08-22",
@@ -92,14 +92,14 @@
       "telescope_high": 137227.7844
     },
     "ETH-USD": {
-      "rsi14": 59.27,
+      "rsi14": 58.09,
       "rsi_timeframe": "weekly",
-      "change24h": 4.86,
-      "drawdown_ath": -49.51,
-      "trend": 0.3198,
-      "volatility30": 0.7007,
-      "position": 0.2879,
-      "crystal_target": 2410.2822,
+      "change24h": -3.24,
+      "drawdown_ath": -49.63,
+      "trend": 0.318,
+      "volatility30": 0.735,
+      "position": 0.2862,
+      "crystal_target": 2421.3535,
       "crystal_source": "Model projection",
       "crystal_basis": "12-month trend, cycle/risk position and momentum model",
       "crystal_updated": "2026-08-22",
@@ -107,14 +107,14 @@
       "telescope_high": 5314.4835
     },
     "DOGE-USD": {
-      "rsi14": 49.26,
+      "rsi14": 49.39,
       "rsi_timeframe": "weekly",
-      "change24h": 14.15,
-      "drawdown_ath": -80.36,
+      "change24h": 1.3,
+      "drawdown_ath": -80.14,
       "trend": 0.0,
-      "volatility30": 0.6881,
-      "position": 0.0828,
-      "crystal_target": 0.0946,
+      "volatility30": 0.6471,
+      "position": 0.0853,
+      "crystal_target": 0.0974,
       "crystal_source": "Model projection",
       "crystal_basis": "12-month trend, cycle/risk position and momentum model",
       "crystal_updated": "2026-08-22",
@@ -618,7 +618,7 @@
     }
   },
   "errors": {},
-  "updated": "2026-08-22T05:59:33.532218+00:00",
-  "last_successful_update": "2026-08-22T05:59:45.689796+00:00",
+  "updated": "2026-08-22T07:47:49.376349+00:00",
+  "last_successful_update": "2026-08-22T07:48:03.288104+00:00",
   "model_version": "V57"
 }
