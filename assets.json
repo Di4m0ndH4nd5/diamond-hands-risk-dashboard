@@ -6,10 +6,11 @@
     "type": "Crypto"
   },
   {
-    "name": "Ethereum",
-    "ticker": "ETH",
-    "yf": "ETH-USD",
-    "type": "Crypto"
+    "name": "Cardano",
+    "ticker": "ADA",
+    "yf": "ADA-USD",
+    "type": "Crypto",
+    "currency": "USD"
   },
   {
     "name": "Dogecoin",
@@ -18,220 +19,10 @@
     "type": "Crypto"
   },
   {
-    "name": "S&P 500",
-    "ticker": "SPX",
-    "yf": "^GSPC",
-    "type": "Indices",
-    "currency": "USD",
-    "flag": "🇺🇸"
-  },
-  {
-    "name": "FTSE 100",
-    "ticker": "UKX",
-    "yf": "^FTSE",
-    "type": "Indices",
-    "currency": "GBP",
-    "flag": "🇬🇧"
-  },
-  {
-    "name": "CAC 40",
-    "ticker": "CAC40",
-    "yf": "^FCHI",
-    "type": "Indices",
-    "currency": "EUR",
-    "flag": "🇫🇷"
-  },
-  {
-    "name": "Nikkei 225",
-    "ticker": "NIKKEI",
-    "yf": "^N225",
-    "type": "Indices",
-    "currency": "JPY",
-    "flag": "🇯🇵"
-  },
-  {
-    "name": "DAX",
-    "ticker": "DAX",
-    "yf": "^GDAXI",
-    "type": "Indices",
-    "currency": "EUR",
-    "flag": "🇩🇪"
-  },
-  {
-    "name": "Gold",
-    "ticker": "XAU",
-    "yf": "GC=F",
-    "type": "Metals"
-  },
-  {
-    "name": "Silver",
-    "ticker": "XAG",
-    "yf": "SI=F",
-    "type": "Metals"
-  },
-  {
-    "name": "Copper",
-    "ticker": "COPPER",
-    "yf": "HG=F",
-    "type": "Metals"
-  },
-  {
-    "name": "Palladium",
-    "ticker": "PALLADIUM",
-    "yf": "PA=F",
-    "type": "Metals"
-  },
-  {
-    "name": "Crude Oil (WTI)",
-    "ticker": "WTI",
-    "yf": "CL=F",
-    "type": "Resources",
-    "currency": "USD"
-  },
-  {
-    "name": "Brent Crude Oil",
-    "ticker": "BRENT",
-    "yf": "BZ=F",
-    "type": "Resources",
-    "currency": "USD"
-  },
-  {
-    "name": "Apple",
-    "ticker": "AAPL",
-    "yf": "AAPL",
-    "type": "Big 7"
-  },
-  {
-    "name": "Microsoft",
-    "ticker": "MSFT",
-    "yf": "MSFT",
-    "type": "Big 7"
-  },
-  {
-    "name": "NVIDIA",
-    "ticker": "NVDA",
-    "yf": "NVDA",
-    "type": "Big 7"
-  },
-  {
-    "name": "Amazon",
-    "ticker": "AMZN",
-    "yf": "AMZN",
-    "type": "Big 7"
-  },
-  {
-    "name": "Alphabet",
-    "ticker": "GOOGL",
-    "yf": "GOOGL",
-    "type": "Big 7"
-  },
-  {
-    "name": "Meta",
-    "ticker": "META",
-    "yf": "META",
-    "type": "Big 7"
-  },
-  {
-    "name": "Tesla",
-    "ticker": "TSLA",
-    "yf": "TSLA",
-    "type": "Big 7"
-  },
-  {
-    "name": "Strategy",
-    "ticker": "MSTR",
-    "yf": "MSTR",
-    "type": "Crypto Companies"
-  },
-  {
-    "name": "MARA Holdings",
-    "ticker": "MARA",
-    "yf": "MARA",
-    "type": "Crypto Companies"
-  },
-  {
-    "name": "Coinbase",
-    "ticker": "COIN",
-    "yf": "COIN",
-    "type": "Crypto Companies"
-  },
-  {
-    "name": "Rolls-Royce",
-    "ticker": "RR.",
-    "yf": "RR.L",
-    "type": "Defence"
-  },
-  {
-    "name": "ASML",
-    "ticker": "ASML",
-    "yf": "ASML",
-    "type": "Semiconductors"
-  },
-  {
-    "name": "BAE Systems",
-    "ticker": "BA.",
-    "yf": "BA.L",
-    "type": "Defence"
-  },
-  {
-    "name": "Coca-Cola",
-    "ticker": "KO",
-    "yf": "KO",
-    "type": "Boomers"
-  },
-  {
-    "name": "CRISPR Therapeutics",
-    "ticker": "CRSP",
-    "yf": "CRSP",
-    "type": "BIG PHARMA"
-  },
-  {
-    "name": "Mastercard",
-    "ticker": "MA",
-    "yf": "MA",
-    "type": "Banks & Financial"
-  },
-  {
-    "name": "Visa",
-    "ticker": "V",
-    "yf": "V",
-    "type": "Banks & Financial"
-  },
-  {
-    "name": "Micron Technology",
-    "ticker": "MU",
-    "yf": "MU",
-    "type": "Semiconductors"
-  },
-  {
-    "name": "Uber Technologies",
-    "ticker": "UBER",
-    "yf": "UBER",
-    "type": "Gen Z"
-  },
-  {
-    "name": "AST SpaceMobile",
-    "ticker": "ASTS",
-    "yf": "ASTS",
-    "type": "Space"
-  },
-  {
-    "name": "Eli Lilly",
-    "ticker": "LLY",
-    "yf": "LLY",
-    "type": "BIG PHARMA"
-  },
-  {
-    "name": "Novo Nordisk",
-    "ticker": "NVO",
-    "yf": "NVO",
-    "type": "BIG PHARMA"
-  },
-  {
-    "name": "ServiceNow",
-    "ticker": "NOW",
-    "yf": "NOW",
-    "type": "NERD"
+    "name": "Ethereum",
+    "ticker": "ETH",
+    "yf": "ETH-USD",
+    "type": "Crypto"
   },
   {
     "name": "Solana",
@@ -248,205 +39,115 @@
     "currency": "USD"
   },
   {
-    "name": "Cardano",
-    "ticker": "ADA",
-    "yf": "ADA-USD",
-    "type": "Crypto",
-    "currency": "USD"
+    "name": "CAC 40",
+    "ticker": "CAC40",
+    "yf": "^FCHI",
+    "type": "Indices",
+    "currency": "EUR",
+    "flag": "🇫🇷"
   },
   {
-    "name": "RTX",
-    "ticker": "RTX",
-    "yf": "RTX",
-    "type": "Defence",
-    "currency": "USD"
+    "name": "DAX",
+    "ticker": "DAX",
+    "yf": "^GDAXI",
+    "type": "Indices",
+    "currency": "EUR",
+    "flag": "🇩🇪"
   },
   {
-    "name": "Lockheed Martin",
-    "ticker": "LMT",
-    "yf": "LMT",
-    "type": "Defence",
-    "currency": "USD"
+    "name": "FTSE 100",
+    "ticker": "UKX",
+    "yf": "^FTSE",
+    "type": "Indices",
+    "currency": "GBP",
+    "flag": "🇬🇧"
   },
   {
-    "name": "General Dynamics",
-    "ticker": "GD",
-    "yf": "GD",
-    "type": "Defence",
-    "currency": "USD"
+    "name": "Nikkei 225",
+    "ticker": "NIKKEI",
+    "yf": "^N225",
+    "type": "Indices",
+    "currency": "JPY",
+    "flag": "🇯🇵"
   },
   {
-    "name": "Northrop Grumman",
-    "ticker": "NOC",
-    "yf": "NOC",
-    "type": "Defence",
-    "currency": "USD"
+    "name": "S&P 500",
+    "ticker": "SPX",
+    "yf": "^GSPC",
+    "type": "Indices",
+    "currency": "USD",
+    "flag": "🇺🇸"
   },
   {
-    "name": "Leonardo",
-    "ticker": "LDO",
-    "yf": "LDO.MI",
-    "type": "Defence",
-    "currency": "EUR"
+    "name": "Copper",
+    "ticker": "COPPER",
+    "yf": "HG=F",
+    "type": "Metals"
   },
   {
-    "name": "Thales",
-    "ticker": "HO",
-    "yf": "HO.PA",
-    "type": "Defence",
-    "currency": "EUR"
+    "name": "Gold",
+    "ticker": "XAU",
+    "yf": "GC=F",
+    "type": "Metals"
   },
   {
-    "name": "GSK",
-    "ticker": "GSK",
-    "yf": "GSK.L",
-    "type": "BIG PHARMA",
-    "currency": "GBP"
+    "name": "Palladium",
+    "ticker": "PALLADIUM",
+    "yf": "PA=F",
+    "type": "Metals"
   },
   {
-    "name": "Pfizer",
-    "ticker": "PFE",
-    "yf": "PFE",
-    "type": "BIG PHARMA",
-    "currency": "USD"
+    "name": "Silver",
+    "ticker": "XAG",
+    "yf": "SI=F",
+    "type": "Metals"
   },
   {
-    "name": "Johnson & Johnson",
-    "ticker": "JNJ",
-    "yf": "JNJ",
-    "type": "BIG PHARMA",
-    "currency": "USD"
+    "name": "Alphabet",
+    "ticker": "GOOGL",
+    "yf": "GOOGL",
+    "type": "Big 7"
   },
   {
-    "name": "AstraZeneca",
-    "ticker": "AZN",
-    "yf": "AZN.L",
-    "type": "BIG PHARMA",
-    "currency": "GBP"
+    "name": "Amazon",
+    "ticker": "AMZN",
+    "yf": "AMZN",
+    "type": "Big 7"
   },
   {
-    "name": "Moderna",
-    "ticker": "MRNA",
-    "yf": "MRNA",
-    "type": "BIG PHARMA",
-    "currency": "USD"
+    "name": "Apple",
+    "ticker": "AAPL",
+    "yf": "AAPL",
+    "type": "Big 7"
   },
   {
-    "name": "JPMorgan Chase",
-    "ticker": "JPM",
-    "yf": "JPM",
-    "type": "Banks & Financial",
-    "currency": "USD"
+    "name": "Meta",
+    "ticker": "META",
+    "yf": "META",
+    "type": "Big 7"
   },
   {
-    "name": "Bank of America",
-    "ticker": "BAC",
-    "yf": "BAC",
-    "type": "Banks & Financial",
-    "currency": "USD"
+    "name": "Microsoft",
+    "ticker": "MSFT",
+    "yf": "MSFT",
+    "type": "Big 7"
   },
   {
-    "name": "Goldman Sachs",
-    "ticker": "GS",
-    "yf": "GS",
-    "type": "Banks & Financial",
-    "currency": "USD"
+    "name": "NVIDIA",
+    "ticker": "NVDA",
+    "yf": "NVDA",
+    "type": "Big 7"
   },
   {
-    "name": "HSBC",
-    "ticker": "HSBA",
-    "yf": "HSBA.L",
-    "type": "Banks & Financial",
-    "currency": "GBP"
+    "name": "Tesla",
+    "ticker": "TSLA",
+    "yf": "TSLA",
+    "type": "Big 7"
   },
   {
-    "name": "Barclays",
-    "ticker": "BARC",
-    "yf": "BARC.L",
-    "type": "Banks & Financial",
-    "currency": "GBP"
-  },
-  {
-    "name": "Nike",
-    "ticker": "NKE",
-    "yf": "NKE",
-    "type": "Sports",
-    "currency": "USD"
-  },
-  {
-    "name": "Adidas",
-    "ticker": "ADS",
-    "yf": "ADS.DE",
-    "type": "Sports",
-    "currency": "EUR"
-  },
-  {
-    "name": "Puma",
-    "ticker": "PUM",
-    "yf": "PUM.DE",
-    "type": "Sports",
-    "currency": "EUR"
-  },
-  {
-    "name": "Under Armour",
-    "ticker": "UAA",
-    "yf": "UAA",
-    "type": "Sports",
-    "currency": "USD"
-  },
-  {
-    "name": "ExxonMobil",
-    "ticker": "XOM",
-    "yf": "XOM",
-    "type": "Energy",
-    "currency": "USD"
-  },
-  {
-    "name": "Chevron",
-    "ticker": "CVX",
-    "yf": "CVX",
-    "type": "Energy",
-    "currency": "USD"
-  },
-  {
-    "name": "Shell",
-    "ticker": "SHEL",
-    "yf": "SHEL",
-    "type": "Energy",
-    "currency": "USD"
-  },
-  {
-    "name": "BP",
-    "ticker": "BP",
-    "yf": "BP",
-    "type": "Energy",
-    "currency": "USD"
-  },
-  {
-    "name": "TotalEnergies",
-    "ticker": "TTE",
-    "yf": "TTE",
-    "type": "Energy",
-    "currency": "USD"
-  },
-  {
-    "name": "Airbus",
-    "ticker": "AIR",
-    "yf": "AIR.PA",
-    "type": "Space",
-    "currency": "EUR"
-  },
-  {
-    "name": "SpaceX",
-    "ticker": "SPCX",
-    "yf": "SPCX",
-    "type": "Space",
-    "currency": "USD"
-  },
-  {
-    "name": "Natural Gas",
-    "ticker": "NATGAS",
-    "yf": "NG=F",
+    "name": "Brent Crude Oil",
+    "ticker": "BRENT",
+    "yf": "BZ=F",
     "type": "Resources",
     "currency": "USD"
   },
@@ -465,6 +166,20 @@
     "currency": "USD"
   },
   {
+    "name": "Crude Oil",
+    "ticker": "WTI",
+    "yf": "CL=F",
+    "type": "Resources",
+    "currency": "USD"
+  },
+  {
+    "name": "Natural Gas",
+    "ticker": "NATGAS",
+    "yf": "NG=F",
+    "type": "Resources",
+    "currency": "USD"
+  },
+  {
     "name": "Sugar",
     "ticker": "SUGAR",
     "yf": "SB=F",
@@ -479,9 +194,278 @@
     "currency": "USD"
   },
   {
-    "name": "Palantir",
-    "ticker": "PLTR",
-    "yf": "PLTR",
+    "name": "CleanSpark",
+    "ticker": "CLSK",
+    "yf": "CLSK",
+    "type": "Crypto Companies",
+    "currency": "USD"
+  },
+  {
+    "name": "Coinbase",
+    "ticker": "COIN",
+    "yf": "COIN",
+    "type": "Crypto Companies"
+  },
+  {
+    "name": "MARA Holdings",
+    "ticker": "MARA",
+    "yf": "MARA",
+    "type": "Crypto Companies"
+  },
+  {
+    "name": "Riot Platforms",
+    "ticker": "RIOT",
+    "yf": "RIOT",
+    "type": "Crypto Companies",
+    "currency": "USD"
+  },
+  {
+    "name": "Strategy",
+    "ticker": "MSTR",
+    "yf": "MSTR",
+    "type": "Crypto Companies"
+  },
+  {
+    "name": "BAE Systems",
+    "ticker": "BA.",
+    "yf": "BA.L",
+    "type": "Defence"
+  },
+  {
+    "name": "General Dynamics",
+    "ticker": "GD",
+    "yf": "GD",
+    "type": "Defence",
+    "currency": "USD"
+  },
+  {
+    "name": "Leonardo",
+    "ticker": "LDO",
+    "yf": "LDO.MI",
+    "type": "Defence",
+    "currency": "EUR"
+  },
+  {
+    "name": "Lockheed Martin",
+    "ticker": "LMT",
+    "yf": "LMT",
+    "type": "Defence",
+    "currency": "USD"
+  },
+  {
+    "name": "Northrop Grumman",
+    "ticker": "NOC",
+    "yf": "NOC",
+    "type": "Defence",
+    "currency": "USD"
+  },
+  {
+    "name": "Rolls-Royce",
+    "ticker": "RR.",
+    "yf": "RR.L",
+    "type": "Defence"
+  },
+  {
+    "name": "RTX",
+    "ticker": "RTX",
+    "yf": "RTX",
+    "type": "Defence",
+    "currency": "USD"
+  },
+  {
+    "name": "Thales",
+    "ticker": "HO",
+    "yf": "HO.PA",
+    "type": "Defence",
+    "currency": "EUR"
+  },
+  {
+    "name": "AstraZeneca",
+    "ticker": "AZN",
+    "yf": "AZN.L",
+    "type": "BIG PHARMA",
+    "currency": "GBP"
+  },
+  {
+    "name": "CRISPR Therapeutics",
+    "ticker": "CRSP",
+    "yf": "CRSP",
+    "type": "BIG PHARMA"
+  },
+  {
+    "name": "Eli Lilly",
+    "ticker": "LLY",
+    "yf": "LLY",
+    "type": "BIG PHARMA"
+  },
+  {
+    "name": "GSK",
+    "ticker": "GSK",
+    "yf": "GSK.L",
+    "type": "BIG PHARMA",
+    "currency": "GBP"
+  },
+  {
+    "name": "Johnson & Johnson",
+    "ticker": "JNJ",
+    "yf": "JNJ",
+    "type": "BIG PHARMA",
+    "currency": "USD"
+  },
+  {
+    "name": "Moderna",
+    "ticker": "MRNA",
+    "yf": "MRNA",
+    "type": "BIG PHARMA",
+    "currency": "USD"
+  },
+  {
+    "name": "Novo Nordisk",
+    "ticker": "NVO",
+    "yf": "NVO",
+    "type": "BIG PHARMA"
+  },
+  {
+    "name": "Pfizer",
+    "ticker": "PFE",
+    "yf": "PFE",
+    "type": "BIG PHARMA",
+    "currency": "USD"
+  },
+  {
+    "name": "Bank of America",
+    "ticker": "BAC",
+    "yf": "BAC",
+    "type": "Banks & Financial",
+    "currency": "USD"
+  },
+  {
+    "name": "Barclays",
+    "ticker": "BARC",
+    "yf": "BARC.L",
+    "type": "Banks & Financial",
+    "currency": "GBP"
+  },
+  {
+    "name": "Goldman Sachs",
+    "ticker": "GS",
+    "yf": "GS",
+    "type": "Banks & Financial",
+    "currency": "USD"
+  },
+  {
+    "name": "HSBC",
+    "ticker": "HSBA",
+    "yf": "HSBA.L",
+    "type": "Banks & Financial",
+    "currency": "GBP"
+  },
+  {
+    "name": "JPMorgan Chase",
+    "ticker": "JPM",
+    "yf": "JPM",
+    "type": "Banks & Financial",
+    "currency": "USD"
+  },
+  {
+    "name": "Mastercard",
+    "ticker": "MA",
+    "yf": "MA",
+    "type": "Banks & Financial"
+  },
+  {
+    "name": "Visa",
+    "ticker": "V",
+    "yf": "V",
+    "type": "Banks & Financial"
+  },
+  {
+    "name": "Adidas",
+    "ticker": "ADS",
+    "yf": "ADS.DE",
+    "type": "Sports",
+    "currency": "EUR"
+  },
+  {
+    "name": "Nike",
+    "ticker": "NKE",
+    "yf": "NKE",
+    "type": "Sports",
+    "currency": "USD"
+  },
+  {
+    "name": "Puma",
+    "ticker": "PUM",
+    "yf": "PUM.DE",
+    "type": "Sports",
+    "currency": "EUR"
+  },
+  {
+    "name": "Under Armour",
+    "ticker": "UAA",
+    "yf": "UAA",
+    "type": "Sports",
+    "currency": "USD"
+  },
+  {
+    "name": "BP",
+    "ticker": "BP",
+    "yf": "BP",
+    "type": "Energy",
+    "currency": "USD"
+  },
+  {
+    "name": "Chevron",
+    "ticker": "CVX",
+    "yf": "CVX",
+    "type": "Energy",
+    "currency": "USD"
+  },
+  {
+    "name": "ExxonMobil",
+    "ticker": "XOM",
+    "yf": "XOM",
+    "type": "Energy",
+    "currency": "USD"
+  },
+  {
+    "name": "Shell",
+    "ticker": "SHEL",
+    "yf": "SHEL",
+    "type": "Energy",
+    "currency": "USD"
+  },
+  {
+    "name": "TotalEnergies",
+    "ticker": "TTE",
+    "yf": "TTE",
+    "type": "Energy",
+    "currency": "USD"
+  },
+  {
+    "name": "Airbus",
+    "ticker": "AIR",
+    "yf": "AIR.PA",
+    "type": "Space",
+    "currency": "EUR"
+  },
+  {
+    "name": "AST SpaceMobile",
+    "ticker": "ASTS",
+    "yf": "ASTS",
+    "type": "Space"
+  },
+  {
+    "name": "SpaceX",
+    "ticker": "SPCX",
+    "yf": "SPCX",
+    "type": "Space",
+    "currency": "USD"
+  },
+  {
+    "name": "D-Wave Quantum",
+    "ticker": "QBTS",
+    "yf": "QBTS",
     "type": "NERD",
     "currency": "USD"
   },
@@ -489,13 +473,6 @@
     "name": "IBM",
     "ticker": "IBM",
     "yf": "IBM",
-    "type": "NERD",
-    "currency": "USD"
-  },
-  {
-    "name": "Oracle",
-    "ticker": "ORCL",
-    "yf": "ORCL",
     "type": "NERD",
     "currency": "USD"
   },
@@ -514,6 +491,20 @@
     "currency": "USD"
   },
   {
+    "name": "Oracle",
+    "ticker": "ORCL",
+    "yf": "ORCL",
+    "type": "NERD",
+    "currency": "USD"
+  },
+  {
+    "name": "Palantir",
+    "ticker": "PLTR",
+    "yf": "PLTR",
+    "type": "NERD",
+    "currency": "USD"
+  },
+  {
     "name": "Rigetti Computing",
     "ticker": "RGTI",
     "yf": "RGTI",
@@ -521,11 +512,10 @@
     "currency": "USD"
   },
   {
-    "name": "D-Wave Quantum",
-    "ticker": "QBTS",
-    "yf": "QBTS",
-    "type": "NERD",
-    "currency": "USD"
+    "name": "ServiceNow",
+    "ticker": "NOW",
+    "yf": "NOW",
+    "type": "NERD"
   },
   {
     "name": "ABB",
@@ -535,11 +525,11 @@
     "currency": "CHF"
   },
   {
-    "name": "Siemens",
-    "ticker": "SIE",
-    "yf": "SIE.DE",
+    "name": "Intuitive Surgical",
+    "ticker": "ISRG",
+    "yf": "ISRG",
     "type": "Robotics",
-    "currency": "EUR"
+    "currency": "USD"
   },
   {
     "name": "Rockwell Automation",
@@ -549,11 +539,11 @@
     "currency": "USD"
   },
   {
-    "name": "Intuitive Surgical",
-    "ticker": "ISRG",
-    "yf": "ISRG",
+    "name": "Siemens",
+    "ticker": "SIE",
+    "yf": "SIE.DE",
     "type": "Robotics",
-    "currency": "USD"
+    "currency": "EUR"
   },
   {
     "name": "Caterpillar",
@@ -561,6 +551,20 @@
     "yf": "CAT",
     "type": "Building",
     "currency": "USD"
+  },
+  {
+    "name": "Holcim",
+    "ticker": "HOLN",
+    "yf": "HOLN.SW",
+    "type": "Building",
+    "currency": "CHF"
+  },
+  {
+    "name": "Kingspan",
+    "ticker": "KSP",
+    "yf": "KSP.L",
+    "type": "Building",
+    "currency": "GBP"
   },
   {
     "name": "Stanley Black & Decker (DeWalt)",
@@ -577,25 +581,17 @@
     "currency": "GBP"
   },
   {
-    "name": "Kingspan",
-    "ticker": "KSP",
-    "yf": "KSP.L",
-    "type": "Building",
-    "currency": "GBP"
-  },
-  {
-    "name": "Holcim",
-    "ticker": "HOLN",
-    "yf": "HOLN.SW",
-    "type": "Building",
-    "currency": "CHF"
-  },
-  {
     "name": "AMD",
     "ticker": "AMD",
     "yf": "AMD",
     "type": "Semiconductors",
     "currency": "USD"
+  },
+  {
+    "name": "ASML",
+    "ticker": "ASML",
+    "yf": "ASML",
+    "type": "Semiconductors"
   },
   {
     "name": "Broadcom",
@@ -605,11 +601,10 @@
     "currency": "USD"
   },
   {
-    "name": "TSMC",
-    "ticker": "TSM",
-    "yf": "TSM",
-    "type": "Semiconductors",
-    "currency": "USD"
+    "name": "Micron Technology",
+    "ticker": "MU",
+    "yf": "MU",
+    "type": "Semiconductors"
   },
   {
     "name": "Qualcomm",
@@ -626,37 +621,16 @@
     "currency": "USD"
   },
   {
-    "name": "Riot Platforms",
-    "ticker": "RIOT",
-    "yf": "RIOT",
-    "type": "Crypto Companies",
-    "currency": "USD"
-  },
-  {
-    "name": "CleanSpark",
-    "ticker": "CLSK",
-    "yf": "CLSK",
-    "type": "Crypto Companies",
-    "currency": "USD"
-  },
-  {
-    "name": "Sony",
-    "ticker": "SONY",
-    "yf": "SONY",
-    "type": "Gen X",
+    "name": "TSMC",
+    "ticker": "TSM",
+    "yf": "TSM",
+    "type": "Semiconductors",
     "currency": "USD"
   },
   {
     "name": "Disney",
     "ticker": "DIS",
     "yf": "DIS",
-    "type": "Gen X",
-    "currency": "USD"
-  },
-  {
-    "name": "Electronic Arts",
-    "ticker": "EA",
-    "yf": "EA",
     "type": "Gen X",
     "currency": "USD"
   },
@@ -668,6 +642,13 @@
     "currency": "USD"
   },
   {
+    "name": "Electronic Arts",
+    "ticker": "EA",
+    "yf": "EA",
+    "type": "Gen X",
+    "currency": "USD"
+  },
+  {
     "name": "PayPal",
     "ticker": "PYPL",
     "yf": "PYPL",
@@ -675,23 +656,16 @@
     "currency": "USD"
   },
   {
-    "name": "Spotify",
-    "ticker": "SPOT",
-    "yf": "SPOT",
-    "type": "Gen Z",
+    "name": "Sony",
+    "ticker": "SONY",
+    "yf": "SONY",
+    "type": "Gen X",
     "currency": "USD"
   },
   {
     "name": "Netflix",
     "ticker": "NFLX",
     "yf": "NFLX",
-    "type": "Gen Z",
-    "currency": "USD"
-  },
-  {
-    "name": "Reddit",
-    "ticker": "RDDT",
-    "yf": "RDDT",
     "type": "Gen Z",
     "currency": "USD"
   },
@@ -703,11 +677,44 @@
     "currency": "USD"
   },
   {
+    "name": "Reddit",
+    "ticker": "RDDT",
+    "yf": "RDDT",
+    "type": "Gen Z",
+    "currency": "USD"
+  },
+  {
+    "name": "Spotify",
+    "ticker": "SPOT",
+    "yf": "SPOT",
+    "type": "Gen Z",
+    "currency": "USD"
+  },
+  {
     "name": "Starbucks",
     "ticker": "SBUX",
     "yf": "SBUX",
     "type": "Gen Z",
     "currency": "USD"
+  },
+  {
+    "name": "Uber Technologies",
+    "ticker": "UBER",
+    "yf": "UBER",
+    "type": "Gen Z"
+  },
+  {
+    "name": "Coca-Cola",
+    "ticker": "KO",
+    "yf": "KO",
+    "type": "Boomers"
+  },
+  {
+    "name": "Diageo",
+    "ticker": "DGE",
+    "yf": "DGE.L",
+    "type": "Boomers",
+    "currency": "GBP"
   },
   {
     "name": "McDonald's",
@@ -731,11 +738,32 @@
     "currency": "GBP"
   },
   {
-    "name": "Diageo",
-    "ticker": "DGE",
-    "yf": "DGE.L",
-    "type": "Boomers",
-    "currency": "GBP"
+    "name": "BMW",
+    "ticker": "BMW",
+    "yf": "BMW.DE",
+    "type": "Automobile",
+    "currency": "EUR"
+  },
+  {
+    "name": "Ferrari",
+    "ticker": "RACE",
+    "yf": "RACE",
+    "type": "Automobile",
+    "currency": "USD"
+  },
+  {
+    "name": "Ford",
+    "ticker": "F",
+    "yf": "F",
+    "type": "Automobile",
+    "currency": "USD"
+  },
+  {
+    "name": "Mercedes-Benz",
+    "ticker": "MBG",
+    "yf": "MBG.DE",
+    "type": "Automobile",
+    "currency": "EUR"
   },
   {
     "name": "Toyota",
@@ -750,33 +778,5 @@
     "yf": "VOW3.DE",
     "type": "Automobile",
     "currency": "EUR"
-  },
-  {
-    "name": "Ferrari",
-    "ticker": "RACE",
-    "yf": "RACE",
-    "type": "Automobile",
-    "currency": "USD"
-  },
-  {
-    "name": "Mercedes-Benz",
-    "ticker": "MBG",
-    "yf": "MBG.DE",
-    "type": "Automobile",
-    "currency": "EUR"
-  },
-  {
-    "name": "BMW",
-    "ticker": "BMW",
-    "yf": "BMW.DE",
-    "type": "Automobile",
-    "currency": "EUR"
-  },
-  {
-    "name": "Ford",
-    "ticker": "F",
-    "yf": "F",
-    "type": "Automobile",
-    "currency": "USD"
   }
 ]
