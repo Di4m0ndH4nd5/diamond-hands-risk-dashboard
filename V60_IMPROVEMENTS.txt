@@ -1,0 +1,15 @@
+Di4m0ndH4nd5 Risk Dashboard V60
+
+- Consolidated category rendering so each category appears once and all its assets are together.
+- Crypto remains one category; Crypto Companies remains one category.
+- Boomers, NERD, Resources, Space and Banks & Financial consolidated.
+- Oil split from Resources: WTI + Brent are Oil; Natural Gas, Cocoa, Coffee, Sugar and Wheat are Resources.
+- Rolls-Royce moved to Defence.
+- Duolingo removed.
+- FANUC removed.
+- SpaceX changed to live/public ticker SPCX.
+- Mobile Lambo Ladder remains full width.
+- Tightened mobile NOT FINANCIAL ADVICE / header gap.
+- Logo cleanup/mapping updated for BMW, Mercedes-Benz, Holcim, Caterpillar, BP, Puma, Adidas, Thales, Leonardo, XRP, ADA, SOL and CRISPR, plus SpaceX.
+- Big 7 remains untouched.
+- Workflow .yml unchanged.

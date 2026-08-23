@@ -85,14 +85,14 @@
     "name": "Crude Oil (WTI)",
     "ticker": "WTI",
     "yf": "CL=F",
-    "type": "Resources",
+    "type": "Oil",
     "currency": "USD"
   },
   {
     "name": "Brent Crude Oil",
     "ticker": "BRENT",
     "yf": "BZ=F",
-    "type": "Resources",
+    "type": "Oil",
     "currency": "USD"
   },
   {
@@ -438,11 +438,10 @@
   },
   {
     "name": "SpaceX",
-    "ticker": "SPACE-X",
-    "yf": null,
+    "ticker": "SPCX",
+    "yf": "SPCX",
     "type": "Space",
-    "currency": "USD",
-    "private": true
+    "currency": "USD"
   },
   {
     "name": "Natural Gas",
@@ -548,13 +547,6 @@
     "yf": "ROK",
     "type": "Robotics",
     "currency": "USD"
-  },
-  {
-    "name": "FANUC",
-    "ticker": "6954",
-    "yf": "6954.T",
-    "type": "Robotics",
-    "currency": "JPY"
   },
   {
     "name": "Intuitive Surgical",
@@ -707,13 +699,6 @@
     "name": "Pinterest",
     "ticker": "PINS",
     "yf": "PINS",
-    "type": "Gen Z",
-    "currency": "USD"
-  },
-  {
-    "name": "Duolingo",
-    "ticker": "DUOL",
-    "yf": "DUOL",
     "type": "Gen Z",
     "currency": "USD"
   },
