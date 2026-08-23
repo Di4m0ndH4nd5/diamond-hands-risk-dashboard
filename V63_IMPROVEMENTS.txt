@@ -1,0 +1,8 @@
+V63
+- Replaced only the 14 user-supplied logos:
+  XRP, BAE Systems, CRISPR Therapeutics, HSBC, TotalEnergies, Rockwell Automation,
+  Caterpillar, Kingspan, Travis Perkins, Electronic Arts, eBay, Starbucks, BMW, Volkswagen.
+- Each supplied logo was processed into a 512x512 circular badge with generous internal padding so artwork is NOT clipped at corners.
+- Category structure from V62 preserved exactly.
+- Version updated to V63.
+- Workflow .yml unchanged.
