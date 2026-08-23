@@ -82,6 +82,20 @@
     "type": "Metals"
   },
   {
+    "name": "Crude Oil (WTI)",
+    "ticker": "WTI",
+    "yf": "CL=F",
+    "type": "Oil",
+    "currency": "USD"
+  },
+  {
+    "name": "Brent Crude Oil",
+    "ticker": "BRENT",
+    "yf": "BZ=F",
+    "type": "Oil",
+    "currency": "USD"
+  },
+  {
     "name": "Apple",
     "ticker": "AAPL",
     "yf": "AAPL",

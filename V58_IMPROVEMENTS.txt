@@ -1,0 +1,15 @@
+Di4m0ndH4nd5 Risk Dashboard V58
+
+- Removed Moon-O-Meter and its explanatory paragraph; Lambo Ladder retained.
+- Crystal Ball now shows 1 Year Forecast and 2 Year Forecast.
+- Crystal Ball dates display DD/MM/YYYY.
+- Expanded long-term crypto forecast envelope; BTC is no longer constrained by the old small forecast cap.
+- Removed STALE text; price LED is green=current, orange=delayed, red=data error.
+- Risk colours aligned: 0.00–0.20 green, 0.20–0.50 yellow, 0.50–0.75 orange, 0.75–1.00 red; 0.50 is the dial centre.
+- RSI colours aligned: 0–25 green, 26–50 yellow, 51–75 orange, 76–100 red.
+- Added Crude Oil (WTI) CL=F and Brent Crude Oil BZ=F in Oil category, USD.
+- Replaced BTC and ETH logos with supplied images.
+- Cleaned MSTR and META laser logo circular edges.
+- Tightened mobile header-to-notice gap.
+- Header positioning unchanged; rocket remains removed.
+- GitHub Actions workflow unchanged.
