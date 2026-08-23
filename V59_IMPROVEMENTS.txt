@@ -1,0 +1,16 @@
+Di4m0ndH4nd5 Risk Dashboard V59
+
+- Added expanded UK/Europe/US-focused categories: Defence, BIG PHARMA, Banks & Financial, Sports, Energy, Space, Resources, NERD, Robotics, Building, Semiconductors, Crypto Companies, Gen X, Gen Z, Boomers, Automobile.
+- Added Solana, XRP and Cardano to Crypto.
+- Added Barclays to Banks & Financial.
+- Removed Industrial category.
+- Added Starbucks to Gen Z.
+- Moved all former Additional Stocks into suitable categories; Additional Stocks is now gone.
+- Oils moved into Resources; added Natural Gas, Cocoa, Coffee, Sugar and Wheat.
+- Added SpaceX as private informational row (no invented live price) and Airbus/AST SpaceMobile to Space.
+- Mobile Lambo Ladder now full width.
+- Mobile header/notice gap tightened further.
+- Big 7 left untouched.
+- Existing BTC/ETH supplied logos retained.
+- V58 Crystal Ball, risk/RSI colour system, LED status system and Lambo Ladder retained.
+- Workflow .yml unchanged.
