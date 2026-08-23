@@ -1,0 +1,34 @@
+Di4m0ndH4nd5 Risk Dashboard V61
+
+Master category order:
+1 Crypto
+2 Indices
+3 Metals
+4 Big 7
+5 Resources
+6 Crypto Companies
+7 Defence
+8 BIG PHARMA
+9 Banks & Financial
+10 Sports
+11 Energy
+12 Space
+13 NERD
+14 Robotics
+15 Building
+16 Semiconductors
+17 Gen X
+18 Gen Z
+19 Boomers
+20 Automobile
+
+- Resources combines Oil + Resources; display WTI as "Crude Oil" while ticker remains CL=F.
+- Crypto includes Bitcoin, Ethereum, Dogecoin, Solana, XRP and Cardano.
+- All category assets are sorted/grouped from the underlying data, preventing duplicate category headings.
+- Big 7 fixed at #4.
+- Rolls-Royce moved to Defence.
+- Duolingo and FANUC removed.
+- SpaceX uses SPCX and is treated as live/public.
+- Requested logos refreshed/mapped for ASML, BAE, CRISPR, ASTS, XRP, Lockheed Martin, HSBC, TotalEnergies, IBM, Rockwell, CAT, EA, Diageo, BMW, Ford plus prior V60 logo work.
+- Mobile header/notice gap aggressively tightened; Crystal Ball nudge limited so Signal column remains protected and STRONG BUY diamond stays visible.
+- Workflow .yml unchanged.

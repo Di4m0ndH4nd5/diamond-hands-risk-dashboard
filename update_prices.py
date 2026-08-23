@@ -66,7 +66,7 @@ old={}
 if os.path.exists(DATA):
     try:old=json.load(open(DATA,encoding="utf-8"))
     except:old={}
-out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V60"}
+out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V61"}
 ok=0
 for a in ASSETS:
     if not a.get("yf"): continue

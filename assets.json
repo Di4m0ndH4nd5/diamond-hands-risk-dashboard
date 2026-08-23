@@ -85,14 +85,14 @@
     "name": "Crude Oil (WTI)",
     "ticker": "WTI",
     "yf": "CL=F",
-    "type": "Oil",
+    "type": "Resources",
     "currency": "USD"
   },
   {
     "name": "Brent Crude Oil",
     "ticker": "BRENT",
     "yf": "BZ=F",
-    "type": "Oil",
+    "type": "Resources",
     "currency": "USD"
   },
   {
