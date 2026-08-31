@@ -642,13 +642,6 @@
     "currency": "USD"
   },
   {
-    "name": "Electronic Arts",
-    "ticker": "EA",
-    "yf": "EA",
-    "type": "Gen X",
-    "currency": "USD"
-  },
-  {
     "name": "PayPal",
     "ticker": "PYPL",
     "yf": "PYPL",
