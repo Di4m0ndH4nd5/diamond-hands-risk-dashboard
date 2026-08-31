@@ -78,7 +78,7 @@ fng=fetch_fear_greed()
 if os.path.exists(DATA):
     try:old=json.load(open(DATA,encoding="utf-8"))
     except:old={}
-out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V67", "fear_greed":(fng if fng else {"value":None,"classification":"Data unavailable","updated":None})}
+out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V72", "fear_greed":(fng if fng else {"value":None,"classification":"Data unavailable","updated":None})}
 ok=0
 for a in ASSETS:
     if not a.get("yf"): continue

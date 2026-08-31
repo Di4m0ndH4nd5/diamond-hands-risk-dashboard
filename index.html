@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Di4m0ndH4nd5 Risk Dashboard V70</title>
+<title>Di4m0ndH4nd5 Risk Dashboard V72</title>
 <style>
 :root{--bg:#070b0f;--panel:#0d1319;--line:#1d2b35;--cyan:#00e5ff;--text:#f4f7fa;--muted:#8c9aa6;--green:#00e676;--yellow:#f3d63a;--orange:#ff9f0a;--red:#ff453a}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#10212b 0,#070b0f 42%);color:var(--text);font-family:Inter,Arial,sans-serif}.wrap{max-width:1180px;margin:auto;padding:12px}.panel{background:linear-gradient(180deg,#0e151c,#0a1015);border:1px solid #17242d;border-radius:12px;padding:12px;margin-bottom:10px;box-shadow:0 8px 28px #0007}.head{display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:10px}.title h1{font-size:24px;margin:2px 0}.title h2{font-size:12px;margin:0;color:#c8d2da;letter-spacing:.08em}.version{display:block;width:max-content;margin-top:5px;border:1px solid #30404b;border-radius:6px;padding:3px 7px;font-size:10px}.status{text-align:right;font-size:10px;color:#9dabb6;line-height:1.55}.health{display:inline-flex;gap:6px;align-items:center;color:#fff;font-weight:800}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}.notice{margin-top:9px;border:1px solid #8c6c18;background:#171306;border-radius:6px;padding:6px;text-align:center;font-size:10px;font-weight:900;letter-spacing:.06em}.scale{height:8px;border-radius:9px;background:linear-gradient(90deg,#00c853,#cddc39,#ffc107,#ff6d00,#e53935);margin:12px 0 4px}.ticks{display:flex;justify-content:space-between;font-size:9px;color:#7e8b95}.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.stat{border:1px solid #1a2832;background:#0b1116;border-radius:8px;padding:8px;text-align:center}.stat small{font-size:8px;color:#84939f}.stat b{display:block;font-size:22px;margin:2px}.opps{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.opp{border:1px solid #1b2b35;border-radius:8px;padding:8px;font-size:10px}.opp b{font-size:13px}.toolbar{display:flex;justify-content:space-between;align-items:center;margin:4px 0 8px}.toolbar strong{font-size:12px}.sortbtn{background:#0b171e;color:#d8f9ff;border:1px solid #24404c;border-radius:7px;padding:6px 9px;font-size:9px;font-weight:800}table{width:100%;border-collapse:collapse;table-layout:fixed}th{font-size:8px;color:#82919c;text-align:center;padding:8px 5px;border-bottom:1px solid #1b2831}th:first-child{text-align:left;width:30%}td{padding:9px 5px;border-bottom:1px solid #142029;text-align:center;font-size:10px}.group td{background:#0b1b23;color:#00d9ff;text-align:left;font-size:9px;font-weight:900;letter-spacing:.06em;padding:5px 8px}.assetcell{display:flex;align-items:center;gap:7px;text-align:left}.logoBox{width:30px;height:30px;border-radius:50%;background:#eef2f4;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 auto;padding:4px}.logoBox img{width:100%;height:100%;object-fit:contain;border-radius:10px;padding:1px}.fallback{font-size:7px;color:#111;font-weight:900}.asset{font-weight:850;font-size:11px}.ticker{font-size:8px;color:#74838f}.price{font-weight:800}.live{color:var(--green);font-size:8px;margin-right:3px}.score{font-size:13px;font-weight:900}.badge{display:inline-block;border-radius:5px;padding:3px 6px;font-size:8px;font-weight:900;white-space:nowrap}.low{color:#16ef78;background:#063d25}.moderate{color:#f3df42;background:#443b08}.high{color:#ffb13b;background:#482c05}.extreme{color:#ff5a50;background:#4a1210}.rsiLow{color:#2ee879}.rsiMid{color:#f0db3a}.rsiHigh{color:#ff5147}.fav{cursor:pointer;color:#53636e;margin-right:4px}.fav.on{color:#ffd54a}.detail td{padding:0;border-bottom:1px solid #20303a}.detailbox{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#080d11;padding:10px}.gaugewrap{text-align:center}.gaugeTitle{font-size:9px;color:#b7c2ca;font-weight:900}.gauge{width:150px;height:82px;position:relative;margin:5px auto 0;overflow:hidden}.arc{width:150px;height:150px;border-radius:50%;background:conic-gradient(from 270deg,#00c853 0 10%,#f3d63a 10% 25%,#ff9f0a 25% 37.5%,#ff3b30 37.5% 50%,transparent 50% 100%);position:absolute;top:7px}.arc:after{content:"";position:absolute;inset:18px;border-radius:50%;background:#080d11}.needle{position:absolute;width:2px;height:57px;background:#fff;left:74px;top:19px;transform-origin:50% 100%;z-index:2;box-shadow:0 0 5px #fff}.hub{position:absolute;width:8px;height:8px;border-radius:50%;background:#fff;left:71px;bottom:1px;z-index:3}.gscore{font-size:24px;font-weight:950;margin-top:0}.mini{width:100%;border-collapse:collapse}.mini td{padding:4px;border-bottom:1px solid #18252e;font-size:9px}.mini td:first-child{text-align:left;color:#84929d}.mini td:last-child{text-align:right;font-weight:850}.note{font-size:9px;line-height:1.55;color:#82909a;padding:10px 2px 2px}.stale{color:#ff9f0a;font-size:7px;font-weight:900}.market{font-size:7px;color:#75838d}.age{color:#8c9aa6}
 @media(max-width:700px){.wrap{padding:7px}.head{grid-template-columns:1fr 115px 1fr}.title h1{font-size:17px}.title h2{font-size:9px}.status{font-size:8px}.stats{grid-template-columns:repeat(3,1fr);gap:5px}.stat{padding:6px}.stat b{font-size:18px}.opps{grid-template-columns:1fr 1fr}.panel{padding:8px}.asset{font-size:9px}.ticker{font-size:7px}.logoBox{width:25px;height:25px;padding:3px}th{font-size:7px;padding:6px 3px}td{font-size:9px;padding:8px 3px}th:first-child{width:26%}.badge{font-size:7px;padding:3px 4px}.detailbox{grid-template-columns:1fr 1fr;padding:7px}.gauge{transform:scale(.82);transform-origin:top center;margin-bottom:-12px}.gscore{font-size:20px}.mini td{font-size:8px}.notice{font-size:9px}}
 .brandline{display:flex;align-items:center;gap:9px}.diamond-logo{width:42px;height:42px;border-radius:50%;object-fit:cover}.rocket-lower{margin-top:14px}.notice{display:flex;align-items:center;justify-content:center;gap:7px}.notice-doge{width:34px;height:30px;object-fit:contain;border-radius:0}.crystal{font-weight:900;color:#b785ff}@media(max-width:700px){.diamond-logo{width:34px;height:34px}.rocket-lower{margin-top:18px}.notice-doge{width:30px;height:27px}}
-/* V35 */
+/* V72 */
 .logoBox.person{position:relative;padding:0;background:#111}.logoBox.person img{width:100%;height:100%;object-fit:cover;border-radius:50%;padding:0}.laserDot{position:absolute;width:4px;height:4px;border-radius:50%;background:#ff2929;box-shadow:0 0 5px #ff2929,0 0 9px #ff2929;z-index:3;top:41%}.laserDot.l{left:37%;top:39%}.laserDot.r{left:56%;top:39%}.laserBeam{position:absolute;height:2px;background:#ff2929;box-shadow:0 0 5px #ff2929;z-index:2;top:42%;width:17px}.laserBeam.l{right:62%;transform:rotate(8deg);transform-origin:right center}.laserBeam.r{left:64%;transform:rotate(-8deg);transform-origin:left center}.logoBox.ko{background:#f40009;padding:6px 2px}.logoBox.lly{padding:6px}.logoBox.bae{padding:7px 2px}.logoBox.rr{padding:4px 7px}.futurePair{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}.futureCard{border:1px solid #1a2a34;background:#0b1116;border-radius:9px;padding:9px;min-width:0}.futureTitle{font-size:10px;font-weight:950;color:#dce7ed;margin-bottom:6px}.futureValue{font-size:20px;font-weight:950;line-height:1.15}.telMetrics{display:flex;justify-content:center;gap:12px;align-items:baseline;flex-wrap:wrap}.telMetrics .metric{font-size:20px;font-weight:950}.telMetrics small{font-size:8px;color:#81909b;font-weight:700;margin-right:3px}.futureSub{font-size:8px;color:#81909b;margin-top:4px;line-height:1.35}.riskSlider{width:100%;height:20px;accent-color:#ff9f0a;margin:6px 0 1px}.sliderTrack{height:14px;cursor:pointer;touch-action:none;border-radius:8px;background:linear-gradient(90deg,#00c853 0%,#cddc39 35%,#ffc107 52%,#ff8a00 72%,#e53935 100%);position:relative;margin-top:4px}.currentMark{position:absolute;top:-4px;width:4px;height:22px;border-radius:3px;background:#fff;box-shadow:0 0 4px #fff}.sliderEnds{display:flex;justify-content:space-between;font-size:7px;color:#73828d;margin-top:2px}.crystalCard .futureValue{color:#c99cff}.crystalTable{width:100%;border-collapse:collapse;margin-top:6px}.crystalTable td{font-size:8px;padding:4px 2px;border-bottom:1px solid #18252e}.crystalTable td:first-child{text-align:left;color:#8e9ca6}.crystalTable td:last-child{text-align:right;font-weight:800}.infoGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}.infoCard{border:1px solid #1a2832;background:#0b1116;border-radius:9px;padding:10px}.infoCard h3{font-size:10px;margin:0 0 5px}.infoCard p{font-size:8px;line-height:1.5;color:#8c9aa6;margin:0}.detailInfo{min-width:0}.detailInfo .mini{margin-top:2px}.detailbox{grid-template-columns:minmax(180px,.8fr) minmax(0,1.8fr)}
 @media(max-width:700px){.infoGrid{grid-template-columns:1fr 1fr}.head{grid-template-columns:1fr auto 1fr;align-items:center}.title{grid-column:1/-1;text-align:left;justify-self:start}.brandline{justify-content:flex-start}.status{grid-column:3;text-align:right;justify-self:end}.notice{justify-content:center;text-align:center;width:100%}.detailbox{grid-template-columns:1fr}.futurePair{grid-template-columns:1fr 1fr;gap:6px}.futureCard{padding:7px}.futureValue{font-size:16px}.futureTitle{font-size:8px}.futureSub{font-size:7px}.riskSlider{height:18px}.detail td:last-child .badge,tbody tr:not(.detail) td:last-child .badge{font-size:6.1px;padding:3px 1px;white-space:nowrap;line-height:1.05;max-width:100%;text-align:center}.assetcell{justify-content:flex-start}.wrap,.panel{margin-left:auto;margin-right:auto}.notice span{text-align:center}}
 @media(max-width:390px){.infoGrid{grid-template-columns:1fr}.head{grid-template-columns:1fr auto 1fr}.status{grid-column:3}th:first-child{width:25%}th,td{padding-left:2px;padding-right:2px}.badge{font-size:6.5px}.logoBox{width:24px;height:24px}.assetcell{gap:4px}.asset{font-size:8.5px}.price{font-size:8px}.score{font-size:11px}.futurePair{gap:5px}.status{font-size:7px}}
 
-/* V37 precision laser alignment */
+/* V72 precision laser alignment */
 .laserDot{width:3px;height:3px;box-shadow:0 0 3px #ff2929,0 0 6px #ff2929}
 .laserBeam{height:1px;box-shadow:0 0 3px #ff2929;width:15px}
 .logoBox.person.meta .laserDot.l{left:38%;top:40%}.logoBox.person.meta .laserDot.r{left:56%;top:40%}
@@ -25,7 +25,7 @@
 .logoBox.dogeLaser .laserBeam.l{top:41%;right:61%}.logoBox.dogeLaser .laserBeam.r{top:41%;left:64%}
 
 
-/* V38 refinements */
+/* V72 refinements */
 @media(max-width:700px){.head{margin-bottom:0!important;margin-top:0!important}
   .title{grid-column:1;grid-row:1;text-align:left;justify-self:start;min-width:0}
   .status{grid-column:2;grid-row:1;text-align:right;justify-self:end;align-self:start;white-space:nowrap}
@@ -65,7 +65,7 @@
 .logoBox.dogeLaser .laserBeam.l{right:57%;top:42%;transform:rotate(7deg);transform-origin:right center}.logoBox.dogeLaser .laserBeam.r{left:59%;top:42%;transform:rotate(-7deg);transform-origin:left center}
 
 
-/* V39 final */
+/* V72 final */
 @media(max-width:700px){.head{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;column-gap:4px;row-gap:0}.title{grid-column:1;grid-row:1;justify-self:start;text-align:left;min-width:0}.status{grid-column:3;grid-row:1;justify-self:end;align-self:center;text-align:right;white-space:nowrap;min-width:0}.rocket-lower{margin-top:0}.title h1{font-size:15px;line-height:1.05}.title h2{font-size:8px}.version{font-size:8px;padding:2px 5px;margin-top:3px}.diamond-logo{width:30px;height:30px}.brandline{gap:5px}.status,.health{font-size:6.8px}.dot{width:6px;height:6px}td{font-size:10.4px}.asset{font-size:9.3px}.ticker{font-size:8.2px}.price{font-size:8.5px}.score{font-size:11.5px}th:first-child{width:21%}.assetcell{gap:3px}.logoBox{width:25px;height:25px}tbody tr:not(.detail) td:last-child{padding-left:0;padding-right:0;overflow:visible}tbody tr:not(.detail) td:last-child .badge{padding:4px 4px!important;font-size:5.9px!important;white-space:nowrap!important;max-width:none!important;letter-spacing:-.12px}}
 @media(max-width:390px){th:first-child{width:20%}.title h1{font-size:13.5px}.status,.health{font-size:6.2px}tbody tr:not(.detail) td:last-child .badge{font-size:5.5px!important;padding:4px 3px!important}}
 .logoBox.lly{padding:6px!important}.logoBox.rr{padding:5px 7px!important}.logoBox.lly img,.logoBox.rr img{object-fit:contain!important;border-radius:0!important;padding:0!important}
@@ -78,7 +78,7 @@
 .logoBox.dogeLaser .laserDot.l{left:42.2%!important;top:41.2%!important}.logoBox.dogeLaser .laserDot.r{left:58%!important;top:41.2%!important}.logoBox.dogeLaser .laserBeam.l{right:57.8%!important;top:41.2%!important;transform:rotate(4deg)!important}.logoBox.dogeLaser .laserBeam.r{left:58%!important;top:41.2%!important;transform:rotate(-4deg)!important}
 
 
-/* V40 */
+/* V72 */
 .logoBox.person .laserDot,.logoBox.person .laserBeam,.logoBox.dogeLaser .laserDot,.logoBox.dogeLaser .laserBeam{display:none!important}
 .logoBox.person,.logoBox.dogeLaser{padding:0!important;background:#111}
 .logoBox.person img,.logoBox.dogeLaser img{width:100%!important;height:100%!important;object-fit:cover!important;border-radius:50%!important;padding:0!important}
@@ -106,7 +106,7 @@
 }
 
 
-/* V41 refinements */
+/* V72 refinements */
 
 
 .confidenceBadge{
@@ -184,7 +184,7 @@
 }
 
 
-/* V42 */
+/* V72 */
 .lamboCard{
   margin-top:8px;
   border:1px solid #1d303b;
@@ -256,7 +256,7 @@
 }
 
 
-/* V43 */
+/* V72 */
 /* Oversized rocket becomes a background/header art element, not a small image sitting above the page. */
 .head{position:relative;isolation:isolate;overflow:visible}
 
@@ -293,7 +293,7 @@
 }
 
 
-/* V44 mobile polish + approved laser icons */
+/* V72 mobile polish + approved laser icons */
 .logoBox.person img,.logoBox.dogeLaser img{
   width:100%!important;
   height:100%!important;
@@ -423,9 +423,9 @@
 }
 
 
-/* ========================= V45 CLEANUP ========================= */
+/* ========================= V72 CLEANUP ========================= */
 
-/* Laser icons: keep approved V44 artwork untouched, but crop away the source artwork's visible outer ring. */
+/* Laser icons: keep approved V72 artwork untouched, but crop away the source artwork's visible outer ring. */
 .logoBox.person,.logoBox.dogeLaser{
   border:0!important;
   box-shadow:none!important;
@@ -730,7 +730,7 @@
 }
 
 
-/* V46 final */
+/* V72 final */
 @media(max-width:700px){
  .head{position:relative!important}
  
@@ -742,7 +742,7 @@
 @media(max-width:340px){}
 
 
-/* V47 — supplied Doge rocket artwork */
+/* V72 — supplied Doge rocket artwork */
 @media(max-width:700px){
   .head{
     position:relative!important;
@@ -759,7 +759,7 @@
 }
 
 
-/* V47 FINAL HEADER — fixed left / centre / right */
+/* V72 FINAL HEADER — fixed left / centre / right */
 .head{
   display:grid!important;
   grid-template-columns:minmax(0,1fr) 250px minmax(0,1fr)!important;
@@ -807,7 +807,7 @@
 }
 
 
-/* V50 — proven V34 header structure, final locked layout */
+/* V72 — proven V72 header structure, final locked layout */
 .head{
   display:grid!important;
   grid-template-columns:minmax(0,1fr) 250px minmax(0,1fr)!important;
@@ -853,7 +853,7 @@
 
 .flagLogo{width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 28px;font-size:21px;line-height:1}@media(max-width:700px){.flagLogo{width:24px;height:24px;flex-basis:24px;font-size:18px}}
 
-/* V52 — HEADER POSITIONING LOCKED */
+/* V72 — HEADER POSITIONING LOCKED */
 .head{display:grid!important;grid-template-columns:minmax(0,1fr) 250px minmax(0,1fr)!important;align-items:start!important;width:100%!important;position:relative!important}
 .title{grid-column:1!important;grid-row:1!important;justify-self:start!important;text-align:left!important;min-width:0!important;z-index:3!important}
 .status{grid-column:3!important;grid-row:1!important;justify-self:end!important;text-align:right!important;min-width:0!important;z-index:3!important}
@@ -862,7 +862,7 @@
 @media(max-width:700px){.head{grid-template-columns:minmax(0,1fr) 115px minmax(0,1fr)!important}.title{grid-column:1!important;justify-self:start!important;text-align:left!important}.status{grid-column:3!important;justify-self:end!important;text-align:right!important}}
 
 
-/* V54 — consistent international index flags */
+/* V72 — consistent international index flags */
 .flagLogo{
   width:28px!important;
   height:28px!important;
@@ -887,7 +887,7 @@
 }
 
 
-/* V54 — HEADER POSITIONING LOCKED */
+/* V72 — HEADER POSITIONING LOCKED */
 .head{display:grid!important;grid-template-columns:minmax(0,1fr) 250px minmax(0,1fr)!important;align-items:start!important;width:100%!important;position:relative!important}
 .title{grid-column:1!important;grid-row:1!important;justify-self:start!important;text-align:left!important;min-width:0!important;z-index:3!important}
 .status{grid-column:3!important;grid-row:1!important;justify-self:end!important;text-align:right!important;min-width:0!important;z-index:3!important}
@@ -896,7 +896,7 @@
 @media(max-width:700px){.head{grid-template-columns:minmax(0,1fr) 115px minmax(0,1fr)!important}.title{grid-column:1!important;justify-self:start!important;text-align:left!important}.status{grid-column:3!important;justify-self:end!important;text-align:right!important}}
 
 
-/* V55 — rocket removed; header sides remain fixed */
+/* V72 — rocket removed; header sides remain fixed */
 .head{
   display:grid!important;
   grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
@@ -927,7 +927,7 @@
 }
 
 
-/* V56 — header branding refinement only */
+/* V72 — header branding refinement only */
 .diamond-logo{
   transform:translateY(-4px)!important;
 }
@@ -946,7 +946,7 @@
 }
 
 
-/* V57 — tighten the gap above the NOT FINANCIAL ADVICE notice */
+/* V72 — tighten the gap above the NOT FINANCIAL ADVICE notice */
 .head{
   margin-bottom:2px!important;
 }
@@ -955,7 +955,7 @@
 }
 
 
-/* V70 unified colour language */
+/* V72 unified colour language */
 .low{color:#16ef78;background:#063d25}.moderate{color:#f3df42;background:#443b08}.high{color:#ff9f0a;background:#482c05}.extreme{color:#ff453a;background:#4a1210}
 .rsiLow{color:#2ee879}.rsiMid{color:#f3df42}.rsiHigh{color:#ff9f0a}.rsiExtreme{color:#ff453a}
 .live{font-size:8px!important;margin-right:5px!important;color:#00e676!important}.live.delayed{color:#ff9f0a!important}.live.bad{color:#ff453a!important}
@@ -963,7 +963,7 @@
 @media(max-width:700px){.head{margin-bottom:0!important;margin-top:0!important}.notice{margin-bottom:0!important}.notice{margin-top:0!important}.futurePair{grid-template-columns:1fr!important}.lamboCard{grid-column:1/-1!important;width:100%!important}.crystalCard{grid-column:1/-1!important;width:100%!important}}
 
 <style>.privateTag{font-size:7px;font-weight:900;color:#9faab3;border:1px solid #33424d;border-radius:5px;padding:3px 5px;letter-spacing:.05em}
-/* V70 mobile cleanup */
+/* V72 mobile cleanup */
 @media(max-width:700px){
  .notice{margin-top:0!important;margin-bottom:0!important;padding-top:2px!important;padding-bottom:2px!important}
  .futurePair{grid-template-columns:1fr!important;gap:6px!important}
@@ -972,7 +972,7 @@
 .logoBox img{border-radius:50%;object-fit:cover}
 
 
-/* V70: tiny Crystal Ball column nudge; Signal column is protected on mobile */
+/* V72: tiny Crystal Ball column nudge; Signal column is protected on mobile */
 @media(min-width:701px){th:nth-child(5),td:nth-child(5){padding-left:10px!important}}
 @media(max-width:700px){
   .head{margin-top:0!important;margin-bottom:0!important;padding-bottom:0!important}
@@ -985,7 +985,7 @@
 }
 
 
-/* V70 logo consistency */
+/* V72 logo consistency */
 .logoBox,.assetLogo,.logo,.assetcell img{border-radius:50%!important;overflow:hidden!important}
 .assetcell img{width:34px!important;height:34px!important;object-fit:contain!important;background:transparent!important;border:0!important;box-shadow:none!important}
 @media(max-width:700px){.assetcell img{width:30px!important;height:30px!important}}
@@ -999,19 +999,19 @@
 }
 
 
-/* V70 crystal nudge */
+/* V72 crystal nudge */
 @media(min-width:701px){th:nth-child(5),td:nth-child(5){transform:translateX(4px)}}
 @media(max-width:700px){th:nth-child(5),td:nth-child(5){transform:translateX(2px)}}
 
-/* V70 feature CSS */
+/* V72 feature CSS */
 .fgTop{font-size:10px;font-weight:800;margin-left:auto;margin-right:8px;white-space:nowrap}
 @media(max-width:700px){.fgTop{font-size:7.5px;margin-right:3px}.sortbtn{font-size:8px}}
 
-/* V70 ath CSS */
+/* V72 ath CSS */
 .athAlarm{text-align:center;font-size:14px;font-weight:800}
 @media(max-width:700px){.athAlarm{font-size:11px}th:nth-child(4),td:nth-child(4){width:8%!important;padding-left:1px!important;padding-right:1px!important}}
 
-/* V70 final column alignment */
+/* V72 final column alignment */
 .athAlarm{text-align:center;font-size:14px;font-weight:800;white-space:nowrap}
 @media(max-width:700px){
   th:nth-child(4),td:nth-child(4){width:7%!important;min-width:7%!important;padding-left:1px!important;padding-right:1px!important}
@@ -1029,7 +1029,7 @@
 <meta name="apple-mobile-web-app-title" content="Di4m0ndH4nd5 Risk Dashboard">
 </head><body><div class="wrap">
 <section class="panel"><div class="head">
-<div class="title"><div class="brandline"><img src="icon-180.png" class="diamond-logo" alt="Diamond hands logo"><div><h1>Di4m0ndH4nd5</h1><div class="dashline"><h2>RISK DASHBOARD</h2><span class="version">V70</span></div></div></div></div>
+<div class="title"><div class="brandline"><img src="icon-180.png" class="diamond-logo" alt="Diamond hands logo"><div><h1>Di4m0ndH4nd5</h1><div class="dashline"><h2>RISK DASHBOARD</h2><span class="version">V72</span></div></div></div></div>
 
 <div class="status"><div class="health"><span class="dot" id="healthDot"></span><span id="health">CHECKING</span></div><br><span id="updated">Loading…</span><br><span class="age" id="age"></span></div>
 </div><div class="notice"><img src="doge.png" class="notice-doge" alt="Doge"><span>NOT FINANCIAL ADVICE #HODL</span></div><div class="scale"></div><div class="ticks"><span>0.00</span><span>0.20</span><span>0.45</span><span>0.55</span><span>0.75</span><span>1.00</span></div></section>
