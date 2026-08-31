@@ -47,15 +47,28 @@ def model_forecasts(close,p,risk,cls):
     return one,two
 
 FEAR_GREED_URL="https://api.alternative.me/fng/?limit=1&format=json"
+
 def fetch_fear_greed():
+    """Fetch Fear & Greed independently of market-price processing."""
     try:
-        req=urllib.request.Request(FEAR_GREED_URL,headers={"User-Agent":"Di4m0ndH4nd5 Risk Dashboard/64"})
-        with urllib.request.urlopen(req,timeout=15) as resp:j=json.loads(resp.read().decode("utf-8"))
-        row=(j.get("data") or [None])[0]
-        if not row:return None
-        return {"value":int(row.get("value",50)),"classification":row.get("value_classification","Neutral"),
-                "updated":datetime.fromtimestamp(int(row.get("timestamp",0)),tz=timezone.utc).isoformat()}
-    except Exception:return None
+        req=urllib.request.Request(
+            FEAR_GREED_URL,
+            headers={"User-Agent":"Mozilla/5.0 (compatible; Di4m0ndH4nd5/73)"}
+        )
+        with urllib.request.urlopen(req,timeout=20) as resp:
+            payload=json.loads(resp.read().decode("utf-8"))
+        row=(payload.get("data") or [None])[0]
+        if not row or row.get("value") is None:
+            return {"value":None,"classification":"Data unavailable","updated":None}
+        ts=int(row.get("timestamp",0))
+        return {
+            "value":int(row["value"]),
+            "classification":row.get("value_classification","Neutral"),
+            "updated":datetime.fromtimestamp(ts,tz=timezone.utc).isoformat() if ts else None
+        }
+    except Exception as e:
+        print(f"Fear & Greed fetch failed: {e}")
+        return {"value":None,"classification":"Data unavailable","updated":None}
 
 def calc(a):
     t=a["yf"];cls=a["type"];h=fetch(t);c=h["Close"];c=c.iloc[:,0] if isinstance(c,pd.DataFrame) else c;c=c.dropna().astype(float);p=float(c.iloc[-1]);prev=float(c.iloc[-2]) if len(c)>1 else p;ath=float(c.max());ath_distance=(1-p/ath)*100 if ath else 100;ch=(p/prev-1)*100 if prev else 0
@@ -78,7 +91,7 @@ fng=fetch_fear_greed()
 if os.path.exists(DATA):
     try:old=json.load(open(DATA,encoding="utf-8"))
     except:old={}
-out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V72", "fear_greed":(fng if fng else {"value":None,"classification":"Data unavailable","updated":None})}
+out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V73", "fear_greed":(fng if fng else {"value":None,"classification":"Data unavailable","updated":None})}
 ok=0
 for a in ASSETS:
     if not a.get("yf"): continue
