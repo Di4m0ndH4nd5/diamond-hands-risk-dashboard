@@ -1202,7 +1202,7 @@ const categoryRank={"Crypto": 0, "Indices": 1, "Metals": 2, "Big 7": 3, "Resourc
 
 function fearGreedHTML(){
  const f=data.fear_greed||{},v=Number(f.value);
- return Number.isFinite(v)?`${v}/100 · ${f.classification||"Neutral"}`:"—";
+ return Number.isFinite(v)?`${v}/100 · ${f.classification||"Neutral"}`:"Data unavailable";
 }
 
 function render(){
