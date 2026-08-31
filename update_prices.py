@@ -14,7 +14,7 @@ def fetch(t):
     err=None
     for i in range(4):
         try:
-            h=yf.download(t,period="5y",interval="1d",auto_adjust=False,progress=False,threads=False)
+            h=yf.download(t,period="max",interval="1d",auto_adjust=False,progress=False,threads=False)
             if h is not None and not h.empty:return h
         except Exception as e:err=e
         time.sleep(2+i*2)
@@ -58,7 +58,7 @@ def fetch_fear_greed():
     except Exception:return None
 
 def calc(a):
-    t=a["yf"];cls=a["type"];h=fetch(t);c=h["Close"];c=c.iloc[:,0] if isinstance(c,pd.DataFrame) else c;c=c.dropna().astype(float);p=float(c.iloc[-1]);prev=float(c.iloc[-2]) if len(c)>1 else p;ch=(p/prev-1)*100 if prev else 0
+    t=a["yf"];cls=a["type"];h=fetch(t);c=h["Close"];c=c.iloc[:,0] if isinstance(c,pd.DataFrame) else c;c=c.dropna().astype(float);p=float(c.iloc[-1]);prev=float(c.iloc[-2]) if len(c)>1 else p;ath=float(c.max());ath_distance=(1-p/ath)*100 if ath else 100;ch=(p/prev-1)*100 if prev else 0
     wrsi=RSI(c.resample("W-FRI").last().dropna(),14); hi=float(c.tail(min(len(c),1095)).max());lo=float(c.tail(min(len(c),1095)).min());dd=(p/hi-1)*100 if hi else 0;pos=(p-lo)/(hi-lo) if hi>lo else .5
     ret=c.pct_change().dropna();ann=365 if cls=="Crypto" else 252;vol=float(ret.tail(30).std()*math.sqrt(ann)) if len(ret)>=30 else 0;vr=pct(ret.rolling(30).std().dropna()*math.sqrt(ann),vol);w=wrsi if wrsi is not None else 50
     if cls=="Crypto":
@@ -72,13 +72,13 @@ def calc(a):
         src="Analyst consensus"; basis=(f"Yahoo Finance analyst consensus ({n} analysts)" if n else "Yahoo Finance analyst consensus")
     else:
         src="Model projection"; basis="Long-term trend, cycle/risk position and momentum model"
-    return p,round(risk,4),{"rsi14":None if wrsi is None else round(wrsi,2),"rsi_timeframe":"weekly","change24h":round(ch,2),"drawdown_ath":round(dd,2),"trend":round(trend,4),"volatility30":round(vol,4),"position":round(pos,4),"crystal_target":round(float(one),4),"crystal_1y":round(float(one),4),"crystal_2y":round(float(two),4),"crystal_source":src,"crystal_basis":basis,"crystal_updated":datetime.now(timezone.utc).date().isoformat(),"telescope_low":round(float(lo)*0.90,4),"telescope_high":round(float(hi)*1.10,4)}
+    return p,round(risk,4),{"rsi14":None if wrsi is None else round(wrsi,2),"rsi_timeframe":"weekly","change24h":round(ch,2),"drawdown_ath":round(dd,2),"ath_price":round(ath,4),"ath_distance_pct":round(ath_distance,2),"trend":round(trend,4),"volatility30":round(vol,4),"position":round(pos,4),"crystal_target":round(float(one),4),"crystal_1y":round(float(one),4),"crystal_2y":round(float(two),4),"crystal_source":src,"crystal_basis":basis,"crystal_updated":datetime.now(timezone.utc).date().isoformat(),"telescope_low":round(float(lo)*0.90,4),"telescope_high":round(float(hi)*1.10,4)}
 old={}
 fng=fetch_fear_greed()
 if os.path.exists(DATA):
     try:old=json.load(open(DATA,encoding="utf-8"))
     except:old={}
-out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V64","fear_greed":(fng if fng else old.get("fear_greed"))}
+out={"prices":dict(old.get("prices",{})),"risks":dict(old.get("risks",{})),"components":dict(old.get("components",{})),"errors":{},"updated":datetime.now(timezone.utc).isoformat(),"last_successful_update":old.get("last_successful_update"),"model_version":"V65","fear_greed":(fng if fng else old.get("fear_greed"))}
 ok=0
 for a in ASSETS:
     if not a.get("yf"): continue

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Di4m0ndH4nd5 Risk Dashboard V64</title>
+<title>Di4m0ndH4nd5 Risk Dashboard V65</title>
 <style>
 :root{--bg:#070b0f;--panel:#0d1319;--line:#1d2b35;--cyan:#00e5ff;--text:#f4f7fa;--muted:#8c9aa6;--green:#00e676;--yellow:#f3d63a;--orange:#ff9f0a;--red:#ff453a}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#10212b 0,#070b0f 42%);color:var(--text);font-family:Inter,Arial,sans-serif}.wrap{max-width:1180px;margin:auto;padding:12px}.panel{background:linear-gradient(180deg,#0e151c,#0a1015);border:1px solid #17242d;border-radius:12px;padding:12px;margin-bottom:10px;box-shadow:0 8px 28px #0007}.head{display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:10px}.title h1{font-size:24px;margin:2px 0}.title h2{font-size:12px;margin:0;color:#c8d2da;letter-spacing:.08em}.version{display:block;width:max-content;margin-top:5px;border:1px solid #30404b;border-radius:6px;padding:3px 7px;font-size:10px}.status{text-align:right;font-size:10px;color:#9dabb6;line-height:1.55}.health{display:inline-flex;gap:6px;align-items:center;color:#fff;font-weight:800}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}.notice{margin-top:9px;border:1px solid #8c6c18;background:#171306;border-radius:6px;padding:6px;text-align:center;font-size:10px;font-weight:900;letter-spacing:.06em}.scale{height:8px;border-radius:9px;background:linear-gradient(90deg,#00c853,#cddc39,#ffc107,#ff6d00,#e53935);margin:12px 0 4px}.ticks{display:flex;justify-content:space-between;font-size:9px;color:#7e8b95}.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.stat{border:1px solid #1a2832;background:#0b1116;border-radius:8px;padding:8px;text-align:center}.stat small{font-size:8px;color:#84939f}.stat b{display:block;font-size:22px;margin:2px}.opps{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.opp{border:1px solid #1b2b35;border-radius:8px;padding:8px;font-size:10px}.opp b{font-size:13px}.toolbar{display:flex;justify-content:space-between;align-items:center;margin:4px 0 8px}.toolbar strong{font-size:12px}.sortbtn{background:#0b171e;color:#d8f9ff;border:1px solid #24404c;border-radius:7px;padding:6px 9px;font-size:9px;font-weight:800}table{width:100%;border-collapse:collapse;table-layout:fixed}th{font-size:8px;color:#82919c;text-align:center;padding:8px 5px;border-bottom:1px solid #1b2831}th:first-child{text-align:left;width:30%}td{padding:9px 5px;border-bottom:1px solid #142029;text-align:center;font-size:10px}.group td{background:#0b1b23;color:#00d9ff;text-align:left;font-size:9px;font-weight:900;letter-spacing:.06em;padding:5px 8px}.assetcell{display:flex;align-items:center;gap:7px;text-align:left}.logoBox{width:30px;height:30px;border-radius:50%;background:#eef2f4;display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 auto;padding:4px}.logoBox img{width:100%;height:100%;object-fit:contain;border-radius:10px;padding:1px}.fallback{font-size:7px;color:#111;font-weight:900}.asset{font-weight:850;font-size:11px}.ticker{font-size:8px;color:#74838f}.price{font-weight:800}.live{color:var(--green);font-size:8px;margin-right:3px}.score{font-size:13px;font-weight:900}.badge{display:inline-block;border-radius:5px;padding:3px 6px;font-size:8px;font-weight:900;white-space:nowrap}.low{color:#16ef78;background:#063d25}.moderate{color:#f3df42;background:#443b08}.high{color:#ffb13b;background:#482c05}.extreme{color:#ff5a50;background:#4a1210}.rsiLow{color:#2ee879}.rsiMid{color:#f0db3a}.rsiHigh{color:#ff5147}.fav{cursor:pointer;color:#53636e;margin-right:4px}.fav.on{color:#ffd54a}.detail td{padding:0;border-bottom:1px solid #20303a}.detailbox{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#080d11;padding:10px}.gaugewrap{text-align:center}.gaugeTitle{font-size:9px;color:#b7c2ca;font-weight:900}.gauge{width:150px;height:82px;position:relative;margin:5px auto 0;overflow:hidden}.arc{width:150px;height:150px;border-radius:50%;background:conic-gradient(from 270deg,#00c853 0 10%,#f3d63a 10% 25%,#ff9f0a 25% 37.5%,#ff3b30 37.5% 50%,transparent 50% 100%);position:absolute;top:7px}.arc:after{content:"";position:absolute;inset:18px;border-radius:50%;background:#080d11}.needle{position:absolute;width:2px;height:57px;background:#fff;left:74px;top:19px;transform-origin:50% 100%;z-index:2;box-shadow:0 0 5px #fff}.hub{position:absolute;width:8px;height:8px;border-radius:50%;background:#fff;left:71px;bottom:1px;z-index:3}.gscore{font-size:24px;font-weight:950;margin-top:0}.mini{width:100%;border-collapse:collapse}.mini td{padding:4px;border-bottom:1px solid #18252e;font-size:9px}.mini td:first-child{text-align:left;color:#84929d}.mini td:last-child{text-align:right;font-weight:850}.note{font-size:9px;line-height:1.55;color:#82909a;padding:10px 2px 2px}.stale{color:#ff9f0a;font-size:7px;font-weight:900}.market{font-size:7px;color:#75838d}.age{color:#8c9aa6}
@@ -955,7 +955,7 @@
 }
 
 
-/* V64 unified colour language */
+/* V65 unified colour language */
 .low{color:#16ef78;background:#063d25}.moderate{color:#f3df42;background:#443b08}.high{color:#ff9f0a;background:#482c05}.extreme{color:#ff453a;background:#4a1210}
 .rsiLow{color:#2ee879}.rsiMid{color:#f3df42}.rsiHigh{color:#ff9f0a}.rsiExtreme{color:#ff453a}
 .live{font-size:8px!important;margin-right:5px!important;color:#00e676!important}.live.delayed{color:#ff9f0a!important}.live.bad{color:#ff453a!important}
@@ -963,7 +963,7 @@
 @media(max-width:700px){.head{margin-bottom:0!important;margin-top:0!important}.notice{margin-bottom:0!important}.notice{margin-top:0!important}.futurePair{grid-template-columns:1fr!important}.lamboCard{grid-column:1/-1!important;width:100%!important}.crystalCard{grid-column:1/-1!important;width:100%!important}}
 
 <style>.privateTag{font-size:7px;font-weight:900;color:#9faab3;border:1px solid #33424d;border-radius:5px;padding:3px 5px;letter-spacing:.05em}
-/* V64 mobile cleanup */
+/* V65 mobile cleanup */
 @media(max-width:700px){
  .notice{margin-top:0!important;margin-bottom:0!important;padding-top:2px!important;padding-bottom:2px!important}
  .futurePair{grid-template-columns:1fr!important;gap:6px!important}
@@ -972,7 +972,7 @@
 .logoBox img{border-radius:50%;object-fit:cover}
 
 
-/* V64: tiny Crystal Ball column nudge; Signal column is protected on mobile */
+/* V65: tiny Crystal Ball column nudge; Signal column is protected on mobile */
 @media(min-width:701px){th:nth-child(5),td:nth-child(5){padding-left:10px!important}}
 @media(max-width:700px){
   .head{margin-top:0!important;margin-bottom:0!important;padding-bottom:0!important}
@@ -985,7 +985,7 @@
 }
 
 
-/* V64 logo consistency */
+/* V65 logo consistency */
 .logoBox,.assetLogo,.logo,.assetcell img{border-radius:50%!important;overflow:hidden!important}
 .assetcell img{width:34px!important;height:34px!important;object-fit:contain!important;background:transparent!important;border:0!important;box-shadow:none!important}
 @media(max-width:700px){.assetcell img{width:30px!important;height:30px!important}}
@@ -999,13 +999,17 @@
 }
 
 
-/* V64 crystal nudge */
+/* V65 crystal nudge */
 @media(min-width:701px){th:nth-child(5),td:nth-child(5){transform:translateX(4px)}}
 @media(max-width:700px){th:nth-child(5),td:nth-child(5){transform:translateX(2px)}}
 
-/* V64 feature CSS */
+/* V65 feature CSS */
 .fgTop{font-size:10px;font-weight:800;margin-left:auto;margin-right:8px;white-space:nowrap}
 @media(max-width:700px){.fgTop{font-size:7.5px;margin-right:3px}.sortbtn{font-size:8px}}
+
+/* V65 ath CSS */
+.athAlarm{text-align:center;font-size:14px;font-weight:800}
+@media(max-width:700px){.athAlarm{font-size:11px}th:nth-child(4),td:nth-child(4){width:8%!important;padding-left:1px!important;padding-right:1px!important}}
 
 </style></head><link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -1015,13 +1019,13 @@
 <meta name="apple-mobile-web-app-title" content="Di4m0ndH4nd5 Risk Dashboard">
 </head><body><div class="wrap">
 <section class="panel"><div class="head">
-<div class="title"><div class="brandline"><img src="icon-180.png" class="diamond-logo" alt="Diamond hands logo"><div><h1>Di4m0ndH4nd5</h1><div class="dashline"><h2>RISK DASHBOARD</h2><span class="version">V64</span></div></div></div></div>
+<div class="title"><div class="brandline"><img src="icon-180.png" class="diamond-logo" alt="Diamond hands logo"><div><h1>Di4m0ndH4nd5</h1><div class="dashline"><h2>RISK DASHBOARD</h2><span class="version">V65</span></div></div></div></div>
 
 <div class="status"><div class="health"><span class="dot" id="healthDot"></span><span id="health">CHECKING</span></div><br><span id="updated">Loading…</span><br><span class="age" id="age"></span></div>
 </div><div class="notice"><img src="doge.png" class="notice-doge" alt="Doge"><span>NOT FINANCIAL ADVICE #HODL</span></div><div class="scale"></div><div class="ticks"><span>0.00</span><span>0.20</span><span>0.45</span><span>0.55</span><span>0.75</span><span>1.00</span></div></section>
 <section class="stats" id="stats"></section>
-<section class="panel"><div class="toolbar"><strong>☷ MARKET OVERVIEW</strong><span id="fearGreedTop" class="fgTop">😱 FEAR & GREED — —</span><button class="sortbtn" id="sort">SORT: GROUPS</button></div>
-<div style="overflow-x:auto"><table><thead><tr><th>ASSET</th><th>PRICE</th><th>RSI</th><th>RISK</th><th>🔮</th><th>SIGNAL</th></tr></thead><tbody id="rows"></tbody></table></div>
+<section class="panel"><div class="toolbar"><strong>☷ MARKET OVERVIEW</strong><button class="sortbtn" id="sort">SORT: GROUPS</button></div>
+<div style="overflow-x:auto"><table><thead><tr><th>ASSET</th><th>PRICE</th><th>RSI</th><th>🚨 ATH</th><th>RISK</th><th>🔮</th><th>SIGNAL</th></tr></thead><tbody id="rows"></tbody></table></div>
 
 <div class="infoGrid"><div class="infoCard"><h3>📊 How Risk Is Calculated</h3><p>The 0.00–1.00 risk score combines long-term price trends, weekly RSI, drawdown, relative price position and volatility. Crypto also uses longer-term cycle indicators, with lower scores representing lower historical market risk.</p></div><div class="infoCard"><h3>🚦 Signal</h3><p>The signal converts the live risk score into STRONG BUY 💎, BUY, #HODL, TRIM or SELL. It is a simple visual interpretation of the model’s current risk reading, not financial advice.</p></div><div class="infoCard"><h3>🔮 Crystal Ball</h3><p>The Crystal Ball shows a forward price estimate using analyst consensus where available, otherwise a clearly labelled model projection. The source and latest update are shown alongside the forecast.</p></div><div class="infoCard"><h3>🏎️ Lambo Ladder</h3><p>The Lambo Ladder lists fixed risk levels beside the modelled price for each level. It uses the same risk-to-price relationship as the Moon-O-Meter, giving a quick scrollable view of the full range.</p></div></div>
 </section></div>
@@ -1037,37 +1041,37 @@ function logo(a){
   WTI:"emoji:🛢️",BRENT:"emoji:🛢️",NATGAS:"emoji:🔥",COCOA:"emoji:🍫",COFFEE:"emoji:☕",SUGAR:"emoji:🍬",WHEAT:"emoji:🌾",
   GOOGL:"https://www.google.com/s2/favicons?domain=google.com&sz=128",
   "RR.":"https://www.google.com/s2/favicons?domain=rolls-royce.com&sz=128",
-  ASML:"asset-icons/ASML.svg","BA.":"asset-icons/BA._V64.png",
+  ASML:"asset-icons/ASML.svg","BA.":"asset-icons/BA._V65.png",
   KO:"asset-icons/KO.svg",
-  "CRSP":"asset-icons/CRSP_V64.png",
+  "CRSP":"asset-icons/CRSP_V65.png",
   ASTS:"asset-icons/ASTS.svg",NOW:"asset-icons/NOW.svg",
   COIN:"https://www.google.com/s2/favicons?domain=coinbase.com&sz=128",
   MARA:"https://www.google.com/s2/favicons?domain=mara.com&sz=128",
   SPCX:"https://www.google.com/s2/favicons?domain=spacex.com&sz=128",
-  "BMW":"asset-icons/BMW_V64.png",
+  "BMW":"asset-icons/BMW_V65.png",
   MBG:"https://www.google.com/s2/favicons?domain=mercedes-benz.com&sz=128",
   HOLN:"https://www.google.com/s2/favicons?domain=holcim.com&sz=128",
-  "CAT":"asset-icons/CAT_V64.png",
+  "CAT":"asset-icons/CAT_V65.png",
   BP:"https://www.google.com/s2/favicons?domain=bp.com&sz=128",
   PUM:"https://www.google.com/s2/favicons?domain=puma.com&sz=128",
   ADS:"https://www.google.com/s2/favicons?domain=adidas.com&sz=128",
   HO:"https://www.google.com/s2/favicons?domain=thalesgroup.com&sz=128",
   LDO:"https://www.google.com/s2/favicons?domain=leonardo.com&sz=128",
-  "XRP":"asset-icons/XRP_V64.png",
+  "XRP":"asset-icons/XRP_V65.png",
   ADA:"https://www.google.com/s2/favicons?domain=cardano.org&sz=128",
   SOL:"https://www.google.com/s2/favicons?domain=solana.com&sz=128"
  ,
   LMT:"https://www.google.com/s2/favicons?domain=lockheedmartin.com&sz=128"
  ,
-  "HSBA":"asset-icons/HSBA_V64.png"
+  "HSBA":"asset-icons/HSBA_V65.png"
  ,
-  "TTE":"asset-icons/TTE_V64.png"
+  "TTE":"asset-icons/TTE_V65.png"
  ,
   IBM:"https://www.google.com/s2/favicons?domain=ibm.com&sz=128"
  ,
-  "ROK":"asset-icons/ROK_V64.png"
+  "ROK":"asset-icons/ROK_V65.png"
  ,
-  "EA":"asset-icons/EA_V64.png"
+  "EA":"asset-icons/EA_V65.png"
  ,
   DGE:"https://www.google.com/s2/favicons?domain=diageo.com&sz=128"
  ,
@@ -1085,15 +1089,15 @@ function logo(a){
  ,
   MU:"https://www.google.com/s2/favicons?domain=micron.com&sz=128"
  ,
-  "KSP":"asset-icons/KSP_V64.png"
+  "KSP":"asset-icons/KSP_V65.png"
  ,
-  "TPK":"asset-icons/TPK_V64.png"
+  "TPK":"asset-icons/TPK_V65.png"
  ,
-  "EBAY":"asset-icons/EBAY_V64.png"
+  "EBAY":"asset-icons/EBAY_V65.png"
  ,
-  "SBUX":"asset-icons/SBUX_V64.png"
+  "SBUX":"asset-icons/SBUX_V65.png"
  ,
-  "VOW3":"asset-icons/VOW3_V64.png"
+  "VOW3":"asset-icons/VOW3_V65.png"
  };
  if(local[a.ticker])return local[a.ticker];
  const domains={
@@ -1190,20 +1194,20 @@ function fearGreedHTML(){
  const f=data.fear_greed||{},v=Number(f.value);
  return Number.isFinite(v)?`${v}/100 · ${f.classification||"Neutral"}`:"—";
 }
-function updateFearGreedTop(){
- const el=document.getElementById("fearGreedTop"),f=data.fear_greed||{},v=Number(f.value);
- if(el)el.textContent=Number.isFinite(v)?`😱 FEAR & GREED — ${v}/100 ${f.classification||""}`:"😱 FEAR & GREED — —";
-}
 
 function render(){
  let list=[...assets];
- if(sortMode==='rsiAsc') list.sort((a,b)=>(data.risks?.[a.yf]??.5)-(data.risks?.[b.yf]??.5));
+ const signalRank={"STRONG BUY 💎":0,"BUY":1,"#HODL":2,"TRIM":3,"SELL":4};
+ if(sortMode==="rsiAsc") list.sort((a,b)=>(data.components?.[a.yf]?.rsi14??999)-(data.components?.[b.yf]?.rsi14??999));
+ else if(sortMode==="rsiDesc") list.sort((a,b)=>(data.components?.[b.yf]?.rsi14??-1)-(data.components?.[a.yf]?.rsi14??-1));
+ else if(sortMode==="signalAsc") list.sort((a,b)=>signalRank[zone(data.risks?.[a.yf]??.5)[0]]-signalRank[zone(data.risks?.[b.yf]??.5)[0]]);
+ else if(sortMode==="signalDesc") list.sort((a,b)=>signalRank[zone(data.risks?.[b.yf]??.5)[0]]-signalRank[zone(data.risks?.[a.yf]??.5)[0]]);
  else list.sort((a,b)=>(categoryRank[a.type]-categoryRank[b.type])||a.name.localeCompare(b.name));
  let out="",group="";
  list.forEach(a=>{let r=data.risks?.[a.yf]??.5,z=zone(r),l=level(r),c=data.components?.[a.yf]||{},p=data.prices?.[a.yf],chg=c.change24h,rsi=c.rsi14;
-   if(sortMode==="groups"&&a.type!==group){group=a.type;out+=`<tr class="group"><td colspan="6"><div class="groupPill">${group.toUpperCase()}`}
+   if(sortMode==="groups"&&a.type!==group){group=a.type;out+=`<tr class="group"><td colspan="7"><div class="groupPill">${group.toUpperCase()}`}
    out+=`<tr onclick="toggleRow('${a.ticker}')"><td><div class="assetcell">${logoHTML(a)}<div><div class="asset">${a.name}</div><div class="ticker">${a.ticker}</div></div></div></td><td class="price">${a.private?'<span class="privateTag">PRIVATE</span>':`<span class="live ${priceStatus(a)}">●</span>${price(a,p)}`}</td><td class="${rsi==null?'':rsi<=25?'rsiLow':rsi<=50?'rsiMid':rsi<=75?'rsiHigh':'rsiExtreme'}">${rsi==null?'—':rsi.toFixed(1)+(rsi<35?' 🚨':'')}</td><td><div class="score">${r.toFixed(2)}</div><span class="badge ${l[1]}">${l[0]}</span></td><td class="crystal">${c.crystal_target==null?'—':price(a,c.crystal_target)}</td><td><span class="badge ${z[1]}">${z[0]}</span></td></tr>`;
-   if(openRow===a.ticker){let telNow=telescopeEstimate(a,r);out+=`<tr class="detail"><td colspan="6"><div class="detailbox"><div class="gaugewrap"><div class="gaugeTitle">CURRENT ${a.ticker} RISK · LIVE</div>${gauge(r)}</div><div class="detailInfo"><div class="futurePair"><div class="futureCard crystalCard"><div class="futureTitle">🔮 CRYSTAL BALL</div><div class="futureValue">${c.crystal_1y==null?'—':price(a,c.crystal_1y)}</div><table class="crystalTable"><tr><td>🔮 1 Year Forecast</td><td>${c.crystal_1y==null?'—':price(a,c.crystal_1y)}</td></tr><tr><td>🔮 2 Year Forecast</td><td>${c.crystal_2y==null?'—':price(a,c.crystal_2y)}</td></tr><tr><td>🔮 Source</td><td>${c.crystal_basis||c.crystal_source||'—'}</td></tr><tr><td>🔮 Updated</td><td>${formatUKDate(c.crystal_updated)}</td></tr><tr><td>🔮 Confidence</td><td><span class="confidenceBadge">${crystalConfidence(c)}</span></td></tr></table></div>${lamboLadderHTML(a)}</div><table class="mini"><tr><td>😱 Fear & Greed</td><td>${fearGreedHTML()}</td></tr><tr><td>Weekly RSI (14)</td><td>${rsi==null?'—':rsi.toFixed(1)+(rsi<35?' 🚨':'')}</td></tr><tr><td>24H</td><td>${chg==null?'—':(chg>=0?'+':'')+chg.toFixed(1)+'%'}</td></tr><tr><td>From ATH</td><td>${c.drawdown_ath==null?'—':c.drawdown_ath.toFixed(1)+'%'}</td></tr><tr><td>Signal</td><td><span class="badge ${z[1]}">${z[0]}</span></td></tr><tr><td>Updated</td><td>${ago()}</td></tr></table></div></div></td></tr>`;}
+   if(openRow===a.ticker){let telNow=telescopeEstimate(a,r);out+=`<tr class="detail"><td colspan="7"><div class="detailbox"><div class="gaugewrap"><div class="gaugeTitle">CURRENT ${a.ticker} RISK · LIVE</div>${gauge(r)}</div><div class="detailInfo"><div class="futurePair"><div class="futureCard crystalCard"><div class="futureTitle">🔮 CRYSTAL BALL</div><div class="futureValue">${c.crystal_1y==null?'—':price(a,c.crystal_1y)}</div><table class="crystalTable"><tr><td>🔮 1 Year Forecast</td><td>${c.crystal_1y==null?'—':price(a,c.crystal_1y)}</td></tr><tr><td>🔮 2 Year Forecast</td><td>${c.crystal_2y==null?'—':price(a,c.crystal_2y)}</td></tr><tr><td>🔮 Source</td><td>${c.crystal_basis||c.crystal_source||'—'}</td></tr><tr><td>🔮 Updated</td><td>${formatUKDate(c.crystal_updated)}</td></tr><tr><td>🔮 Confidence</td><td><span class="confidenceBadge">${crystalConfidence(c)}</span></td></tr></table></div>${lamboLadderHTML(a)}</div><table class="mini"><tr><td>😱 Fear & Greed</td><td>${fearGreedHTML()}</td></tr><tr><td>Weekly RSI (14)</td><td>${rsi==null?'—':rsi.toFixed(1)+(rsi<35?' 🚨':'')}</td></tr><tr><td>24H</td><td>${chg==null?'—':(chg>=0?'+':'')+chg.toFixed(1)+'%'}</td></tr><tr><td>From ATH</td><td>${c.drawdown_ath==null?'—':c.drawdown_ath.toFixed(1)+'%'}</td></tr><tr><td>Signal</td><td><span class="badge ${z[1]}">${z[0]}</span></td></tr><tr><td>Updated</td><td>${ago()}</td></tr></table></div></div></td></tr>`;}
  });
  document.getElementById("rows").innerHTML=out;
 
@@ -1215,11 +1219,16 @@ function render(){
  if(data.updated){let d=new Date(data.updated),uk=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/London",day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit",hour12:false}).format(d);document.getElementById("updated").textContent="Last updated (UK): "+uk;document.getElementById("age").textContent=ago()}
 }
 document.getElementById("sort").onclick=()=>{
- if(sortMode==="groups"){sortMode="rsiAsc";document.getElementById("sort").textContent="RSI: LOW → HIGH";}
- else if(sortMode==="rsiAsc"){sortMode="rsiDesc";document.getElementById("sort").textContent="RSI: HIGH → LOW";}
- else {sortMode="groups";document.getElementById("sort").textContent="SORT: GROUPS";}
- render();
+ const modes=[
+  ["groups","SORT: GROUPS"],
+  ["rsiAsc","RSI: LOW → HIGH"],
+  ["rsiDesc","RSI: HIGH → LOW"],
+  ["signalAsc","SIGNAL: STRONG BUY → SELL"],
+  ["signalDesc","SIGNAL: SELL → STRONG BUY"]
+ ];
+ const i=modes.findIndex(x=>x[0]===sortMode),n=modes[(i+1)%modes.length];
+ sortMode=n[0];document.getElementById("sort").textContent=n[1];render();
 }
-async function load(){try{let [a,d]=await Promise.all([fetch("assets.json?v="+Date.now()).then(r=>r.json()),fetch("data.json?v="+Date.now()).then(r=>r.json())]);assets=a;data=d;updateFearGreedTop();render()}catch(e){document.getElementById("health").textContent="DATA FEED ISSUE"}}
+async function load(){try{let [a,d]=await Promise.all([fetch("assets.json?v="+Date.now()).then(r=>r.json()),fetch("data.json?v="+Date.now()).then(r=>r.json())]);assets=a;data=d;render()}catch(e){document.getElementById("health").textContent="DATA FEED ISSUE"}}
 load();setInterval(load,120000);setInterval(()=>{if(assets.length)render()},60000);
 </script></body></html>

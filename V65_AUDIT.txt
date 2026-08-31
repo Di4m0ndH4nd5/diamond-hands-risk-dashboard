@@ -1,0 +1,10 @@
+V65 audit
+- Sort modes: Groups; RSI Low->High; RSI High->Low; Signal Strong Buy->Sell; Signal Sell->Strong Buy.
+- RSI sorting applies to ALL assets, including Crypto.
+- Metric sorts have no category headings.
+- RSI alarm retained for weekly RSI <35.
+- Fear & Greed exists only inside expanded row dropdown; not in toolbar/sort.
+- ATH alarm column uses full available price history and triggers at <=5% below all-time high.
+- Category master order preserved exactly.
+- No ticker duplicates.
+- JS and Python syntax passed.
