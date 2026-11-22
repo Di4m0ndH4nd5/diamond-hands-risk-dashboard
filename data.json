@@ -1,8 +1,8 @@
 {
   "prices": {
-    "BTC-USD": 60181.6796875,
-    "ETH-USD": 1680.9100341796875,
-    "DOGE-USD": 0.055070001631975174,
+    "BTC-USD": 59357.19921875,
+    "ETH-USD": 1662.2900390625,
+    "DOGE-USD": 0.054349999874830246,
     "^GSPC": 6910.39013671875,
     "^FTSE": 10346.2998046875,
     "GC=F": 3515.39990234375,
@@ -38,9 +38,9 @@
     "^GDAXI": 24802.779296875,
     "CL=F": 83.9800033569336,
     "BZ=F": 92.56999969482422,
-    "SOL-USD": 70.1500015258789,
-    "XRP-USD": 0.930899977684021,
-    "ADA-USD": 0.1440500020980835,
+    "SOL-USD": 69.54000091552734,
+    "XRP-USD": 0.9186000227928162,
+    "ADA-USD": 0.14193999767303467,
     "RTX": 190.1699981689453,
     "LMT": 565.5,
     "GD": 341.5,
@@ -119,9 +119,9 @@
     "SPCX": 127.79000091552734
   },
   "risks": {
-    "BTC-USD": 0.1356,
-    "ETH-USD": 0.0665,
-    "DOGE-USD": 0.0211,
+    "BTC-USD": 0.1262,
+    "ETH-USD": 0.0607,
+    "DOGE-USD": 0.0195,
     "^GSPC": 0.5226,
     "^FTSE": 0.5865,
     "GC=F": 0.3217,
@@ -157,9 +157,9 @@
     "^GDAXI": 0.6131,
     "CL=F": 0.4951,
     "BZ=F": 0.5349,
-    "SOL-USD": 0.0333,
-    "XRP-USD": 0.0561,
-    "ADA-USD": 0.0248,
+    "SOL-USD": 0.0314,
+    "XRP-USD": 0.0531,
+    "ADA-USD": 0.0237,
     "RTX": 0.571,
     "LMT": 0.5716,
     "GD": 0.5255,
@@ -239,59 +239,59 @@
   },
   "components": {
     "BTC-USD": {
-      "rsi14": 34.45,
+      "rsi14": 33.25,
       "rsi_timeframe": "weekly",
-      "change24h": 2.35,
-      "drawdown_ath": -51.76,
+      "change24h": 0.95,
+      "drawdown_ath": -52.42,
       "ath_price": 124752.5312,
-      "ath_distance_pct": 51.76,
-      "trend": 0.1174,
-      "volatility30": 0.4583,
-      "position": 0.262,
-      "crystal_target": 52389.9013,
-      "crystal_1y": 52389.9013,
-      "crystal_2y": 45606.9318,
+      "ath_distance_pct": 52.42,
+      "trend": 0.1072,
+      "volatility30": 0.448,
+      "position": 0.2526,
+      "crystal_target": 51492.1785,
+      "crystal_1y": 51492.1785,
+      "crystal_2y": 44669.2985,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 33528.7512,
       "telescope_high": 137227.7844
     },
     "ETH-USD": {
-      "rsi14": 34.55,
+      "rsi14": 33.86,
       "rsi_timeframe": "weekly",
-      "change24h": 3.8,
-      "drawdown_ath": -65.21,
+      "change24h": 2.65,
+      "drawdown_ath": -65.59,
       "ath_price": 4831.3486,
-      "ath_distance_pct": 65.21,
-      "trend": 0.0513,
-      "volatility30": 0.64,
-      "position": 0.062,
-      "crystal_target": 1375.5571,
-      "crystal_1y": 1375.5571,
-      "crystal_2y": 1125.6744,
+      "ath_distance_pct": 65.59,
+      "trend": 0.0431,
+      "volatility30": 0.6301,
+      "position": 0.0565,
+      "crystal_target": 1356.1792,
+      "crystal_1y": 1356.1792,
+      "crystal_2y": 1106.4387,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 1325.2978,
       "telescope_high": 5314.4835
     },
     "DOGE-USD": {
-      "rsi14": 30.84,
+      "rsi14": 30.17,
       "rsi_timeframe": "weekly",
-      "change24h": 1.45,
-      "drawdown_ath": -88.22,
+      "change24h": 0.12,
+      "drawdown_ath": -88.37,
       "ath_price": 0.6848,
-      "ath_distance_pct": 91.96,
+      "ath_distance_pct": 92.06,
       "trend": 0.0,
-      "volatility30": 0.6324,
-      "position": 0.0019,
-      "crystal_target": 0.0424,
-      "crystal_1y": 0.0424,
-      "crystal_2y": 0.0326,
+      "volatility30": 0.6272,
+      "position": 0.0002,
+      "crystal_target": 0.0419,
+      "crystal_1y": 0.0419,
+      "crystal_2y": 0.0322,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 0.0489,
       "telescope_high": 0.514
     },
@@ -310,7 +310,7 @@
       "crystal_2y": 9961.3133,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 3219.327,
       "telescope_high": 8600.8232
     },
@@ -329,7 +329,7 @@
       "crystal_2y": 13678.4881,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 6143.5802,
       "telescope_high": 12001.6596
     },
@@ -348,7 +348,7 @@
       "crystal_2y": 6132.7424,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 1467.81,
       "telescope_high": 5850.2399
     },
@@ -367,7 +367,7 @@
       "crystal_2y": 74.1064,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 15.7959,
       "telescope_high": 126.588
     },
@@ -386,7 +386,7 @@
       "crystal_2y": 7.7954,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 2.9624,
       "telescope_high": 7.4839
     },
@@ -405,7 +405,7 @@
       "crystal_2y": 764.7472,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 740.52,
       "telescope_high": 2553.3199
     },
@@ -424,7 +424,7 @@
       "crystal_2y": 466.6023,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (39 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 112.518,
       "telescope_high": 391.897
     },
@@ -443,7 +443,7 @@
       "crystal_2y": 858.7678,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (54 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 192.825,
       "telescope_high": 611.38
     },
@@ -462,7 +462,7 @@
       "crystal_2y": 329.6469,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (56 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 10.1043,
       "telescope_high": 263.164
     },
@@ -481,7 +481,7 @@
       "crystal_2y": 440.7845,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (60 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 73.638,
       "telescope_high": 312.422
     },
@@ -500,7 +500,7 @@
       "crystal_2y": 536.1232,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (53 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 75.087,
       "telescope_high": 442.882
     },
@@ -519,7 +519,7 @@
       "crystal_2y": 1145.1054,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (58 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 80.019,
       "telescope_high": 869.0
     },
@@ -538,7 +538,7 @@
       "crystal_2y": 563.6604,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (40 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 97.29,
       "telescope_high": 538.868
     },
@@ -557,7 +557,7 @@
       "crystal_2y": 2327.805,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (20 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 59.616,
       "telescope_high": 1727.44
     },
@@ -576,7 +576,7 @@
       "crystal_2y": 2845.1431,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (17 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 341.217,
       "telescope_high": 2188.3839
     },
@@ -595,7 +595,7 @@
       "crystal_2y": 3112.6275,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (20 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 642.6,
       "telescope_high": 2564.1
     },
@@ -614,7 +614,7 @@
       "crystal_2y": 134.514,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (25 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 47.142,
       "telescope_high": 109.428
     },
@@ -633,7 +633,7 @@
       "crystal_2y": 115.3184,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (19 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 28.143,
       "telescope_high": 98.032
     },
@@ -652,7 +652,7 @@
       "crystal_2y": 972.9271,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (37 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 255.042,
       "telescope_high": 739.948
     },
@@ -671,7 +671,7 @@
       "crystal_2y": 608.7909,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (37 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 159.885,
       "telescope_high": 480.227
     },
@@ -690,7 +690,7 @@
       "crystal_2y": 2108.58,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (45 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 43.992,
       "telescope_high": 1334.9161
     },
@@ -709,7 +709,7 @@
       "crystal_2y": 132.5183,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (46 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 18.585,
       "telescope_high": 110.11
     },
@@ -728,7 +728,7 @@
       "crystal_2y": 85.5225,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (12 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 1.809,
       "telescope_high": 146.399
     },
@@ -747,7 +747,7 @@
       "crystal_2y": 1984.5763,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (29 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 266.832,
       "telescope_high": 1587.85
     },
@@ -766,7 +766,7 @@
       "crystal_2y": 61.6771,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (12 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 31.761,
       "telescope_high": 161.601
     },
@@ -785,7 +785,7 @@
       "crystal_2y": 210.2672,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (46 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 61.5168,
       "telescope_high": 257.4858
     },
@@ -819,7 +819,7 @@
       "crystal_2y": 314.91,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (15 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 12.2967,
       "telescope_high": 521.213
     },
@@ -838,7 +838,7 @@
       "crystal_2y": 21.2802,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (13 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 2.835,
       "telescope_high": 34.177
     },
@@ -857,7 +857,7 @@
       "crystal_2y": 260.06,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (34 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 29.277,
       "telescope_high": 461.758
     },
@@ -876,7 +876,7 @@
       "crystal_2y": 8438.0085,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 5109.1831,
       "telescope_high": 9598.6333
     },
@@ -895,7 +895,7 @@
       "crystal_2y": 95454.9693,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 23145.1734,
       "telescope_high": 79602.9781
     },
@@ -914,7 +914,7 @@
       "crystal_2y": 36066.5546,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 10777.9948,
       "telescope_high": 29449.0689
     },
@@ -933,7 +933,7 @@
       "crystal_2y": 98.378,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 49.743,
       "telescope_high": 124.245
     },
@@ -952,65 +952,65 @@
       "crystal_2y": 108.6381,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 53.028,
       "telescope_high": 130.185
     },
     "SOL-USD": {
-      "rsi14": 36.16,
+      "rsi14": 35.71,
       "rsi_timeframe": "weekly",
-      "change24h": 2.04,
-      "drawdown_ath": -73.21,
+      "change24h": 1.15,
+      "drawdown_ath": -73.44,
       "ath_price": 261.8698,
-      "ath_distance_pct": 73.21,
+      "ath_distance_pct": 73.44,
       "trend": 0.0,
-      "volatility30": 0.6201,
-      "position": 0.0729,
-      "crystal_target": 53.7826,
-      "crystal_1y": 53.7826,
-      "crystal_2y": 41.2341,
+      "volatility30": 0.6149,
+      "position": 0.07,
+      "crystal_target": 53.348,
+      "crystal_1y": 53.348,
+      "crystal_2y": 40.9262,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 49.5582,
       "telescope_high": 288.0567
     },
     "XRP-USD": {
-      "rsi14": 34.13,
+      "rsi14": 33.4,
       "rsi_timeframe": "weekly",
-      "change24h": 2.33,
-      "drawdown_ath": -73.82,
+      "change24h": 0.98,
+      "drawdown_ath": -74.17,
       "ath_price": 3.5558,
-      "ath_distance_pct": 73.82,
+      "ath_distance_pct": 74.17,
       "trend": 0.0,
-      "volatility30": 0.6392,
-      "position": 0.163,
-      "crystal_target": 0.8441,
-      "crystal_1y": 0.8441,
-      "crystal_2y": 0.7654,
+      "volatility30": 0.6318,
+      "position": 0.1591,
+      "crystal_target": 0.8288,
+      "crystal_1y": 0.8288,
+      "crystal_2y": 0.7478,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 0.3778,
       "telescope_high": 3.9113
     },
     "ADA-USD": {
-      "rsi14": 34.41,
+      "rsi14": 33.96,
       "rsi_timeframe": "weekly",
-      "change24h": 0.8,
-      "drawdown_ath": -88.3,
+      "change24h": -0.68,
+      "drawdown_ath": -88.47,
       "ath_price": 2.9682,
-      "ath_distance_pct": 95.15,
+      "ath_distance_pct": 95.22,
       "trend": 0.0,
-      "volatility30": 0.6925,
-      "position": 0.001,
-      "crystal_target": 0.1107,
-      "crystal_1y": 0.1107,
-      "crystal_2y": 0.0851,
+      "volatility30": 0.6891,
+      "position": 0.0,
+      "crystal_target": 0.1092,
+      "crystal_1y": 0.1092,
+      "crystal_2y": 0.084,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
-      "telescope_low": 0.1286,
+      "crystal_updated": "2026-11-22",
+      "telescope_low": 0.1277,
       "telescope_high": 1.3542
     },
     "RTX": {
@@ -1028,7 +1028,7 @@
       "crystal_2y": 307.9761,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (23 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 62.442,
       "telescope_high": 248.039
     },
@@ -1047,7 +1047,7 @@
       "crystal_2y": 892.1659,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (22 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 347.661,
       "telescope_high": 744.37
     },
@@ -1066,7 +1066,7 @@
       "crystal_2y": 566.0473,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (21 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 183.762,
       "telescope_high": 435.567
     },
@@ -1085,7 +1085,7 @@
       "crystal_2y": 859.275,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (24 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 378.063,
       "telescope_high": 844.822
     },
@@ -1104,7 +1104,7 @@
       "crystal_2y": 90.6845,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (19 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 6.3162,
       "telescope_high": 70.686
     },
@@ -1123,7 +1123,7 @@
       "crystal_2y": 384.3237,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (19 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 98.685,
       "telescope_high": 300.3
     },
@@ -1142,7 +1142,7 @@
       "crystal_2y": 2898.9644,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (21 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 1137.6,
       "telescope_high": 2494.8
     },
@@ -1161,7 +1161,7 @@
       "crystal_2y": 40.7986,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (26 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 19.431,
       "telescope_high": 59.928
     },
@@ -1180,7 +1180,7 @@
       "crystal_2y": 377.7938,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (22 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 127.854,
       "telescope_high": 314.325
     },
@@ -1199,7 +1199,7 @@
       "crystal_2y": 22218.867,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (22 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 8550.9,
       "telescope_high": 17096.2
     },
@@ -1218,7 +1218,7 @@
       "crystal_2y": 222.1105,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (19 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 20.124,
       "telescope_high": 295.9
     },
@@ -1237,7 +1237,7 @@
       "crystal_2y": 504.1957,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (23 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 91.764,
       "telescope_high": 401.698
     },
@@ -1256,7 +1256,7 @@
       "crystal_2y": 84.3443,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (22 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 22.653,
       "telescope_high": 71.291
     },
@@ -1275,7 +1275,7 @@
       "crystal_2y": 1391.4642,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (21 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 253.431,
       "telescope_high": 1267.2769
     },
@@ -1294,7 +1294,7 @@
       "crystal_2y": 2032.6127,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (17 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 397.98,
       "telescope_high": 1757.14
     },
@@ -1313,7 +1313,7 @@
       "crystal_2y": 755.7003,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (18 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 116.28,
       "telescope_high": 583.44
     },
@@ -1332,7 +1332,7 @@
       "crystal_2y": 49.3638,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (38 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 29.628,
       "telescope_high": 142.45
     },
@@ -1351,7 +1351,7 @@
       "crystal_2y": 268.83,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (30 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 84.555,
       "telescope_high": 289.41
     },
@@ -1370,7 +1370,7 @@
       "crystal_2y": 38.8538,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (18 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 13.9095,
       "telescope_high": 76.164
     },
@@ -1389,7 +1389,7 @@
       "crystal_2y": 8.43,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (18 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 3.753,
       "telescope_high": 14.058
     },
@@ -1408,7 +1408,7 @@
       "crystal_2y": 248.6455,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (22 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 74.826,
       "telescope_high": 205.975
     },
@@ -1427,7 +1427,7 @@
       "crystal_2y": 327.4313,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (24 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 120.357,
       "telescope_high": 259.072
     },
@@ -1446,7 +1446,7 @@
       "crystal_2y": 149.589,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (15 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 41.526,
       "telescope_high": 119.559
     },
@@ -1465,7 +1465,7 @@
       "crystal_2y": 75.4543,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (19 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 23.418,
       "telescope_high": 56.452
     },
@@ -1484,7 +1484,7 @@
       "crystal_2y": 136.1475,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (10 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 40.374,
       "telescope_high": 104.863
     },
@@ -1503,7 +1503,7 @@
       "crystal_2y": 312.5813,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (24 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 79.281,
       "telescope_high": 242.22
     },
@@ -1522,7 +1522,7 @@
       "crystal_2y": 4.6061,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 1.4175,
       "telescope_high": 10.648
     },
@@ -1541,7 +1541,7 @@
       "crystal_2y": 6262.6815,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 2018.7,
       "telescope_high": 13821.5
     },
@@ -1560,7 +1560,7 @@
       "crystal_2y": 389.8491,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 129.51,
       "telescope_high": 482.79
     },
@@ -1579,7 +1579,7 @@
       "crystal_2y": 13.5085,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 11.979,
       "telescope_high": 30.745
     },
@@ -1598,7 +1598,7 @@
       "crystal_2y": 554.7732,
       "crystal_source": "Model projection",
       "crystal_basis": "Long-term trend, cycle/risk position and momentum model",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 445.5,
       "telescope_high": 1031.8
     },
@@ -1617,7 +1617,7 @@
       "crystal_2y": 300.915,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (29 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 5.4,
       "telescope_high": 229.955
     },
@@ -1636,7 +1636,7 @@
       "crystal_2y": 350.794,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (23 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 105.813,
       "telescope_high": 362.153
     },
@@ -1655,7 +1655,7 @@
       "crystal_2y": 318.8484,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (40 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 54.963,
       "telescope_high": 361.163
     },
@@ -1674,7 +1674,7 @@
       "crystal_2y": 122.3791,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (43 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 16.317,
       "telescope_high": 155.034
     },
@@ -1693,7 +1693,7 @@
       "crystal_2y": 73.2713,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (14 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 2.79,
       "telescope_high": 90.299
     },
@@ -1712,7 +1712,7 @@
       "crystal_2y": 26.4205,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (13 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 0.3375,
       "telescope_high": 61.974
     },
@@ -1731,7 +1731,7 @@
       "crystal_2y": 32.022,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (17 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 0.3717,
       "telescope_high": 49.258
     },
@@ -1750,7 +1750,7 @@
       "crystal_2y": 111.1332,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (28 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 21.757,
       "telescope_high": 97.416
     },
@@ -1769,7 +1769,7 @@
       "crystal_2y": 419.3751,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (23 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 88.128,
       "telescope_high": 318.835
     },
@@ -1788,7 +1788,7 @@
       "crystal_2y": 602.37,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (25 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 179.712,
       "telescope_high": 544.588
     },
@@ -1824,7 +1824,7 @@
       "crystal_2y": 659.52,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (30 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 164.754,
       "telescope_high": 671.495
     },
@@ -1843,7 +1843,7 @@
       "crystal_2y": 1089.8015,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (26 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 146.196,
       "telescope_high": 1171.39
     },
@@ -1862,7 +1862,7 @@
       "crystal_2y": 155.6182,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (11 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 50.274,
       "telescope_high": 130.163
     },
@@ -1881,7 +1881,7 @@
       "crystal_2y": 918.5063,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (16 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 444.6,
       "telescope_high": 1190.75
     },
@@ -1900,7 +1900,7 @@
       "crystal_2y": 110.4442,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (19 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 36.009,
       "telescope_high": 111.76
     },
@@ -1919,7 +1919,7 @@
       "crystal_2y": 887.9529,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (49 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 50.346,
       "telescope_high": 714.362
     },
@@ -1938,7 +1938,7 @@
       "crystal_2y": 710.7373,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (47 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 38.439,
       "telescope_high": 529.727
     },
@@ -1957,7 +1957,7 @@
       "crystal_2y": 792.0356,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (20 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 54.252,
       "telescope_high": 534.38
     },
@@ -1976,7 +1976,7 @@
       "crystal_2y": 250.0875,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (28 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 92.718,
       "telescope_high": 276.122
     },
@@ -1995,7 +1995,7 @@
       "crystal_2y": 457.3707,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (29 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 126.45,
       "telescope_high": 365.508
     },
@@ -2014,7 +2014,7 @@
       "crystal_2y": 43.8983,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (22 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 2.961,
       "telescope_high": 31.559
     },
@@ -2033,7 +2033,7 @@
       "crystal_2y": 28.17,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (15 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 1.602,
       "telescope_high": 25.74
     },
@@ -2052,7 +2052,7 @@
       "crystal_2y": 42.8625,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (4 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 11.3706,
       "telescope_high": 33.286
     },
@@ -2071,7 +2071,7 @@
       "crystal_2y": 177.3138,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (31 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 71.388,
       "telescope_high": 137.456
     },
@@ -2109,7 +2109,7 @@
       "crystal_2y": 171.6,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (27 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 33.129,
       "telescope_high": 137.665
     },
@@ -2128,7 +2128,7 @@
       "crystal_2y": 77.3734,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (33 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 35.172,
       "telescope_high": 112.288
     },
@@ -2147,7 +2147,7 @@
       "crystal_2y": 857.4299,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (38 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 63.945,
       "telescope_high": 853.49
     },
@@ -2166,7 +2166,7 @@
       "crystal_2y": 114.1409,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (43 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 15.7302,
       "telescope_high": 147.3043
     },
@@ -2185,7 +2185,7 @@
       "crystal_2y": 200.4238,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (29 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 35.253,
       "telescope_high": 297.781
     },
@@ -2204,7 +2204,7 @@
       "crystal_2y": 33.7875,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (36 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 13.878,
       "telescope_high": 49.478
     },
@@ -2240,7 +2240,7 @@
       "crystal_2y": 149.94,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (30 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 65.25,
       "telescope_high": 127.391
     },
@@ -2259,7 +2259,7 @@
       "crystal_2y": 403.65,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (29 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 207.666,
       "telescope_high": 375.166
     },
@@ -2278,7 +2278,7 @@
       "crystal_2y": 237.3652,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (23 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 111.384,
       "telescope_high": 197.67
     },
@@ -2297,7 +2297,7 @@
       "crystal_2y": 7148.7853,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (15 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 3555.5157,
       "telescope_high": 6019.2
     },
@@ -2316,7 +2316,7 @@
       "crystal_2y": 2836.8905,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (22 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 1226.25,
       "telescope_high": 4356.0
     },
@@ -2335,7 +2335,7 @@
       "crystal_2y": 321.4053,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (4 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 117.261,
       "telescope_high": 280.247
     },
@@ -2354,7 +2354,7 @@
       "crystal_2y": 132.51,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (18 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 56.358,
       "telescope_high": 167.2
     },
@@ -2373,7 +2373,7 @@
       "crystal_2y": 619.482,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (12 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 162.567,
       "telescope_high": 569.415
     },
@@ -2392,7 +2392,7 @@
       "crystal_2y": 67.8409,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (20 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 33.858,
       "telescope_high": 84.271
     },
@@ -2411,7 +2411,7 @@
       "crystal_2y": 90.3576,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (19 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 46.962,
       "telescope_high": 126.225
     },
@@ -2430,7 +2430,7 @@
       "crystal_2y": 20.2732,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (18 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 7.821,
       "telescope_high": 19.184
     },
@@ -2449,7 +2449,7 @@
       "crystal_2y": 347.6185,
       "crystal_source": "Analyst consensus",
       "crystal_basis": "Yahoo Finance analyst consensus (37 analysts)",
-      "crystal_updated": "2026-11-21",
+      "crystal_updated": "2026-11-22",
       "telescope_low": 97.443,
       "telescope_high": 232.529
     }
@@ -2457,12 +2457,12 @@
   "errors": {
     "KSP.L": "fetch failed None"
   },
-  "updated": "2026-11-21T23:28:51.000957+00:00",
-  "last_successful_update": "2026-11-21T23:30:19.302894+00:00",
+  "updated": "2026-11-22T03:25:04.853461+00:00",
+  "last_successful_update": "2026-11-22T03:26:21.619643+00:00",
   "model_version": "V73",
   "fear_greed": {
-    "value": 12,
+    "value": 11,
     "classification": "Extreme Fear",
-    "updated": "2026-11-21T00:00:00+00:00"
+    "updated": "2026-11-22T00:00:00+00:00"
   }
 }
